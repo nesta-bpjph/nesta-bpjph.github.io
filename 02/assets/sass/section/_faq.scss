@@ -1,0 +1,273 @@
+/*==========================================================================
+FAQ
+========================================================================== */
+.faq__area {
+    padding-bottom: 120px;
+    &-left {
+        &-image {
+            display: flex;
+            position: relative;
+            &-two {
+                margin: 50px 0 0 20px;
+            }
+            &-three {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                img {
+                    max-width: 190px;
+                }
+            }
+        }
+    }
+    &-right {
+        margin-left: 60px;
+        &-page {
+            margin-left: 0;
+            margin-right: 60px;
+        }
+    }
+    &-collapse {
+        position: relative;
+        z-index: 3;       
+        margin-top: 45px; 
+        &-item {
+            margin-bottom: 10px;
+            background: $thin-bg;
+            padding: 0 25px;
+            &-card {
+                &-header {  
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: none;
+                    cursor: pointer;
+                    background: $thin-bg;
+                    padding: 15px 0;
+                    i {
+                        color: $primary-color;
+                    }
+                    &-content {
+                        padding: 0px 0 20px 0;
+                        p {
+                            max-width: 400px;
+                        }
+                    }          
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+FAQ Two
+========================================================================== */
+.faq__two {
+    background: $thin-bg-2;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &-page {
+        background: $thin-bg;
+    }
+    &-left {
+        margin-right: 70px;
+        &-image {
+            position: relative;
+            margin-bottom: 60px;
+            &-one {
+                position: absolute;
+                right: 0;
+                bottom: -60px;
+            }
+        }
+        &-bg {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: auto;
+            height: 100%;
+        }
+    }
+    &-collapse {
+        position: relative;
+        z-index: 3;       
+        margin-top: 45px; 
+        &-item {
+            margin-bottom: 10px;
+            background: $white;
+            padding: 0 25px;
+            &-card {
+                &-header {  
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: none;
+                    cursor: pointer;
+                    background: $white;
+                    padding: 15px 0;
+                    i {
+                        color: $primary-color;
+                    }
+                    &-content {
+                        padding: 0px 0 20px 0;
+                    }          
+                }
+                &-header-two {  
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: none;
+                    cursor: pointer;
+                    background: $white;
+                    padding: 15px 0;
+                    i {
+                        color: $primary-color;
+                    }
+                    &-content {
+                        padding: 0px 0 20px 0;
+                    }          
+                }
+            }
+        }
+    }
+    &-right {
+        &-bottom {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            i {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: $white;
+                background: $heading-color;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+            h6 a {
+                color: $primary-color-1;
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+	.faq__area {
+        &-right {
+            margin-left: 50px;
+            &-page {
+                margin-right: 50px;
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+	.faq__area {
+        &-right {
+            margin-left: 20px;
+            &-page {
+                margin-right: 20px;
+            }
+        }
+    }
+    .faq__two {        
+        &-left {
+            margin-right: 30px;
+            &-bg {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+	.faq__area {
+        &-right {
+            margin-left: 0;
+            &-page {
+                margin-right: 0;
+            }
+        }
+        &-collapse { 
+            &-item {
+                padding: 0 20px;
+                &-card {
+                    &-header {
+                        h5 {
+                            font-size: 16px;
+                            line-height: 26px;
+                            font-weight: 500;
+                        }       
+                    }
+                }
+            }
+        }
+    }
+    .faq__two {        
+        &-left {
+            margin-right: 0;
+        }
+        &-collapse {
+            &-item {
+                padding: 0 20px;
+                &-card {
+                    &-header {
+                        h5 {
+                            font-size: 16px;
+                            line-height: 26px;
+                            font-weight: 500;
+                        }       
+                    }
+                    &-header-two {
+                        h5 {
+                            font-size: 16px;
+                            line-height: 26px;
+                            font-weight: 500;
+                        }       
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 440px) {
+	.faq__area {
+        &-collapse { 
+            &-item {
+                &-card {
+                    &-header {
+                        h5 {
+                            font-size: 14px;
+                            line-height: 24px;
+                            font-weight: 700;
+                        }       
+                    }
+                }
+            }
+        }
+    }
+    .faq__two {     
+        &-collapse {
+            &-item {
+                &-card {
+                    &-header {
+                        h5 {
+                            font-size: 14px;
+                            line-height: 24px;
+                            font-weight: 700;
+                        }       
+                    }
+                    &-header-two {
+                        h5 {
+                            font-size: 14px;
+                            line-height: 24px;
+                            font-weight: 700;
+                        }       
+                    }
+                }
+            }
+        }
+    }
+}

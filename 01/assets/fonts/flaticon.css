@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?564408008561796c3ddf027248be6a31") format("truetype"),
+url("./flaticon.woff?564408008561796c3ddf027248be6a31") format("woff"),
+url("./flaticon.woff2?564408008561796c3ddf027248be6a31") format("woff2"),
+url("./flaticon.eot?564408008561796c3ddf027248be6a31#iefix") format("embedded-opentype"),
+url("./flaticon.svg?564408008561796c3ddf027248be6a31#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-call:before {
+    content: "\f101";
+}
+.flaticon-facebook-app-symbol:before {
+    content: "\f102";
+}
+.flaticon-twitter:before {
+    content: "\f103";
+}
+.flaticon-linkedin:before {
+    content: "\f104";
+}
+.flaticon-vimeo:before {
+    content: "\f105";
+}
+.flaticon-instagram:before {
+    content: "\f106";
+}
+.flaticon-left-arrow:before {
+    content: "\f107";
+}
+.flaticon-next:before {
+    content: "\f108";
+}
+.flaticon-right-arrow:before {
+    content: "\f109";
+}
+.flaticon-court:before {
+    content: "\f10a";
+}
+.flaticon-balance:before {
+    content: "\f10b";
+}
+.flaticon-checked:before {
+    content: "\f10c";
+}
+.flaticon-straight-quotes:before {
+    content: "\f10d";
+}
+.flaticon-date:before {
+    content: "\f10e";
+}
+.flaticon-comment:before {
+    content: "\f10f";
+}
+.flaticon-placeholder:before {
+    content: "\f110";
+}
+.flaticon-mail:before {
+    content: "\f111";
+}
+.flaticon-envelope:before {
+    content: "\f112";
+}
+.flaticon-telephone:before {
+    content: "\f113";
+}
+.flaticon-double-right-arrows-angles:before {
+    content: "\f114";
+}
+.flaticon-presentation:before {
+    content: "\f115";
+}
+.flaticon-law:before {
+    content: "\f116";
+}
+.flaticon-plus:before {
+    content: "\f117";
+}
+.flaticon-minus:before {
+    content: "\f118";
+}
+.flaticon-up-arrow:before {
+    content: "\f119";
+}
+.flaticon-search:before {
+    content: "\f11a";
+}
+.flaticon-menu:before {
+    content: "\f11b";
+}
+.flaticon-close:before {
+    content: "\f11c";
+}
+.flaticon-user:before {
+    content: "\f11d";
+}
+.flaticon-user-1:before {
+    content: "\f11e";
+}
+.flaticon-profile-user:before {
+    content: "\f11f";
+}
+.flaticon-folder:before {
+    content: "\f120";
+}
+.flaticon-reply:before {
+    content: "\f121";
+}
+.flaticon-law-1:before {
+    content: "\f122";
+}
+.flaticon-lawyer:before {
+    content: "\f123";
+}
+.flaticon-compliant:before {
+    content: "\f124";
+}

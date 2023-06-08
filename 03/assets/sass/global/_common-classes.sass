@@ -1,0 +1,570 @@
+/*******************************************************/
+/*****************  02. Common Classes *****************/
+/*******************************************************/
+.page-wrapper
+    position: relative
+    z-index: 9
+    width: 100%
+    margin: 0 auto
+    overflow: hidden
+    min-width: 300px
+    background: #FFFFFF
+    
+.container
+    +res-ab(xl)
+        max-width: $container
+        padding-left: $gutter/2
+        padding-right: $gutter/2
+   
+.row
+    --bs-gutter-x: 30px
+.no-gap
+    +colgap(0)
+      
+.small-gap
+    +colgap(20px)
+    
+.large-gap
+    +res-ab(xxl)
+        +colgap(80px)
+    
+.col-small
+    +res-bl(xs)
+        flex: 0 0 100%
+        max-width: 100%
+    
+/** Section Title style **/
+.sub-title
+    font-size: 20px
+    margin-bottom: 15px
+    align-items: center
+    display: inline-flex
+    color: $primary-color
+    text-transform: capitalize
+    &:before
+        content: ''
+        height: 1px
+        width: 30px
+        flex: none
+        margin-right: 15px
+        background: $primary-color
+    &.style-two
+        z-index: 1
+        font-size: 17px
+        font-weight: 500
+        padding-left: 10px
+        position: relative
+        color: $heading-color
+        &:before
+            position: absolute
+            left: 0
+            top: 1px
+            +size(18px)
+            z-index: -1
+            background: transparent
+            border-top: 2px solid $primary-color
+            border-left: 2px solid $primary-color
+    &.style-three
+        font-size: 17px
+        font-weight: 500
+        &:before
+            display: none
+    +res-bl(sm)
+        font-size: 18px
+        
+.section-title
+    h2
+        margin-bottom: 20px
+        text-transform: capitalize
+        +res-bl(md)
+            font-size: 35px
+        +res-bl(sm)
+            font-size: 30px
+    p
+        font-size: 20px
+        +res-bl(sm)
+            font-size: 18px
+        +res-bl(xs)
+            font-size: 16px
+        span
+            color: $primary-color
+        
+.text-center
+    .sub-title
+        &:after
+            content: ''
+            height: 1px
+            width: 30px
+            flex: none
+            margin-left: 15px
+            background: $primary-color
+    .sub-title
+        &.style-two
+            padding-right: 10px
+            &:after
+                position: absolute
+                right: 0
+                top: 1px
+                +size(18px)
+                z-index: -1
+                background: transparent
+                border-top: 2px solid $primary-color
+                border-right: 2px solid $primary-color
+        
+.text-white
+    .sub-title
+        color: $primary-color
+        &.style-two
+            color: white
+   
+/** Button style **/
+.theme-btn,
+a.theme-btn
+    color: white
+    cursor: pointer
+    transition: 0.5s
+    font-weight: 700
+    border-radius: 5px
+    text-align: center
+    padding: 15px 35px
+    align-items: center
+    display: inline-flex
+    justify-content: center
+    background-position: 0 0
+    text-transform: uppercase
+    background-size: 100% 300%
+    background-image: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%, #FB5D4A 0%, #FF9B07 117.45%)
+    i
+        font-size: 13px
+        transition: 0.5s
+        margin-left: 10px
+    &:hover
+        background-size: 200% 300%
+        background-position: -100% 100%
+        i
+            margin-left: 13px;
+            margin-right: -3px
+    &.style-two
+        padding: 12px 30px
+        background: transparent
+        border: 1px solid rgba(255, 255, 255, 0.55)
+        &:hover
+            background: $primary-color
+            border-color: $primary-color
+        +res-bl(sm)
+            padding: 8px 25px
+    &.style-three
+        background: $black-color
+        &:hover
+            background: white
+            color: $primary-color
+    &.style-four
+        padding: 14px 33px
+        color: $primary-color
+        background: transparent
+        border: 1px solid $primary-color
+        &:hover
+            color: white
+            background: $primary-color
+        +res-bl(sm)
+            padding: 8px 24px
+        
+    &.btn-small
+        font-size: 14px
+        padding: 9px 26px
+        
+    +res-bl(sm)
+        font-size: 15px
+        padding: 9px 25px
+
+/* Read More */
+.read-more
+    font-weight: 500
+    align-items: center
+    display: inline-flex
+    text-transform: capitalize
+    i
+        font-size: 11px
+        margin-left: 7px
+        transition: 0.5s
+    &:hover
+        color: $primary-color
+        i
+            margin-left: 10px
+      
+/* List style One */
+.list-style-one
+    li
+        display: flex
+        &:not(:last-child)
+            margin-bottom: 10px
+        &:before
+            flex: none
+            content: ''
+            +size(8.5px)
+            margin-top: 8px
+            margin-right: 10px
+            border-radius: 2px
+            transform: rotate(-146.6deg)
+            background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+   
+/* List style Two */
+.list-style-two
+    li
+        display: flex
+        position: relative
+        &:not(:last-child)
+            margin-bottom: 18px
+        &:after,
+        &:before
+            content: ''
+            +size(15px)
+            border-radius: 1px
+        &:before
+            flex: none
+            margin-top: 6px
+            margin-right: 15px
+            background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+        &:after
+            left: 3px
+            top: 9px
+            position: absolute
+            border: 1px solid $primary-color
+            
+/* List style Three */
+.list-style-three
+    li
+        display: flex
+        &:not(:last-child)
+            margin-bottom: 8px
+        &:before
+            flex: none
+            content: '\e949'
+            margin-right: 15px
+            color: $primary-color
+            font-family: 'icomoon'
+        
+/* List style Four */
+.list-style-four
+    li
+        display: flex
+        &:not(:last-child)
+            margin-bottom: 8px
+        &:before
+            flex: none
+            content: '\f14a'
+            margin-right: 12px
+            color: $primary-color
+            font-family: 'Font Awesome 5 Pro'
+   
+/** Social Link One **/
+.social-style-one
+    font-size: 14px
+    flex-wrap: wrap
+    display: inline-flex
+    a
+        opacity: 0.8
+        color: white
+        +circle(transparentize(white, 0.9), 42px)
+        &:hover
+            opacity: 1
+            background: $primary-color
+        &:not(:first-child)
+            margin-left: 5px
+        &:not(:last-child)
+            margin-right: 5px
+        
+/** Social Link two **/
+.social-style-two
+    font-size: 14px
+    flex-wrap: wrap
+    display: inline-flex
+    a
+        +size(38px)
+        line-height: 38px
+        text-align: center
+        border-radius: 50%
+        border: 1px solid rgba(0, 0, 0, 0.1)
+        +overlay(linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%), 0)
+        &:before
+            transition: 0.5s
+            border-radius: 50%
+        &:hover
+            color: white
+            border-color: $primary-color
+            &:before
+                opacity: 1
+        &:not(:first-child)
+            margin-left: 5px
+        &:not(:last-child)
+            margin-right: 5px
+        
+/*** Preloader style ** */
+.preloader
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 9999999
+    background-color: #FFFFFF
+    background-repeat: no-repeat
+    background-position: center center
+    background-image: url(../images/preloader.gif)
+
+/* Pagination */    
+.pagination
+    justify-content: center
+    +gapLR(margin, -7px)
+    li
+        margin: 15px 7px 0
+        a,
+        .page-link
+            padding: 0
+            +size(55px)
+            font-size: 20px
+            box-shadow: none
+            line-height: 53px
+            text-align: center
+            color: $heading-color
+            border: 1px solid #ECEDEF
+            +overlay(linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%), 0)
+            +res-bl(xs)
+                +size(44px)
+                font-size: 16px
+                line-height: 42px
+            &:before
+                transition: 0.5s
+        &.active,
+        &:hover:not(.disabled)
+            .page-link
+                color: white
+                border-color: #ECEDEF
+                &:before
+                    opacity: 1
+        &:last-child,
+        &:first-child
+            .page-link
+                border-radius: 0
+        
+/* Rating */
+.ratting
+    align-items: center
+    display: inline-flex
+    i
+        color: #FFC107
+        &:not(:last-child)
+            margin-right: 10px
+                
+/*** Slick Dots ***/
+.slick-arrow
+    font-size: 30px
+    transition: 0.5s
+    color: $heading-color
+    background: transparent
+    &:focus,
+    &:hover
+        color: $primary-color
+                
+/*** Slick Dots ***/
+.slick-dots
+    +flexcenter(center)
+    li
+        position: relative
+        cursor: pointer
+        margin: 15px
+        +size(8px)
+        transition: 0.5s
+        border-radius: 50%
+        background: $primary-color
+        button
+            opacity: 0
+        &:before
+            content: ''
+            +size(0)
+            left: 50%
+            top: 50%
+            opacity: 0.1
+            transition: 0.5s
+            background: white
+            border-radius: 50%
+            position: absolute
+            transform: translate(-50%, -50%)
+        &.slick-active
+            &:before
+                +size(18px)
+
+/*** Scroll Top style ***/
+.back-to-top
+    position: fixed
+    bottom: 25px
+    right: 25px
+    +size(50px)
+    z-index: 99
+    color: white
+    display: none
+    cursor: pointer
+    line-height: 50px
+    text-align: center
+    border-radius: 5px
+    background: #fd7c2a
+    animation: pulse 2s infinite
+    +res-bl(lg)
+        +size(40px)
+        line-height: 40px
+  
+/* Text White */
+.text-white *,
+.text-white a
+    color: white
+    li li
+        .dropdown-btn
+            span
+                color: $heading-color
+        
+    
+/* Video Play Btn */
+.video-play
+    z-index: 1
+    color: white
+    font-size: 18px
+    position: relative
+    display: inline-block
+    +circle(linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%), 92px)
+    &:before
+        content: ''
+        z-index: -1
+        left: 4px
+        top: 4px
+        border-radius: 50%
+        position: absolute
+        +size(calc(100% - 8px))
+        background: $black-color
+    &.style-two
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7)
+        animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1)
+        +res-ab(sm)
+            +size(110px)
+            font-size: 20px
+            line-height: 110px
+        &:before
+            display: none
+        &:hover
+            color: white
+    &.style-three
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7)
+        animation: pulse 1.5s infinite cubic-bezier(0.66, 0, 0, 1)
+        +res-ab(sm)
+            +size(120px)
+            font-size: 25px
+            background: white
+            line-height: 120px
+            color: $primary-color
+        &:before
+            display: none
+    &.style-four
+        color: white
+        border-radius: 0
+        background: linear-gradient(315.68deg, rgba(251, 93, 74, 0.67) 0%, #FF9B07 98.84%)
+        +res-ab(sm)
+            +size(100px)
+            font-size: 25px
+            line-height: 100px
+        &:before
+            display: none
+    +res-bl(sm)
+        +size(65px)
+        font-size: 16px
+        line-height: 65px
+        &:before
+            top: 2px
+            left: 2px
+            +size(calc(100% - 4px))
+            
+/* Tab Btn style one */
+.tab-btns-one
+    li
+        margin-bottom: 10px
+        &:not(:last-child)
+            margin-right: 12px
+        button
+            font-size: 18px
+            padding: 10px 18px
+            color: $base-color
+            border-radius: 3px
+            background: $lighter-color
+            +overlay(linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%), 0)
+            +res-bl(sm)
+                font-size: 16px
+                padding: 8px 15px
+            &:before
+                transition: 0.5s
+                border-radius: 3px
+            &:hover
+                color: $base-color
+            &.active
+                color: white
+                &:before
+                    opacity: 1
+                
+/* Tab Btn style two */
+.tab-btns-two
+    display: inline-flex
+    border-bottom: 1px solid rgba(31, 31, 38, 0.15)
+    li
+        &:not(:last-child)
+            margin-right: 28px
+        button
+            font-size: 18px
+            padding: 0 0 8px
+            color: $heading-color
+            background: transparent
+            border-bottom: 1px solid transparent
+            +res-bl(sm)
+                font-size: 16px
+                margin-bottom: 4px
+                padding-bottom: 4px
+            &:hover
+                color: $heading-color
+            &.active
+                color: $heading-color
+                border-color: $primary-color
+        
+/* Position */
+.rel
+    position: relative
+    
+@for $i from 0 through 5
+    .z-#{0 + $i}
+        z-index: 0 + $i
+    
+.overlay
+    +overlay($heading-color, 0.75)
+    
+.shape
+    z-index: -1
+    position: absolute
+    
+/* Backgruond Size */
+.bgs-cover
+    background-size: cover
+    background-position: center
+
+/* Color + Background */
+.bgc-black
+    background-color: $black-color
+.bgc-lighter
+    background-color: $lighter-color
+.bgc-primary
+    background-color: $primary-color
+.bgc-gradient
+    background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+.color-primary
+    color: $primary-color
+    
+    
+/* Border Radius */
+@for $i from 1 through 6
+    .br-#{5 * $i}
+        border-radius: 5px * $i
+    

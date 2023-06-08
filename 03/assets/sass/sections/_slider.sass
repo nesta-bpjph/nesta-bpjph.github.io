@@ -1,0 +1,141 @@
+/*******************************************************/
+/******************  09. Slider Area *******************/
+/*******************************************************/
+.slick-initialized .slider-single-item
+    display: flex
+.slider-single-item
+    text-align: center
+    +flexcenter(center)
+    +overlay(black, 0.85)
+    background-size: cover
+    background-position: center
+    min-height: calc(100vh - 50px)
+    
+.slide-content
+    z-index: 2
+    +container(785px)
+    position: relative
+    padding-top: 185px
+    padding-bottom: 100px
+    +res-bl(lg)
+        padding-top: 155px
+    h1
+        color: white
+        margin-bottom: 22px
+        text-transform: uppercase
+        +res-bl(xl)
+            font-size: 50px
+        +res-bl(lg)
+            font-size: 45px
+            line-height: 1.4
+        +res-bl(md)
+            font-size: 42px
+        +res-bl(sm)
+            font-size: 35px
+        +res-bl(ms)
+            font-size: 30px
+    p
+        color: white
+        font-size: 18px
+        +container(600px)
+        line-height: 1.95
+        +res-bl(ms)
+            font-size: 16px
+        +res-bl(xs)
+            font-size: 15px
+.slider-btns
+    flex-wrap: wrap
+    padding-top: 20px
+    +flexcenter(center)
+    +res-bl(lg)
+        padding-top: 5px
+    .theme-btn
+        margin: 15px 10px 0
+     
+.main-slider-active
+    .slick-dots
+        z-index: 2
+        right: 70px
+        position: absolute
+        top: calc(50% + 50px)
+        flex-direction: column
+        transform: translateY(-50%)
+        +res-bl(lg)
+            right: 0
+        li
+            &:before
+                +size(18px)
+            &.slick-active
+                +size(1px, 30px)
+                &:before
+                    display: none
+                
+.slider-shpe-one
+    position: absolute
+    max-width: 30%
+    bottom: 30%
+    left: 0
+    
+.slide-content
+    *
+        transition: 1s
+        animation-duration: 1s
+        animation-fill-mode: both
+    
+.slick-active .slide-content
+    h1, p
+        animation-name: fadeInUp
+    .slider-btns
+        .theme-btn
+            animation-delay: 0.6s
+            &:first-child
+                animation-name: fadeInLeft
+            &:last-child
+                animation-name: fadeInRight
+    h1
+        animation-delay: 0.2s
+    p
+        animation-delay: 0.4s
+        
+/* Slider Two */
+.slider-section-two
+    .main-slider-active
+        +overlay($black-color, 1)
+        z-index: 0
+        .slick-dots
+            top: auto
+            right: 50%
+            bottom: 50px
+            flex-direction: row
+            transform: translate(50%, 0)
+            li
+                &:not(.slick-active)
+                    background: white
+                &.slick-active
+                    +size(8px)
+                    &:before
+                        display: block
+        &:before
+            border-bottom-left-radius: 300px
+            +res-bl(md)
+                border-bottom-left-radius: 200px
+    .slider-single-item
+        overflow: hidden
+        min-height: calc(100vh - 110px)
+        border-bottom-left-radius: 300px
+        +res-bl(md)
+            border-bottom-left-radius: 200px
+        &:before
+            background: #1F1F26
+    &:before
+        +size(400px, 350px)
+        position: absolute
+        content: ''
+        left: 0
+        bottom: 0
+        z-index: -1
+        background: linear-gradient(34.72deg, #FB5D4A 1.03%, #FF9B07 40.49%)
+    .slider-shpe-one
+        right: 0
+        left: auto
+        bottom: 20%

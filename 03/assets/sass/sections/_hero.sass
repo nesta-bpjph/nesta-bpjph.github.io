@@ -1,0 +1,106 @@
+/*******************************************************/
+/*******************  08. Hero Area ********************/
+/*******************************************************/
+.hero-content
+    +res-bl(sm)
+        padding-right: 66px
+    h1
+        margin-bottom: 22px
+        text-transform: uppercase
+        +res-bl(xl)
+            font-size: 50px
+        +res-bl(lg)
+            font-size: 45px
+            line-height: 1.4
+        +res-bl(md)
+            font-size: 42px
+        +res-bl(sm)
+            font-size: 35px
+        +res-bl(ms)
+            font-size: 30px
+    p
+        font-size: 18px
+        max-width: 440px
+        line-height: 1.95
+        text-transform: capitalize
+        +res-bl(ms)
+            font-size: 16px
+        +res-bl(xs)
+            font-size: 15px
+.hero-btns
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    .theme-btn
+        margin-top: 15px
+        &:not(:last-child)
+            margin-right: 22px
+        
+.hero-image-part
+    top: 0
+    right: 0
+    width: 42vw
+    height: 100%
+    position: absolute
+    border-bottom-right-radius: 300px
+    +res-bl(lg)
+        width: 33vw
+    +res-bl(md)
+        width: 75px
+    +res-bl(sm)
+        width: 50px
+    &:before
+        content: ''
+        +size(100%)
+        left: 0
+        top: 0
+        opacity: 0.5
+        position: absolute
+        background: #191C26
+        border-bottom-right-radius: 300px
+    &:after
+        position: absolute
+        +size(300px)
+        content: ''
+        bottom: 0
+        right: 0
+        z-index: -2
+        max-width: 100%
+        transform: matrix(-1, 0, 0, 1, 0, 0)
+        background: linear-gradient(34.72deg, #FB5D4A 1.03%, #FF9B07 40.49%)
+    .video-play
+        left: -40px
+        top: calc(50% + 3px)
+        +res-bl(lg)
+            top: calc(50% - 18px)
+        +res-bl(sm)
+            left: -20px
+        
+.hero-area
+    overflow: hidden
+    +res-bl(sm)
+        +gapTB(padding, 120px)
+    &:before
+        content: ''
+        width: 300px
+        height: 150%
+        position: absolute
+        top: -20%
+        left: 200px
+        z-index: -1
+        transform: matrix(0.88, 0.49, -0.47, 0.88, 0, 0)
+        background: linear-gradient(181.92deg, rgba(33, 33, 40, 0.06) 23.92%, #1B1B22 102.71%)
+    
+.hero-shapes
+    .one
+        left: 15%
+        top: 33%
+        animation: shapeAnimationOne 40s infinite
+    .two
+        left: 8%
+        top: 55%
+        animation: shapeAnimationFour 30s infinite
+    .three
+        left: 20%
+        bottom: 10%
+        animation: shapeAnimationFive 20s infinite

@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?b69614d614129e1953bf8085f11b36a2") format("truetype"),
+url("./flaticon.woff?b69614d614129e1953bf8085f11b36a2") format("woff"),
+url("./flaticon.woff2?b69614d614129e1953bf8085f11b36a2") format("woff2"),
+url("./flaticon.eot?b69614d614129e1953bf8085f11b36a2#iefix") format("embedded-opentype"),
+url("./flaticon.svg?b69614d614129e1953bf8085f11b36a2#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-right-arrow:before {
+    content: "\f101";
+}
+.flaticon-right-arrow-1:before {
+    content: "\f102";
+}
+.flaticon-pinterest:before {
+    content: "\f103";
+}
+.flaticon-right-arrow-2:before {
+    content: "\f104";
+}
+.flaticon-facebook:before {
+    content: "\f105";
+}
+.flaticon-twitter:before {
+    content: "\f106";
+}
+.flaticon-instagram:before {
+    content: "\f107";
+}
+.flaticon-linkedin:before {
+    content: "\f108";
+}
+.flaticon-instagram-1:before {
+    content: "\f109";
+}
+.flaticon-behance:before {
+    content: "\f10a";
+}
+.flaticon-youtube:before {
+    content: "\f10b";
+}
+.flaticon-user:before {
+    content: "\f10c";
+}
+.flaticon-calendar:before {
+    content: "\f10d";
+}
+.flaticon-phone-call:before {
+    content: "\f10e";
+}
+.flaticon-vimeo:before {
+    content: "\f10f";
+}
+.flaticon-play:before {
+    content: "\f110";
+}
+.flaticon-arrow-down-sign-to-navigate:before {
+    content: "\f111";
+}
+.flaticon-headphones:before {
+    content: "\f112";
+}
+.flaticon-idea:before {
+    content: "\f113";
+}
+.flaticon-headphone:before {
+    content: "\f114";
+}
+.flaticon-email:before {
+    content: "\f115";
+}
+.flaticon-chat:before {
+    content: "\f116";
+}
+.flaticon-chat-1:before {
+    content: "\f117";
+}
+.flaticon-hand:before {
+    content: "\f118";
+}
+.flaticon-bank:before {
+    content: "\f119";
+}
+.flaticon-analytics:before {
+    content: "\f11a";
+}
+.flaticon-presentation-screen:before {
+    content: "\f11b";
+}
+.flaticon-personal-wealth:before {
+    content: "\f11c";
+}
+.flaticon-insurance:before {
+    content: "\f11d";
+}
+.flaticon-dollar:before {
+    content: "\f11e";
+}
+.flaticon-left-arrow:before {
+    content: "\f11f";
+}
+.flaticon-canvas:before {
+    content: "\f120";
+}

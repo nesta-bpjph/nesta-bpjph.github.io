@@ -1,0 +1,264 @@
+/*==========================================================================
+Top Bar
+========================================================================== */
+.header__area {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    &-top-bar {
+        background: $primary-color;
+        padding: 7px 25px;
+        &-left {
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 20px;
+                    list-style: none;
+                    padding-right: 20px;
+                    border-right: 2px solid $border3;
+                    &:last-child {
+                        margin: 0;
+                        padding: 0;
+                        border: 0;                            
+                    }
+                    a {
+                        color: $white;
+                        font-size: 14px;
+                        line-height: 24px;
+                        i {
+                            color: $white;
+                            position: relative;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        &-right {
+            display: flex;
+            justify-content: end;
+            &-item {
+                margin-left: 50px;
+                padding-left: 40px;
+                border-left: 2px solid $border3;
+                &-language {
+                    .nice-select {
+                        background: none;
+                        border: 0;
+                        padding: 0 20px;
+                        padding-left: 0;
+                        height: 25px;
+                        line-height: 25px;
+                        color: $white;
+                        font-size: 15px;
+                        &::after {
+                            width: 8px;
+                            height: 8px;
+                            right: 0;
+                            top: 11px;
+                            border-bottom: 2px solid $white;
+                            border-right: 2px solid $white;     
+                            transition: all 0.3s ease-out 0s;               
+                        }
+                        .list {
+                            background: $white;
+                            margin-top: 8px;     
+                            width: 130px;   
+                            transition: all 0.3s ease-out 0s;
+                            right: 0;
+                            z-index: 99;
+                            border-radius: 0;
+                            box-shadow: 0 20px 60px $shadow;
+                            border: 1px solid $border1;
+                        }
+                        .option {
+                            color: $heading-color;
+                        }
+                    }
+                } 
+                &-menu {
+                    ul {
+                        li {
+                            display: inline-block;
+                            list-style: none;
+                            margin-right: 25px;
+                            &:last-child {
+                                margin: 0;
+                                padding: 0;
+                            }
+                            a {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+                &:first-child {
+                    border: 0;
+                    padding: 0;
+                    margin: 0;
+                }               
+            }
+        }
+    }
+}
+/*==========================================================================
+Top Bar Two
+========================================================================== */
+.header__two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;    
+    &-top-bar {      
+        background: $heading-color;
+        padding: 7px 0;  
+        &-left {
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 30px;
+                    list-style: none;
+                    &:last-child {
+                        margin: 0;                          
+                    }
+                    a {
+                        color: $white;
+                        font-size: 14px;
+                        line-height: 24px;
+                        i {
+                            color: $border9;
+                            position: relative;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        } 
+        &-right {
+            text-align: right;
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 30px;
+                    list-style: none;
+                    &:last-child {
+                        margin: 0;                          
+                    }
+                    a {
+                        color: $border8;
+                        font-size: 14px;
+                        line-height: 24px;
+                        span {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    
+}
+@media (max-width: 991px) {
+    .header__area {
+        &-top-bar {
+            &-right {
+                &-item {
+                    margin-left: 30px;
+                    padding-left: 30px;              
+                }
+            }
+        }
+    }
+    .header__two {   
+        &-top-bar {      
+            &-left {
+                text-align: center;
+                ul {
+                    li {
+                        margin-right: 15px;
+                        a {
+                            i {
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+            } 
+            &-right {
+                text-align: center;
+            } 
+        }
+        
+    }
+}
+@media (max-width: 768px) {
+    .header__area {
+        &-top-bar {
+            &-left {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            &-right {
+                justify-content: center;
+                &-item {
+                    &-language {
+                        .nice-select {
+                            .list {
+                                width: 136px;
+                                z-index: 9999;
+                            }
+                        }
+                    }               
+                }
+            }
+        }
+    }
+}
+@media (max-width: 476px) {
+    .header__two {
+        &-top-bar {
+            &-right {
+                ul {
+                    li {
+                        margin: 0;
+                        margin: 0 20px;
+                    }
+                }
+            } 
+        }
+    }
+}
+@media (max-width: 396px) {
+    .header__area {
+        &-top-bar {
+            &-left {
+                ul {
+                    li {
+                        margin-right: 4px;
+                        padding-right: 4px;
+                        border: 0;
+                        a {
+                            i {
+                                margin-right: 9px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-right {
+                &-item {
+                    &-language {
+                        .nice-select {
+                            .list {
+                                right: auto;
+                                left: 0;
+                            }
+                        }
+                    }               
+                }
+            }
+        }
+    }
+}

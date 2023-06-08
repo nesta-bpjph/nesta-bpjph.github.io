@@ -1,0 +1,254 @@
+/*==========================================================================
+All Side Bar
+========================================================================== */
+.all__sidebar {
+    margin-top: -70px;
+    &-item {
+        padding: 40px;
+        box-shadow: 0 0 70px $shadow;
+        margin-bottom: 30px;
+        background: $white;
+        h5 {
+            position: relative;
+            font-size: 20px;
+            line-height: 30px;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 1px;
+                width: 100%;
+                background: $border1;
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 1px;
+                width: 60px;
+                background: $primary-color;
+            }
+        }
+        &-category {
+            ul {
+                li {
+                    list-style: none;
+                    a {
+                        display: block;
+                        color: $heading-color;
+                        font-weight: 500;
+                        transition: all 0.4s ease-out 0s;
+                        padding-bottom: 15px;
+                        margin-bottom: 15px;
+                        border-bottom: 1px solid $border1;
+                        span {
+                            float: right;
+                            position: relative;
+                            top: 2px;
+                        }
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                    &:last-child a {
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                    }
+                }
+            }
+        }
+        &-materials {
+            ul {
+                li {
+                    list-style: none;
+                    a {
+                        display: block;
+                        color: $heading-color;
+                        font-weight: 500;
+                        padding: 0 25px;
+                        margin-bottom: 10px;
+                        border: 1px solid $border1;
+                        line-height: 58px;
+                        span {
+                            float: right;
+                            color: $body-color;
+                            line-height: 60px;
+                        }
+                        i {
+                            font-size: 22px;
+                            color: $primary-color;
+                            margin-right: 10px;
+                            top: 3px;
+                            position: relative;
+                        }
+                    }
+                    &:last-child a {
+                        margin: 0;
+                    }
+                }
+            }            
+        }
+        &-search {
+            form {
+                position: relative;
+                button {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    color: $white;
+                    width: 60px;
+                    bottom: 0;
+                    background: $primary-color;
+                    display: inline-block;
+                }
+            }
+        }
+        &-about {
+            text-align: center;
+            img {
+                border-radius: 50%;
+            }
+            h6 {
+                font-size: 18px;
+                line-height: 28px;
+                margin-top: 15px;
+                margin-bottom: 10px;
+            }
+            p {
+                max-width: 280px;
+                margin: 0 auto;
+                margin-bottom: 20px;                
+            }
+            ul {
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    margin-right: 15px;
+                    a i {
+                        font-size: 14px;
+                        transition: all 0.3s ease-out 0s;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        &-post {
+            &-item {
+                display: flex;
+                align-items: center;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid $border1;
+                &-image {
+                    img {
+                        max-width: 80px;
+                    }
+                }
+                &-content {
+                    margin-left: 20px;
+                    span {
+                        font-size: 14px;
+                        line-height: 24px;
+                        i {
+                            color: $heading-color;
+                            margin-right: 10px;
+                        }
+                    }
+                    h6 a {
+                        transition: all 0.4s ease-out 0s;
+                        max-width: 210px;
+                        display: inline-block;
+                        &:hover {
+                            color: $primary-color;
+                        }                        
+                    }
+                }
+                &:last-child {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                }
+            }
+        }
+        &-tag {
+            ul {
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    a {
+                        display: inline-block;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 30px;
+                        padding: 0 22px;
+                        background: $thin-bg;
+                        transition: all 0.4s ease-out 0s;
+                        margin: 5px 2px;
+                        &:hover {
+                            background: $primary-color;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .all__sidebar {
+        &-item {
+            padding: 35px 30px;
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .all__sidebar {
+        margin-left: 0;
+        &-item {
+            padding: 35px 25px;
+            &-materials {
+                ul {
+                    li {
+                        a {
+                            padding: 0 20px;
+                            i {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }            
+            }
+            &-post {
+                &-item {
+                    &-content {
+                        margin-left: 15px;
+                        h6 {   
+                            font-size: 14px;
+                            line-height: 24px;                   
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .all__sidebar {
+        margin: 0;
+    }
+}

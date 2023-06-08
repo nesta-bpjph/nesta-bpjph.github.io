@@ -1,0 +1,171 @@
+/*==========================================================================
+Page Banner
+========================================================================== */
+.page__banner {
+    padding-top: 255px;
+    padding-bottom: 165px;
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 55%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: $heading-color;
+        border-radius: 0 0 150px 0;
+        z-index: -2;
+    }
+    &-content {
+        ul {
+            li {
+                display: inline-block;
+                list-style: none;
+                color: $secondary-color;
+                font-weight: 700;
+                a {
+                    color: $border8;
+                    margin-right: 15px;
+                }
+                span {
+                    margin-right: 15px;   
+                    color: $border8;                 
+                }
+            }
+        }
+        h2 {
+            color: $white;
+            font-size: 80px;
+            line-height: 90px;
+            margin-top: 10px;
+        }
+        .subtitle-two {
+            color: $white;
+        }
+    }
+}
+/*==========================================================================
+Error
+========================================================================== */
+.error__area {
+    padding-top: 312px;
+    padding-bottom: 208px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &-title {
+        text-align: center;
+        h1 {
+            font-size: 300px;
+            line-height: 285px;
+            color: $white;
+        }
+        h3 {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 50px;
+            color: $white;
+            font-weight: 400;
+        }
+        .theme-banner-btn {
+            i::before {
+                font-size: 16px;
+                margin: 0;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .error__area {
+        padding-top: 195px;
+        padding-bottom: 88px;
+        &-title {
+            h1 {
+                font-size: 200px;
+                line-height: 210px;
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .page__banner {
+        &::after {
+            width: 65%;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .page__banner {
+        &::after {
+            width: 75%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .page__banner {
+        padding-top: 290px;
+        &::after {
+            width: 100%;
+            border-radius: 0;
+        }
+        &-content {
+            h2 {
+                font-size: 56px;
+                line-height: 66px;
+            }
+        }
+    }
+    .error__area {
+        padding-top: 240px;
+        padding-bottom: 120px;
+        &-title {
+            h1 {
+                font-size: 170px;
+                line-height: 180px;
+            }
+        }
+    }
+}
+@media (max-width: 440px) {
+    .page__banner {
+        &-content {
+            h2 {
+                font-size: 44px;
+                line-height: 54px;
+            }
+        }
+    }
+    .error__area {
+        &-title {
+            h1 {
+                font-size: 150px;
+                line-height: 160px;
+            }
+        }
+    }
+}
+@media (max-width: 359px) {
+    .page__banner {
+        padding-top: 320px;
+        &-content {
+            h2 {
+                font-size: 38px;
+                line-height: 48px;
+            }
+        }
+    }
+    .error__area {
+        padding-top: 250px;
+        &-title {
+            h1 {
+                font-size: 130px;
+                line-height: 140px;
+            }
+        }
+    }
+}

@@ -1,0 +1,310 @@
+/*----------------------------------------*/
+/*    05. Component - Slider
+/*----------------------------------------*/
+// Slider Navigation
+.intro11-slider-wrap{
+    .swiper-button-prev, .swiper-button-next{
+        opacity: 0;
+        visibility: hidden;
+        transition: $baseTransition;
+        @include breakpoint(max-md_device){
+            display: none;
+        }
+        &:focus{
+            border: 0px;
+            outline: 0px;
+        }
+        &:after{
+            display: none;
+        }
+        i{
+            font-size: 30px;
+            color: $white;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+    .swiper-button-prev{
+        left: 0px;
+    }
+    .swiper-button-next{
+        right: 0px;
+    }
+    &:hover{
+        .swiper-button-prev, .swiper-button-next{
+            opacity: 1;
+            visibility: visible;
+            transition: $baseTransition;
+        }
+        .swiper-button-prev{
+            left: 50px;
+        }
+        .swiper-button-next{
+            right: 50px;
+        }
+    }
+    // Slider pagination
+    .swiper-pagination-bullet{
+        display: none;
+        width: 12px;
+        height: 12px;
+        border: 2px solid $white;
+        background: transparent;
+        opacity: 1;
+        &.swiper-pagination-bullet-active{
+            background: $primary;
+            border-color: $primary;
+        }
+        &:hover{
+            background: $primary;
+            border-color: $primary;
+        }
+        @include breakpoint(max-md_device){
+            display: inline-block;
+        }
+    }
+}
+// Slider Content
+.intro11-slider{
+    width: 100%;
+    height: 100%;
+    .slider-content{
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 1200px;
+        margin: 0 auto;
+        @include breakpoint(max-xl_device){
+            width: 1020px;
+        }
+        @include breakpoint(max-lg_device){
+            width: 800px;
+        }
+        @include breakpoint(max-md_device){
+            width: 100%;
+            padding: 0 20px;
+        }
+        @include breakpoint(max-xs_device){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .title{
+            font-size: 80px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            color: $white;
+            text-transform: uppercase;
+            @include breakpoint(max-lg_device){
+                font-size: 60px;
+            }
+            @include breakpoint(max-sm_device){
+                font-size: 40px;
+            }
+            @include breakpoint(max-xs_device){
+                font-size: 30px;
+            }
+            &.title-space{
+                letter-spacing: 8px;
+            }
+        }
+        .sub-title{
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+            color: $white;
+            line-height: 1.5;
+            margin-bottom: 40px;
+            @include breakpoint(max-lg_device){
+                max-width: 500px;
+            }
+            @include breakpoint(max-md_device){
+                max-width: 450px;
+                margin-bottom: 20px;
+                line-height: 1.3;
+            }
+            @include breakpoint(max-sm_device){
+                font-size: 16px;
+            }
+        }
+        .btn{
+            @include breakpoint(max-sm_device){
+                padding: 15px 25px;
+            }
+            @include breakpoint(max-xs_device){
+                font-size: 12px;
+                padding: 12px 20px;
+            }
+        }
+    }
+}
+// Video Introll
+.bg-video{
+    height: 100%;
+    @include breakpoint(max-md_device){
+        height: 600px;
+    }
+    @include breakpoint(max-xs_device){
+        height: 500px;
+    }
+    @include breakpoint(max-xxs_device){
+        height: 400px;
+    }
+    .video-area{
+        &:before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(0,0,0,0.5);
+        }
+    }
+    .video-bg-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        @include breakpoint(max-xl_device){
+            width: 1020px;
+        }
+        @include breakpoint(max-lg_device){
+            width: 800px;
+        }
+        @include breakpoint(max-md_device){
+            width: 100%;
+            padding: 0 20px;
+        }
+        .title{
+            font-size: 80px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            @include breakpoint(max-lg_device){
+                font-size: 60px;
+                letter-spacing: 6px;
+            }
+            @include breakpoint(max-md_device){
+                font-size: 56px;
+                letter-spacing: 4px;
+            }
+            @include breakpoint(max-sm_device){
+                font-size: 44px;
+                letter-spacing: 3px;
+            }
+            @include breakpoint(max-xs_device){
+                font-size: 40px;
+                letter-spacing: 2px;
+            }
+            @include breakpoint(max-xxs_device){
+                font-size: 26px;
+                letter-spacing: 1px;
+            }
+            &.title-space{
+                letter-spacing: 8px;
+            }
+        }
+        .sub-title{
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+            color: $white;
+            line-height: 1.5;
+            margin-bottom: 40px;
+            @include breakpoint(max-lg_device){
+                max-width: 500px;
+            }
+            @include breakpoint(max-md_device){
+                max-width: 450px;
+                margin-bottom: 20px;
+                line-height: 1.3;
+            }
+            @include breakpoint(max-sm_device){
+                font-size: 16px;
+            }
+        }
+        .btn{
+            @include breakpoint(max-sm_device){
+                padding: 15px 25px;
+            }
+            @include breakpoint(max-xs_device){
+                font-size: 12px;
+                padding: 12px 20px;
+            }
+        }
+    }
+}
+/*-- Slider Background image --*/
+.bg-position{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.slide-bg-1{
+    min-height: 970px;
+    @include breakpoint(max-xxl_device){
+        min-height: 800px;
+    }
+    @include breakpoint(max-xl_device){
+        min-height: 600px;
+    }
+    @include breakpoint(max-lg_device){
+        min-height: 550px;
+    }
+    @include breakpoint(max-md_device){
+        min-height: 500px;
+    }
+    @include breakpoint(max-sm_device){
+        min-height: 400px;
+    }
+    @include breakpoint(max-xs_device){
+        min-height: 350px;
+    }
+    @include breakpoint(max-xxs_device){
+        min-height: 300px;
+    }
+}
+.slide-bg-2{
+    min-height: 800px;
+    @include breakpoint(max-xl_device){
+        min-height: 600px;
+    }
+    @include breakpoint(max-lg_device){
+        min-height: 550px;
+    }
+    @include breakpoint(max-md_device){
+        min-height: 500px;
+    }
+    @include breakpoint(max-sm_device){
+        min-height: 400px;
+    }
+    @include breakpoint(max-xs_device){
+        min-height: 350px;
+    }
+    @include breakpoint(max-xxs_device){
+        min-height: 300px;
+    }
+}
+.slide-1{
+    background-image: url('../images/slider/1-1.jpg');
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.slide-2{
+    background-image: url('../images/slider/1-2.jpg');
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.slide-3{
+    background-image: url('../images/slider/1-3.jpg');
+	background-color: rgba(0, 0, 0, 0.8);
+}

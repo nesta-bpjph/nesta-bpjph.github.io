@@ -1,0 +1,75 @@
+/*******************************************************/
+/******************  12. Counter Area ******************/
+/*******************************************************/
+.counter-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+.counter-item
+    display: flex
+    align-items: center
+    margin-bottom: 50px
+    +res-bl(ms)
+        width: 50%
+        position: relative
+        flex-direction: column
+        align-items: flex-start
+    .icon
+        line-height: 1
+        font-size: 75px
+        margin-right: 18px
+        background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        +res-bl(xl)
+            font-size: 66px
+        +res-bl(ms)
+            font-size: 50px
+            margin-bottom: 15px
+    .content
+        .count-text
+            display: block
+            font-size: 50px
+            @extend %heading
+            margin-bottom: 10px
+            &.k:after
+                content: 'k'
+                font-size: 30px
+            +res-bl(ms)
+                font-size: 45px
+        b
+            font-size: 20px
+            font-weight: 500
+            text-transform: capitalize
+            +res-bl(xl)
+                font-size: 16px
+    &:after
+        height: 100%
+        content: ''
+        width: 1px
+        +gapLR(margin, 50px)
+        border-right: 1px dashed rgba(31, 31, 38, 0.3)
+        +res-bl(xl)
+            +gapLR(margin, 25px)
+        +res-bl(md)
+            margin-right: 0
+        +res-bl(ms)
+            position: absolute
+            right: 25px
+            top: 0
+    +res-ab(md)
+        &:last-child
+            &:after
+                display: none
+        
+.text-white
+    .counter-item
+        &:after
+            border-right-color: rgba(255, 255, 255, 0.3)
+        .count-text
+            color: white
+            
+.counter-area-two
+    +overlay($black-color, 1)
+    &:before
+        height: 200%

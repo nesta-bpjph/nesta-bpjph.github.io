@@ -1,0 +1,311 @@
+/*******************************************************/
+/*****************  13. Services Area ******************/
+/*******************************************************/
+.services-area
+    +overlay($black-color, 1)
+    &:before
+        height: 80%
+        +res-bl(lg)
+            height: 90%
+        +res-bl(md)
+            height: 95%
+.service-item
+    padding: 55px 50px
+    text-align: center
+    margin-bottom: 30px
+    background: $lighter-color
+    +overlay(linear-gradient(359.89deg, #FB5D4A 36.17%, #FF9B07 99.9%), 0)
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    &:before
+        transition: 0.5s
+    .icon
+        line-height: 1
+        font-size: 75px
+        transition: 0.5s
+        margin-bottom: 15px
+        color: $primary-color
+        +res-bl(xs)
+            font-size: 65px
+    h4
+        transition: 0.5s
+        margin-bottom: 15px
+        text-transform: capitalize
+        +res-bl(xs)
+            font-size: 22px
+    p
+        transition: 0.5s
+        margin-bottom: 0
+    &.style-two
+        margin-bottom: 0
+        background: #1B1B23
+        border: 1px solid rgba(98, 98, 103, 0.1)
+        .icon
+            color: #626267
+        h4, h4 a
+            color: white
+        p
+            color: white
+            opacity: 0.8
+    &:hover
+        .icon, h4, h4 a, p
+            color: white
+        p,
+        &:before
+            opacity: 1
+        
+/* Service Two */
+.consulting-firm-area
+    overflow: hidden
+    &:after,
+    &:before
+        position: absolute
+        +size(280px, 130%)
+        content: ''
+        top: -15%
+        z-index: -1
+        transform: matrix(-0.88, -0.49, 0.47, -0.88, 0, 0)
+        background: linear-gradient(180.05deg, rgba(33, 33, 40, 0.4) 1.02%, #1B1B22 90.88%)
+    &:before
+        left: 10%
+    &:after
+        left: 40%
+
+.consulting-firm-content
+    max-width: 465px
+    
+.service-item-two
+    margin-bottom: 25px
+    +res-ab(xs)
+        display: flex
+    .icon
+        flex: none
+        +size(66px)
+        font-size: 35px
+        line-height: 64px
+        border-radius: 50%
+        text-align: center
+        margin: 5px 33px 10px 0
+        border: 1px solid $primary-color
+        background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        +res-bl(sm)
+            margin-right: 25px
+    h4, p
+        color: white
+    p
+        opacity: 0.8
+        
+.consulting-firm-image
+    margin-top: -40px
+    +res-ab(xl)
+        margin-right: -260px
+        
+/* Service Three */
+.service-area-video
+    +flexcenter(center)
+    +overlay(#1F1F26, 0.28)
+    +res-ab(lg)
+        top: 0
+        right: 0
+        position: absolute
+        +size(33.33vw, 100%)
+    +res-bl(lg)
+        height: 500px
+    +res-bl(sm)
+        height: 350px
+
+.service-item-three
+    max-width: 265px
+    padding-bottom: 80px
+    +res-bl(sm)
+        max-width: none
+        padding-bottom: 20px
+    .icon
+        +size(70px)
+        font-size: 35px
+        line-height: 68px
+        border-radius: 50%
+        text-align: center
+        margin-bottom: 15px
+        color: $primary-color
+        border: 1px solid #37383A
+        background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    h4, h4 a, p
+        color: white
+    h4
+        text-transform: capitalize
+    p
+        opacity: 0.8
+        
+.title-btn
+    .theme-btn.style-four.btn-small
+        &:not(:hover)
+            border-color: #37383A
+        
+.services-area-three
+    overflow: hidden
+    &:after,
+    &:before
+        position: absolute
+        +size(280px, 130%)
+        content: ''
+        top: -15%
+        z-index: -1
+        transform: matrix(0.88, 0.49, -0.47, 0.88, 0, 0)
+        background: linear-gradient(180.85deg, rgba(33, 33, 40, 0.18) 28.12%, #1B1B22 90.57%)
+    &:before
+        left: 10%
+    &:after
+        left: 40%
+        
+.for-middle-border
+    position: relative
+    z-index: 1
+    +res-bl(sm)
+        padding-bottom: 55px
+    &:after,
+    &:before
+        content: ''
+        z-index: -1
+        background: #26262D
+        position: absolute
+        +res-bl(sm)
+            display: none
+    &:before
+        +size(1px, 100%)
+        top: 0
+        left: 50%
+    &:after
+        +size(100%, 1px)
+        left: 0
+        top: calc(50% - 50px)
+    
+/* Service Four */
+.service-four-active
+    +gapLR(margin, -15px)
+    +res-ab(lg)
+        margin-right: -450px
+    +res-ab(xl)
+        margin-left: 50px
+    .service-item-four
+        +gapLR(margin, 15px)
+.service-item-four
+    position: relative
+    position: relative
+    margin-bottom: 30px
+    .image
+        clip-path: polygon(80% 0, 100% 30%, 100% 100%, 0 100%, 0 0);
+        img
+            width: 100%
+    .content
+        z-index: 1
+        background: white
+        position: relative
+        padding: 30px 30px 15px
+        +res-bl(xs)
+            +gapLR(padding, 25px)
+        h4
+            display: flex
+            align-items: center
+            text-transform: capitalize
+            i
+                font-size: 40px
+                margin-right: 15px
+                background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+            +res-bl(xs)
+                font-size: 20px
+                i
+                    font-size: 30px
+        .icon
+            position: absolute
+            z-index: -1
+            right: 28px
+            bottom: 20px
+            color: #F8F8F8
+            font-size: 75px
+        &:after
+            position: absolute
+            +size(100%, 3px)
+            content: ''
+            left: 0
+            bottom: 0
+            transform: matrix(1, 0, 0, -1, 0, 0)
+            background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+        
+/* Service Five */
+.service-item-five
+    display: flex
+    &:not(:last-child)
+        margin-bottom: 10px
+    .icon
+        flex: none
+        margin-top: 5px
+        font-size: 30px
+        margin-right: 33px
+        color: $primary-color
+        +circle(rgba(31, 31, 38, 0.06), 66px)
+        +res-bl(xs)
+            margin-right: 20px
+    h4
+        font-size: 22px
+        
+/* Service Six */
+.service-item-six
+    padding-top: 35px
+    padding-bottom: 28px
+    .icon
+        line-height: 1
+        font-size: 40px
+        margin-bottom: 20px
+        background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    h5
+        font-size: 22px
+        margin-bottom: 8px
+    
+/* Service Details */
+.service-details-content
+    h2
+        text-transform: capitalize
+        +res-bl(md)
+            font-size: 35px
+        +res-bl(sm)
+            font-size: 30px
+    h4
+        text-transform: capitalize
+        
+.service-details-video
+    +overlay(black, 0.15)
+    img
+        width: 100%
+    &:before
+        z-index: 1
+    .video-play
+        +size(65px)
+        +abs-middle()
+        font-size: 16px
+        line-height: 65px
+        
+.accordion.service-faq
+    .accordion-item
+        &:first-child
+            padding-top: 0
+            border-top: none
+        &:last-child
+            padding-bottom: 0
+            border-bottom: none
+        .accordion-header
+            button
+                &:before
+                    border-radius: 0
+        .accordion-body
+            padding-left: 68px
+            +res-bl(xs)
+                padding-left: 55px

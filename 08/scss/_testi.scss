@@ -1,0 +1,39 @@
+//
+// testi.scss
+//
+.customer-testi {
+    cursor: e-resize;
+    .content {
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 8px solid $dark;
+            border-color: transparent $white $white transparent;
+            transform-origin: 0 0;
+            transform: rotate(45deg);
+            box-shadow: 2px 2px 2px -1px rgba($dark, 0.15);
+        }
+    }
+}
+
+.tns-nav {
+    text-align: center;
+    margin-top: 10px;
+    button {
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background: rgba($primary, 0.4) !important;
+        transition: all 0.5s ease;
+        opacity: 1;
+        margin: 4px;
+        border: none;
+        &.tns-nav-active {
+            background: $primary !important;
+            width: 10px;
+        }
+    }
+}

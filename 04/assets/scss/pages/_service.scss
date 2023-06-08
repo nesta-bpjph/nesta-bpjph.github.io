@@ -1,0 +1,59 @@
+/*----------------------------------------*/
+/*    16. Pages - Service
+/*----------------------------------------*/
+.single-service-wrapper{
+    text-align: center;
+    height: auto;
+    padding: 0 10px;
+    .service-icon{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 30px;
+        border-radius: 50%;
+        color: $white;
+        position: relative;
+        transition: all 0.3s ease-out;
+        background-color: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        &::before {
+            background-color: $headings-color;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+            content: "";
+            opacity: 0.075;
+            z-index: -1;
+            transition: all 0.3s ease-out;
+        }
+        i{
+            position: relative;
+            z-index: 9;
+            font-size: 36px;
+            line-height: 80px;
+        }
+    }
+    &:hover{
+        .service-icon{
+            &::before {
+                transform: scale(1.2);
+            }
+        }
+    }
+    .service-content{
+        .title{
+            font-size: 20px;
+            color: $headings-color;
+            margin-bottom: 20px;
+            font-weight: 700;
+            @include breakpoint(max-xxs_device){
+                font-size: 18px;
+            }
+        }
+    }
+}

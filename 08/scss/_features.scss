@@ -1,0 +1,97 @@
+//
+// _features.scss
+//
+
+/*********************************/
+/*         Features              */
+/*===============================*/
+.features {
+    @each $name,
+    $value in $colors {
+        &.feature-#{$name} {
+            .icons {
+                i {
+                    background: rgba($value, 0.1);
+                    color: $value;
+                }
+            }
+            .title {
+                &:hover {
+                    color: $value !important;
+                }
+            }
+            .fea-icon,
+            .link,
+            .icon-style i {
+                color: $value !important;
+            }
+
+            .feature-icon {
+                i {
+                    color: $value;
+                    border: 2px solid rgba($value, 0.1);
+                }
+            }
+
+            &:hover {
+                .feature-icon {
+                    i {
+                        background: rgba($value, 0.1);
+                    }
+                }
+                .icon-style {
+                    background: $value !important;
+                }
+            }                        
+        }
+    }
+}
+
+.features {
+    transition: all 0.5s ease;
+    .title {
+        transition: all 0.5s ease;
+    }
+    .feature-icon {
+        i {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s ease;
+        }
+
+        &.sm-icon {
+            i {
+                width: 36px;
+                height: 36px;
+            }
+        }
+    }
+
+    .icon-style {
+        height: 56px;
+        width: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(45deg);
+        transition: all 0.5s ease;
+        i {
+            transform: rotate(-45deg);
+            transition: all 0.5s ease;
+            display: inline-block;
+        }
+    }
+    &:hover {
+        &.feature-shadow-md {
+            box-shadow: $shadow-lg !important;
+        }
+        .icon-style {
+            i {
+                color: $white !important;
+            }
+        } 
+    } 
+}

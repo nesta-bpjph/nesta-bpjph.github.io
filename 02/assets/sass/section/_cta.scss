@@ -1,0 +1,46 @@
+/*==========================================================================
+Cta
+========================================================================== */
+.cta__area {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-title {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 850px;
+        padding: 0 0 390px 0px;
+        h3 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        &-button {
+            display: flex;
+            justify-content: center;
+            &-item {
+                margin-right: 30px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 440px) {
+	.cta__area {
+        &-title {
+            h3 {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            &-button {
+                display: inline-block;
+                &-item {
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+/*----------------------------------------*/
+/*    08. Component - Funfact
+/*----------------------------------------*/
+.funfact-section{
+    background-image: url('../images/funfact/1.jpg');
+    background-repeat: no-repeat;
+	background-position: center center;
+    background-size: cover;
+    min-height: 400px;
+    position:relative;
+    @include breakpoint(max-xs_device){
+        min-height: 350px;
+    }
+    @include breakpoint(max-xxs_device){
+        min-height: 300px;
+    }
+    &:after{
+        background-color: rgba(0, 0, 0, 0.8);
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+    .single-fun-fact-wrap{
+        z-index: 9;
+        position: relative;
+        text-align: center;
+        @include breakpoint(max-md_device){
+            margin: 20px 0;
+        }
+        .counter-area{
+            .counter, span{
+                font-size: 60px;
+                color: $white;
+                @include breakpoint(max-xs_device){
+                    font-size: 45px;
+                }
+                @include breakpoint(max-xxs_device){
+                    font-size: 35px;
+                }
+            }
+        }
+        .counter-content{
+            .title{
+                font-size: 20px;
+                line-height: 1;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $white;
+                @include breakpoint(max-xs_device){
+                    font-size: 16px;
+                }
+                @include breakpoint(max-xxs_device){
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

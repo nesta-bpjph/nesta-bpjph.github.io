@@ -1,0 +1,422 @@
+//=======================
+// Developer Variable
+//=======================
+
+// Font Family
+$titilliumWeb: 'Poppins', sans-serif;
+$titlehead: 'Mulish', sans-serif;
+$body-font: $titilliumWeb;
+$heading-font: $titlehead;
+
+// Transition
+$baseTransition: all 0.3s ease 0s;
+
+// Socail Color
+$android: #7AC157;
+$apple: #B8B8B8;
+$behance: #1869FF;
+$codepen: #000000;
+$dribbble: #EA4C8A;
+$dropbox: #007EE5;
+$evernote: #78D525;
+$facebook: #4867AA;
+$github: #313131;
+$googleDrive: #1DA462;
+$googleEarth: #4285F4;
+$googleGlass: #EA4335;
+$googleMaps: #5083C3;
+$googlePlay: #01B9FD;
+$googlePlus: #DD5144;
+$google: #4285F4;
+$instagram: #B23A94;
+$css3: #0277BD;
+$html5: #E44D26;
+$javascript: #F9DC3D;
+$python: #0C9DBF;
+$lastfm: #E31B23;
+$linkedin: #007BB6;
+$paypal: #002F86;
+$pinterest: #BD081B;
+$pocket: #EF3E56;
+$polymer: #F87292;
+$rss: #F99C3A;
+$share: #2C9CFF;
+$stackoverflow: #F38024;
+$steam: #15497B;
+$twitter: #1DA1F2;
+$vk: #5181B8;
+$wikipedia: #E9E9E9;
+$windows: #0078D6;
+$s500px: #000000;
+$s8tracks: #122D4B;
+$amazon: #F79B34;
+$blogger: #F06A35;
+$delicious: #0000FE;
+$disqus: #2E9EFE;
+$flattr: #7AB831;
+$flickr: #FE0084;
+$odnoklassniki: #F58220;
+$outlook: #0072C6;
+$playstation: #07418E;
+$reddit: #FF4500;
+$skype: #00A9F0;
+$slideshare: #0077B5;
+$soundcloud: #FE4900;
+$tumblr: #36465D;
+$twitch: #6441A4;
+$vimeo: #1AB7EA;
+$whatsapp: #189D0E;
+$xbox: #107C0F;
+$yahoo: #4101AF;
+$youtube: #FE0000;
+
+// scss-docs-start social-colors-map
+$social-colors: (
+	"android": $android,
+	"apple": $apple,
+	"behance": $behance,
+	"codepen": $codepen,
+	"dribbble": $dribbble,
+	"dropbox": $dropbox,
+	"evernote": $evernote,
+	"facebook": $facebook,
+	"github": $github,
+	"google-drive": $googleDrive,
+	"google-earth": $googleEarth,
+	"google-glass": $googleGlass,
+	"google-maps": $googleMaps,
+	"google-play": $googlePlay,
+	"google-plus": $googlePlus,
+	"google": $google,
+	"instagram": $instagram,
+	"css3": $css3,
+	"html5": $html5,
+	"javascript": $javascript,
+	"python": $python,
+	"lastfm": $lastfm,
+	"linkedin": $linkedin,
+	"paypal": $paypal,
+	"pinterest": $pinterest,
+	"pocket": $pocket,
+	"polymer": $polymer,
+	"rss": $rss,
+	"share": $share,
+	"stackoverflow": $stackoverflow,
+	"steam": $steam,
+	"twitter": $twitter,
+	"vk": $vk,
+	"wikipedia": $wikipedia,
+	"windows": $windows,
+	"s500px": $s500px,
+	"s8tracks": $s8tracks,
+	"amazon": $amazon,
+	"blogger": $blogger,
+	"delicious": $delicious,
+	"disqus": $disqus,
+	"flattr": $flattr,
+	"flickr": $flickr,
+	"odnoklassniki": $odnoklassniki,
+	"outlook": $outlook,
+	"playstation": $playstation,
+	"reddit": $reddit,
+	"skype": $skype,
+	"slideshare": $slideshare,
+	"soundcloud": $soundcloud,
+	"tumblr": $tumblr,
+	"twitch": $twitch,
+	"vimeo": $vimeo,
+	"whatsapp": $whatsapp,
+	"xbox": $xbox,
+	"yahoo": $yahoo,
+	"youtube": $youtube,
+);
+// scss-docs-end theme-colors-map
+
+// Responsive Variables
+$extraBig-device: "only screen and (min-width: 1600px)";
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1599px)";
+$desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+$large-mobile: "only screen and (max-width: 767px)";
+$small-mobile: "only screen and (max-width: 575px)";
+$extra-small-mobile: "only screen and (max-width: 479px)";
+
+//===============================
+// Bootstrap Variables Overright
+//===============================
+
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+$white: #FFF;
+$black: #000000;
+$gray-100: #F8F9FA;
+$gray-200: #E9ECEF;
+$gray-300: #DEE2E6;
+$gray-400: #CED4DA;
+$gray-500: #ADB5BD;
+$gray-600: #6C757D;
+$gray-700: #495057;
+$gray-800: #343A40;
+$gray-900: #212529;
+$gray-1000: #222222;
+$gray-1100: #666666;
+
+// fusv-disable
+$grays: (
+	"100": $gray-100,
+	"200": $gray-200,
+	"300": $gray-300,
+	"400": $gray-400,
+	"500": $gray-500,
+	"600": $gray-600,
+	"700": $gray-700,
+	"800": $gray-800,
+	"900": $gray-900,
+);
+// fusv-enable
+
+$blue: #0D6EFD;
+$indigo: #6610F2;
+$purple: #6F42C1;
+$pink: #D63384;
+$red: #dc3545;
+$orange: #FD7E14;
+$yellow: #FFC107;
+$green: #198754;
+$teal: #20C997;
+$cyan: #0DCAF0;
+$template-default: #122179;
+
+// scss-docs-start colors-map
+$colors: (
+	"blue": $blue,
+	"indigo": $indigo,
+	"purple": $purple,
+	"pink": $pink,
+	"red": $red,
+	"orange": $orange,
+	"yellow": $yellow,
+	"green": $green,
+	"teal": $teal,
+	"cyan": $cyan,
+	"white": $white,
+	"gray": $gray-600,
+	"gray-dark": $gray-800,
+);
+// scss-docs-end colors-map
+
+$primary: $template-default;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+	"primary": $primary,
+	"secondary": $secondary,
+	"success": $success,
+	"info": $info,
+	"warning": $warning,
+	"danger": $danger,
+	"light": $light,
+	"dark": $dark,
+);
+
+
+
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret: true;
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-reduced-motion: true;
+$enable-grid-classes: true;
+$enable-button-pointers: true;
+$enable-rfs: true;
+$enable-validation-icons: true;
+$enable-negative-margins: true;
+$enable-deprecation-messages: true;
+$enable-important-utilities: true;
+
+// Gradient
+//
+// The gradient which is added to components if `$enable-gradients` is `true`
+// This gradient is also added to elements with `.bg-gradient`
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 10px;
+$spacers: (
+	0: 0,
+	1: $spacer * 0.5,
+	2: $spacer,
+	3: $spacer * 1.5,
+	4: $spacer * 2,
+	5: $spacer * 2.5,
+	6: $spacer * 3,
+	7: $spacer * 3.5,
+	8: $spacer * 4,
+	9: $spacer * 4.5,
+	10: $spacer * 5,
+);
+//
+$negative-spacers: if($enable-negative-margins, negativify-map($spacers), null);
+
+// Position
+//
+// Define the edge positioning anchors of the position utilities.
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $white;
+$body-color: $gray-1100;
+$body-text-align: null;
+
+// Links
+//
+// Style anchor elements.
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom: 16px;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1600px,
+);
+// scss-docs-end grid-breakpoints
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1200px,
+	xxl: 1201px,
+);
+// scss-docs-end container-max-widths
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+$grid-row-columns: 6;
+//
+$gutters: $spacers;
+
+// Container padding
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+//
+//
+$box-shadow: 0 8px 16px rgba($black, 0.15);
+//
+
+//
+
+//
+$transition-base: $baseTransition;
+// scss-docs-end aspect-ratios
+// stylelint-enable function-disallowed-list
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-base: $body-font;
+$font-family-code: var(--bs-font-monospace);
+
+// $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
+// $font-size-base effects the font size of the body text
+$font-size-root: null;
+$font-size-base: 16px; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.25;
+//
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+//
+$font-weight-base: $font-weight-normal;
+//
+$line-height-base: 1.75;
+//
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+//
+$headings-margin-bottom: $spacer / 2;
+$headings-font-family: $heading-font;
+$headings-font-style: null;
+$headings-font-weight: 500;
+$headings-line-height: 1.2;
+$headings-color: #212121;
+
+
+// scss-docs-end table-variables
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y: 6px;
+$input-btn-padding-x: 12px;
+
+
+// Form
+$form-select-indicator-padding: 16px; // Extra padding to account for the presence of the background-image based indicator
+
+
+
+// Navs
+$nav-link-padding-y: 8px;
+
+// Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
+$modal-footer-margin-between: 8px;

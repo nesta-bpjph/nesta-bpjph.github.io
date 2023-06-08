@@ -1,0 +1,143 @@
+//
+// work.scss
+//
+
+/*********************************/
+/*         Works & Portfolios    */
+/*===============================*/
+.project {
+    @each $name,
+    $value in $colors {
+        &.project-#{$name} {
+            .title {
+                &:hover {
+                    color: $value !important;
+                }
+            }
+            .btn {
+                background-color: #{$value} !important;
+                border: 1px solid #{$value} !important;
+                color: $white !important;
+                box-shadow: 0 3px 5px 0 rgba($value, 0.1);
+                &:hover, &:focus, &:active, &.active, &.focus{
+                    background-color: darken($value, 10%) !important;
+                    border-color: darken($value, 10%) !important;
+                    color: $white !important;
+                }
+            }
+        }
+    }
+}
+
+.project {
+    .content {
+        .title {
+            transition: all 0.5s ease;
+        }
+    }
+    img,
+    .overlay-work,
+    .content,
+    .icons {
+        transition: all 0.5s ease;
+    }
+    .overlay-work,
+    .content,
+    .icons {
+        position: absolute;
+    }
+    .overlay-work {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0; 
+        z-index: 1;
+    }
+    .content {
+        bottom: 20px;
+        left: 20px;
+        z-index: 1;
+        opacity: 0;
+    }
+    .icons {
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+        opacity: 0;
+    }
+    &:hover {
+        img {
+            transform: scale(1.1) rotate(3deg);
+        }
+        .overlay-work {
+            opacity: 0.65;
+        }
+        .icons,
+        .content {
+            opacity: 1;
+        }
+    }
+}
+
+//Filter
+.container-filter {
+    li {
+        margin: 0px 15px 10px !important;
+        font-size: 16px; 
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        cursor: pointer;
+        line-height: 34px;
+        transition: all 0.5s ease;
+        color: $muted !important;
+        &.active,
+        &:hover {
+            color: $dark !important;
+        }
+    }
+    .categories {
+        &:after {
+            content: "";
+            position: absolute;
+            height: 0;
+            width: 0;
+            background-color: rgba($primary, 0.4);
+            right: 0;
+            left: 0;
+            bottom: 6px;
+            border-radius: 5px;
+            transition: all 0.5s ease;
+        }
+        &.active,
+        &:hover {
+            &:after {
+                width: 100%;
+                right: auto;
+                left: 0;
+                height: 6px;
+                top: 60%;
+            }
+        }
+    }
+}
+
+//Tobii Lighbox
+.tobii__btn svg {
+    height: 30px;
+    width: auto;
+}
+.tobii__counter {
+    font-size: 16px;
+}
+.tobii-zoom {
+    display: block !important;
+}
+
+.tobii-zoom__icon {
+    display: none;
+}
+
+#grid {
+    padding: 0 !important;
+}

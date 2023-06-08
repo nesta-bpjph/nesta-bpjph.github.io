@@ -1,0 +1,35 @@
+/*******************************************************/
+/******************  23. Skills Area *******************/
+/*******************************************************/
+.skill-content
+    padding: 50px 40px 0 75px
+    +res-bl(xl)
+        padding-left: 50px
+        padding-right: 20px
+    +res-bl(lg)
+        padding-right: 50px
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+.skillbar
+    height: 10px
+    margin-top: 70px
+    position: relative
+    border-radius: 4px
+    background: #F4F2FF
+    .skillbar-title,
+    .skill-bar-percent
+        top: -40px
+        font-size: 18px
+        position: absolute
+        font-family: $base-font
+    .skill-bar-percent
+        right: 0
+    .skillbar-bar
+        width: 0
+        height: 10px
+        border-radius: 4px 0 0 4px
+        background-color: $primary-color
+        
+.skill-image
+    img
+        width: 100%

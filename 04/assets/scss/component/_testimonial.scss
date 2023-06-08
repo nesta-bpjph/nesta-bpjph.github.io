@@ -1,0 +1,73 @@
+/*----------------------------------------*/
+/*    09. Component - Testimonial
+/*----------------------------------------*/
+.testimonial-section{
+    background: $gray-100;
+    .testimonial{
+        text-align: center;
+        .testimonial-author-image{
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        blockquote {
+            border: 0;
+            font-family: $heading-font;
+            margin: 0;
+            padding: 40px 64px 40px 72px;
+            position: relative;
+            @include breakpoint(max-xxs_device){
+                padding: 40px 50px 40px 50px;
+            }
+            &:before{
+                left: 22px;
+                top: 21px;
+                color: $headings-color;
+                content: "“";
+                font-size: 100px;
+                font-style: normal;
+                line-height: 1;
+                position: absolute;
+                @include breakpoint(max-xxs_device){
+                    font-size: 70px
+                }
+            }
+            &:after{
+                color: $headings-color;
+                right: 10px;
+                font-size: 100px;
+                font-style: normal;
+                line-height: 1;
+                position: absolute;
+                bottom: -0.5em;
+                content: "”";
+                @include breakpoint(max-xxs_device){
+                    font-size: 70px;
+                    bottom: 0px;
+                }
+            }
+            p{
+                color: $body-color;
+                font-family: $heading-font;
+                font-size: 20px;
+                font-style: italic;
+                font-weight: 600;
+                @include breakpoint(max-xs_device){
+                    font-size: 18px;
+                }
+                @include breakpoint(max-xxs_device){
+                    font-size: 16px;
+                }
+            }
+        }
+        .testimonial-author{
+            margin-bottom: 20px;
+            span{
+                color: $headings-color;
+            }
+        }
+    }
+    
+    
+}

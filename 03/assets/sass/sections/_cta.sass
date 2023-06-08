@@ -1,0 +1,42 @@
+/*******************************************************/
+/*******************  21. CTA Area *********************/
+/*******************************************************/
+.contact-info-wrap
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    
+.contact-info-item
+    display: flex
+    position: relative
+    align-items: center
+    margin-bottom: 30px
+    margin-right: 30px
+    padding-right: 30px
+    &:after
+        content: ''
+        +size(2px, 30px)
+        position: absolute
+        background: white
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+    &:last-child
+        +res-ab(xl)
+            margin-right: 0
+            padding-right: 0
+            &:after
+                display: none
+    .icon
+        font-size: 20px
+        margin-right: 17px
+        +circle(white, 42px)
+        i
+            color: $primary-color
+    .content
+        span
+            display: block
+            font-size: 15px
+        b
+            font-size: 18px
+            font-weight: 500

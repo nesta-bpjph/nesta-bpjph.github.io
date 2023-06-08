@@ -1,0 +1,69 @@
+/*----------------------------------------*/
+/*    06. Component - Button
+/*----------------------------------------*/
+.btn {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 15px 30px;
+    line-height: 20px;
+    &-sm {
+        font-size: 13px;
+        padding: 10px 25px;
+    }
+    &-lg {
+        padding: 20px 35px;
+    }
+    @each $color, $value in $theme-colors {
+        &-hover-#{$color} {
+          &:hover{
+            border-color: $value;
+            background-color: $value;
+            @if $color==warning or $color==light {
+                color: $headings-color;
+            }
+            @else {
+                color: $white;
+            }
+          }
+        }
+    } 
+}
+@each $name,
+$value in $theme-colors {
+    .btn-#{$name} {
+        border-color: $value;
+        background-color: $value;
+
+        @if $name==dark {
+            background-color: $headings-color;
+            border-color:  $headings-color;
+        }
+        @else if $name==warning or $name==light {
+            color: $headings-color;
+        }
+
+        @else {
+            color: $white;
+        }
+    }
+}
+.read-more{
+    font-size: 14px;
+    color: $headings-color;
+    line-height: 1;
+    font-weight: 500;
+    padding: 0;
+    text-decoration: underline;
+    background-color: transparent;
+    @each $color, $value in $theme-colors {
+        &.btn-hover-#{$color} {
+            &:hover {
+                border-color: transparent;
+                background-color: transparent;
+                color: $primary;
+            }
+        }
+    }
+}

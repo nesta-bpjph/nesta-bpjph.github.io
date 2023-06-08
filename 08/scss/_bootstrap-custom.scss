@@ -1,0 +1,344 @@
+//
+// Bootstrap-custom.scss
+//
+
+/*********************************/
+/*         Bootstrap-custom      */
+/*===============================*/
+
+.container {
+    @media (min-width: 1400px) {
+        max-width: 1140px !important;
+    }
+}
+
+.row > * {
+    position: relative;
+}
+
+@each $heading,
+$size in $heading-font-sizes {
+    #{$heading}, .#{$heading} {
+        font-size: $size !important;
+    }
+}
+
+@each $heading,
+$size in $display-font-sizes {
+    .#{$heading} {
+        font-size: $size !important;
+    }
+}
+
+@each $name,
+$value in $colors {
+    .bg-#{$name} {
+        background-color: #{$value} !important;
+    }
+    .bg-soft-#{$name} {
+        background-color: rgba($value, 0.05) !important;
+    }
+    .bg-blur-#{$name} {
+        backdrop-filter: blur(12px);
+        background-color: rgba($value, 0.8);
+    }
+    .text-#{$name} {
+        color: #{$value} !important;
+    }
+    a {
+        &.text-#{$name} {
+            &:hover,
+            &:focus {
+                color: darken($value, 5%) !important;
+            }
+        }
+    }
+}
+
+.d-flex {
+    .flex-1 {
+        flex: 1;
+    }
+}
+
+.bg-black {
+    background: $black !important;
+}
+
+.text-white-50 {
+    color: rgba($white, 0.5);
+}
+
+//Video tag
+video {
+    &:focus {
+        outline: none;
+    }
+}
+
+//li (list inline item)
+.list-inline-item:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 5px;
+}
+
+// Rounded
+.rounded {
+    border-radius: 5px !important;
+}
+.rounded-top {
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+.rounded-left {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+.rounded-bottom {
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+.rounded-right {
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+.rounded-md {
+    border-radius: 10px !important;
+}
+.rounded-lg {
+    border-radius: 30px !important;
+}
+
+//Border
+@each $name,
+$value in $colors {
+    .border-#{$name} {
+        border-color: #{$value} !important;
+    }
+}
+
+.border {
+    border: 1px solid $gray-200 !important;
+}
+.border-top {
+    border-top: 1px solid $gray-200!important;
+}
+.border-bottom {
+    border-bottom: 1px solid $gray-200 !important;    
+}
+.border-left {
+    border-left: 1px solid $gray-200 !important;    
+}
+.border-right {
+    border-right: 1px solid $gray-200 !important;    
+}
+
+// Opacity
+.opacity-05 {
+    opacity: 0.05;
+}
+
+.opacity-075 {
+    opacity: 0.075;
+}
+
+.opacity-1 {
+    opacity: 0.1;
+}
+
+.opacity-2 {
+    opacity: 0.2;
+}
+
+.opacity-3 {
+    opacity: 0.3;
+}
+
+.opacity-4 {
+    opacity: 0.4;
+}
+
+.opacity-5 {
+    opacity: 0.5;
+}
+
+.opacity-6 {
+    opacity: 0.6;
+}
+
+.opacity-7 {
+    opacity: 0.7;
+}
+
+.opacity-8 {
+    opacity: 0.8;
+}
+
+.opacity-9 {
+    opacity: 0.9;
+}
+
+//Small
+.small, small {
+    font-size: 90%;
+}
+
+//card
+.card {
+    .card-body {
+        padding: 1.5rem;
+    }
+    border: none;
+    .card-img {
+        position: relative;
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            background: $card-overlay;
+            transition: all 0.5s ease;
+        }
+    }
+    &:hover {
+        .card-img {
+            .card-overlay {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+//Offcanvas
+.offcanvas {
+    .offcanvas-header {
+        min-height: 74px;
+        .dark-version {
+            display: none;
+        }
+        .light-version {
+            display: inline-block;
+        }
+        .btn-close {
+            color: $dark;
+            background: none;
+            margin-right: 0;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    &.offcanvas-end {
+        width: 350px;
+    }
+    &.photography-offcanvas {
+        width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: 56px !important;
+    }
+    .display-2 {
+        font-size: 50px !important;
+    }
+    .display-3 {
+        font-size: 42px !important;
+    }
+    .display-4 {
+        font-size: 36px !important;
+    }
+    .display-5 {
+        font-size: 30px !important;
+    }
+    .display-6 {
+        font-size: 24px !important;
+    }
+}
+
+
+.form-signin {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.mt-74 {
+    margin-top: 74px;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.fw-semibold {
+    font-weight: 600 !important;
+}
+
+//Z Index css
+.z-index-1 {
+    z-index: 1;
+}
+.z-index-0 {
+    z-index: 0;
+}
+.z-index-m-1 {
+    z-index: -1;
+}
+
+//Modal
+.modal-content {
+    .modal-header {
+        button {
+            &.btn-close {
+                background: none;
+            }
+        }
+    }
+}
+
+.modal.show {
+    padding-right: 15px !important;
+}
+
+
+.img-thumbnail {
+    padding: 2px;
+}
+
+//Avatar Groups
+.img-group {
+    .user-avatar {
+        img {
+            position: relative;
+            transition: all 0.5s ease;
+            &:hover {
+                z-index: 1;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+//Margin Left Css
+.ms-n3 {
+    margin-left: -16px;
+}
+
+.mt-n3 {
+    margin-top: -16px;
+}
+.mt-n4 {
+    margin-top: -24px;
+}
+.mt-n5 {
+    margin-top: -48px;
+}
+.mt-n80 {
+    margin-top: -80px;
+}

@@ -1,0 +1,96 @@
+/*----------------------------------------*/
+/*    12. Component - Footer
+/*----------------------------------------*/
+.footer-section{
+    overflow: hidden;
+}
+.single-footer-widget{
+    @include breakpoint(max-md_device){
+        margin-top: 50px;
+    }
+    .widget-title{
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $headings-color;
+        line-height: 1;
+        font-weight: 700;
+        &:after{
+            content: "";
+            color: $primary;
+            background: $primary;
+            width: 70px;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 0px;
+        }
+        &:before{
+            content: "";
+            background: $headings-color;
+            color: $headings-color;
+            left: 0;
+            bottom: -5px;
+            width: 40px;
+            height: 1px;
+            position: absolute;
+        }
+    }
+    .widget-list{
+        li{
+            margin-bottom: 15px;
+            a{
+                line-height: 24px;
+                padding-left: 19px;
+                position: relative;
+                &:before{
+                    font-family: 'Fontawesome';
+                    content: "\f101";
+                    position: absolute;
+                    left: 0;
+                    line-height: 24px;
+                    top: 0;
+                }
+            }
+            &:last-child{
+                margin-bottom: -5px;
+            }
+        }
+    }
+}
+.newsletter-form-wrap{
+    width: 100%;
+    .email-box{
+        height: 45px;
+        line-height: 45px;
+        padding-right: 40px;
+        border: 0px;
+        font-size: 14px;
+        background-color: $gray-200;
+        transform: .3s;
+        &:focus{
+            box-shadow: none;
+            border: 0px;
+            transform: .3s;
+        }
+    }
+    .newsletter-btn{
+        right: 0;
+        height: 45px;
+        line-height: 45px;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        color: $headings-color;
+        transition: $baseTransition;
+        &:hover{
+            color: $primary;
+            transition: $baseTransition;
+        }
+        i{
+            line-height: 11px;
+        }
+    }
+}

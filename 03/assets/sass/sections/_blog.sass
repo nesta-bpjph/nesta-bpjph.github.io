@@ -1,0 +1,362 @@
+/*******************  19. Blog Area ********************/
+/*******************************************************/
+.blog-item
+    background: white
+    margin-bottom: 30px
+    .image
+        position: relative
+        img
+            width: 100%
+        .date-month
+            position: absolute
+            left: 0
+            top: 0
+            width: 60px
+            span
+                color: white
+                display: block
+                text-align: center
+                text-transform: uppercase
+            .date
+                color: white
+                padding: 5px
+                font-size: 30px
+                font-family: $heading-font
+                background: linear-gradient(179.7deg, #FB5D4A -1.89%, #FF9B07 105.7%)
+            .month
+                background: $black-color
+        &.video
+            &:after
+                content: ''
+                +size(100%)
+                left: 0
+                top: 0
+                position: absolute
+                background: transparentize($black-color, 0.3)
+            .video-play
+                +abs-middle()
+                +res-ab(sm)
+                    +size(75px)
+                    font-size: 15px
+                    line-height: 75px
+    .content
+        text-align: center
+        padding: 33px 22px 20px
+        border-top: 1px solid #DDDDDE
+        border-left: 1px solid #DDDDDE
+        border-right: 1px solid #DDDDDE
+        h4
+            font-size: 22px
+            text-transform: capitalize
+            +res-bl(xs)
+                font-size: 20px
+        h3
+            +res-bl(sm)
+                font-size: 25px
+            +res-bl(xs)
+                font-size: 22px
+    .blog-meta
+        flex-wrap: wrap
+        padding: 20px 22px
+        +flexcenter(space-between)
+        border: 1px solid #DDDDDE
+        li
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            &:not(:last-child)
+                margin-right: 5px
+            i
+                color: #E6E6E7
+                font-size: 18px
+                margin-right: 12px
+            a
+                &:not(:last-child)
+                    &:after
+                        content: ','
+                        margin-right: 4px
+    &.style-two
+        .image
+            .slick-arrow
+                position: absolute
+                color: white
+                top: 50%
+                z-index: 2
+                right: 30px
+                font-size: 18px
+                transform: translateY(-50%)
+                +circle(linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%), 60px)
+                +res-bl(sm)
+                    +size(40px)
+                    font-size: 15px
+                    line-height: 40px
+                &.blog-prev
+                    left: 30px
+        .content
+            text-align: left
+            +gapLR(padding, 30px)
+            +res-bl(sm)
+                +gapLR(padding, 25px)
+        .blog-meta
+            padding: 13px 30px
+            +res-bl(sm)
+                +gapLR(padding, 25px)
+            li
+                i
+                    color: $primary-color
+        .blog-footer
+            display: flex
+            position: relative
+            .blog-meta
+                width: 100%
+                justify-content: flex-start
+                li
+                    &:not(:last-child)
+                        margin-right: 14px
+                        +res-ab(xl)
+                            position: relative
+                            padding-right: 14px
+                            &:after
+                                content: ''
+                                right: 0
+                                top: -13px
+                                position: absolute
+                                background: #DDDDDE
+                                +size(1px, calc(100% + 26px))
+                    &:last-child
+                        +res-bl(xs)
+                            margin-right: 25px
+                    i
+                        font-size: 15px
+                        margin-right: 8px
+            .share
+                border: 1px solid #DDDDDE
+                border-left: none
+                display: flex
+                position: relative
+                align-items: center
+                +res-bl(xs)
+                    position: absolute
+                    right: 0
+                    bottom: 0
+                    background: white
+                    border-left: 1px solid #DDDDDE
+                .social-icons
+                    position: absolute
+                    right: 10px
+                    opacity: 0
+                    z-index: 1
+                    display: flex
+                    line-height: 1
+                    transition: 0.5s
+                    visibility: hidden
+                    padding: 11px 20px
+                    border-radius: 3px
+                    bottom: calc(100% + 22px)
+                    background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+                    a
+                        color: white
+                        &:not(:last-child)
+                            margin-right: 15px
+                    &:after
+                        position: absolute
+                        content: ''
+                        +size(0)
+                        right: 13px
+                        top: 100%
+                        z-index: -1
+                        transition: 0.5s
+                        transform: translateY(-100%)
+                        border-top: 7px solid $primary-color
+                        border-left: 7px solid transparent
+                        border-right: 7px solid transparent
+                .icon
+                    cursor: pointer
+                    font-size: 20px
+                    padding: 5px 22px
+                    color: $primary-color
+                    +res-bl(xs)
+                        font-size: 15px
+                        padding: 3px 15px
+                &:before
+                    content: ''
+                    +size(100%, 25px)
+                    position: absolute
+                    left: 0
+                    bottom: 100%
+                    visibility: hidden
+                &:hover
+                    &:before
+                        visibility: visible
+                    .social-icons
+                        opacity: 1
+                        visibility: visible
+                        &:after
+                            transform: translateY(0)
+                
+/* Blog Style Two */
+.blog-item-two
+    margin-bottom: 30px
+    img
+        width: 100%
+    .content
+        position: relative
+        background: #FAFAFA
+        margin: -20px 20px 0
+        padding: 22px 25px 30px 30px
+        +res-bl(xs)
+            +gapLR(margin, 10px)
+            padding-left: 20px
+            padding-right: 15px
+        h4
+            font-size: 22px
+            text-transform: capitalize
+            +res-bl(xs)
+                font-size: 20px
+        .blog-meta
+            display: flex
+            flex-wrap: wrap
+            margin-bottom: 15px
+            align-items: center
+            li
+                &:not(:last-child)
+                    margin-right: 28px
+                i
+                    font-size: 14px
+                    margin-right: 5px
+                    color: $primary-color
+        p
+            margin-bottom: 12px
+            
+/* Blog Classic Page */
+.blog-clssic-wrap
+    .blog-item
+        &.style-two
+            &:not(:last-child)
+                margin-bottom: 80px
+            &.blog-quote
+                padding-top: 10px
+                background: #FAFAFA
+                .content
+                    border: none
+                    display: flex
+                    padding-bottom: 0
+                    &:after
+                        font-size: 55px
+                        content: '\e902'
+                        margin-left: 44px
+                        font-family: 'icomoon'
+                        background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+                        +res-bl(md)
+                            margin-left: 0
+                        +res-bl(sm)
+                            position: absolute
+                            bottom: 40%
+                            right: 25px
+                            z-index: -1
+                            opacity: 0.25
+                .blog-meta
+                    border: none
+                    padding-bottom: 50px
+                    justify-content: flex-start
+                    li
+                        &:not(:last-child)
+                            margin-right: 20px
+                        i
+                            font-size: 15px
+                            margin-right: 8px
+                            
+/* Blog Details Page */
+.blog-details-content
+    .content
+        .blog-meta
+            padding: 0
+            border: none
+            line-height: 1
+            margin-bottom: 5px
+            justify-content: flex-start
+            li
+                margin-bottom: 15px
+                &:not(:last-child)
+                    margin-right: 11px
+                    padding-right: 11px
+                    border-right: 1px solid rgba(0, 0, 0, 0.2)
+                i
+                    font-size: 15px
+                    margin-right: 5px
+        > p
+            margin-bottom: 30px
+    blockquote
+        padding: 40px
+        display: grid
+        font-size: 20px
+        @extend %heading
+        text-align: center
+        background: #FAFAFA
+        margin-bottom: 30px
+        +res-bl(ms)
+            +gapLR(padding, 25px)
+        +res-bl(xs)
+            font-size: 18px
+            +gapLR(padding, 15px)
+        br
+            +res-bl(sm)
+                display: none
+        &:before
+            line-height: 1
+            font-size: 35px
+            content: '\e902'
+            margin-bottom: 10px
+            font-family: 'icomoon'
+            background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+        
+/* Admin Comment */
+.admin-comment
+    padding: 40px 35px
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    .author
+        display: flex
+        align-items: center
+        margin-bottom: 20px
+        .image
+            flex: none
+            max-width: 75px
+            margin-right: 20px
+            +res-bl(xs)
+                max-width: 65px
+                margin-right: 15px
+            img
+                border-radius: 50%
+                border: 4px solid $primary-color
+        .description
+            h5
+                margin-bottom: 3px
+                +res-ab(xs)
+                    font-size: 22px
+                
+/* Post Comments */
+.comment-list
+    li
+        +res-ab(xs)
+            display: flex
+        &:not(:last-child)
+            margin-bottom: 40px
+            padding-bottom: 20px
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+        .author-image
+            flex: none
+            max-width: 70px
+            margin-right: 20px
+            margin-bottom: 20px
+        .author-description
+            margin-bottom: 15px
+            +flexcenter(space-between)
+            .left-part
+                margin-right: 10px
+                h5
+                    margin-bottom: 5px

@@ -1,0 +1,375 @@
+//
+// _home.scss
+//
+
+/*********************************/
+/*            Home               */
+/*===============================*/
+
+@mixin home-common {
+    background-size: cover !important;
+    align-self: center;
+    position: relative;
+    background-position: center center;
+}
+
+.bg-home {
+    height: 100vh;    
+    @include home-common();
+    @media (max-width: 767px) {
+        padding: 150px 0 !important;
+        height: auto;
+    }
+}
+
+.bg-home-75vh {
+    height: 75vh !important;    
+    @include home-common();
+    @media (max-width: 767px) {
+        padding: 120px 0 !important;
+        height: auto;
+    }
+}
+
+.bg-home-70vh {
+    height: 70vh !important;    
+    @include home-common();
+    @media (max-width: 767px) {
+        padding: 120px 0;
+        height: auto;
+    }
+}
+
+.bg-half-260 {
+    padding: 260px 0;    
+    @include home-common();
+    @media (max-width: 768px) {
+        padding: 150px 0;
+        height: auto;
+    }
+}
+.bg-half-170 {
+    padding: 170px 0;    
+    @include home-common();
+    @media (max-width: 767px) {
+        padding: 120px 0;
+        height: auto;
+    }
+}
+.bg-half-130 {
+    padding: 130px 0 104px;    
+    @include home-common();
+}
+.bg-half-100 {
+    padding: 100px 0;    
+    @include home-common();
+}
+
+.bg-half {
+    padding: 200px 0 100px;
+
+    @media (max-width: 768px) {
+        padding: 160px 0 60px;
+    }
+    @include home-common();
+}
+
+//Saas
+.home-dashboard {
+    img {
+        position: relative;
+        top: 60px;
+        z-index: 1;
+    }
+}
+
+//Bg Video Hero
+.bg-video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+    iframe {
+        width: 100vw;
+        height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+        min-height: 100vh;
+        min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+     }
+}
+
+//text type home
+.text-type-element {
+    z-index: 2;
+    &:after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: $primary;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        border-radius: 5px;
+        z-index: -1;
+        transition: all 0.5s ease;
+    }
+}
+
+//Swiper Slider
+.swiper-slider-hero {
+    .swiper-container,
+    .swiper-slide .slide-inner {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-container {        
+        .swiper-button-prev,
+        .swiper-button-next {
+            background: transparent;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            margin-top: -30px;
+            &:before {
+                font-family: "Material Design Icons";
+                font-weight: 900;
+                color: $white;
+            }
+            &:hover {
+                background: $primary;
+                border-color: $primary !important;
+            }
+        }
+        .swiper-button-prev {
+            left: 10px;
+            &:before {
+                content: "\f0141";
+            }
+        }
+        .swiper-button-next {
+            right: 10px;
+            &:before {
+                content: "\f0142";
+            }
+        }
+    }
+    .swiper-pagination-bullet {
+        color: $gray-100;
+        background: transparent;
+    }
+    .swiper-pagination-bullet-active {
+        color: $white;
+    }
+    .swiper-container-horizontal 
+    > .swiper-pagination-bullets,
+    .swiper-pagination-custom, 
+    .swiper-pagination-fraction {
+        bottom: 45px;
+    } 
+    .swiper-container-horizontal 
+    > .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 13px;
+    }
+}
+
+
+//Cover Home
+.auth-hero {
+    min-height: 100vh;
+    @media (max-width: 768px) {
+        min-height: 0;
+        .my-lg-auto {
+            margin: 60px 0;
+        }
+    }
+}
+
+.cover-user {
+    .container-fluid{
+        max-width: 100%;
+        .padding-less{
+
+            @media (max-width: 768px) {
+                position: relative !important;
+                height: 400px !important;
+            }
+
+            &.img {
+                background: scroll center no-repeat;
+                background-size: cover;
+                position: absolute;
+                height: 100%;
+            }
+        }
+    }    
+    .cover-user-img {
+        height: 100vh;
+
+        @media (min-width: 1025px) {
+            padding: 0px 16%;
+        }
+        
+        @media (max-width: 768px) {
+            align-items: start !important;
+            height: auto !important;
+            padding: 30px;
+        }
+    }
+
+    
+    @media (max-width: 768px) {
+        .cover-user-content {
+            text-align: left !important;
+        }    
+        .cover-my-30 {
+            margin: 30px 0;
+        }
+    }
+}
+
+
+//Bg-animation-lines
+.background-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    width: 100%;
+    z-index: 0;
+    .line {
+        background: rgba($primary, 0.1);
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        overflow: hidden;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 15vh;
+            width: 100%;
+            top: -50%;
+            left: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba($primary, 0.5) 75%, rgba($primary, 0.5) 100%);
+            animation: run 16s 0s infinite;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+        }
+        &:nth-child(1) {
+            margin-left: -25%;
+        }
+        &:nth-child(3) {
+            margin-left: 25%;
+        }
+        &:nth-child(1):after {
+            animation-delay: 2s;
+        }
+        &:nth-child(3):after {
+            animation-delay: 2.5s;
+        }
+    }
+}
+
+@keyframes run {
+    0% {
+        top: -50%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+// .bg-animation-right {
+//     &:after {
+//         content: "";
+//         position: absolute;
+//         right: 0px;
+//         top: 0px;
+//         width: 70%;
+//         height: 100%;
+//         background: $primary none repeat scroll 0 0;
+//         clip-path: polygon(60% 0, 100% 0, 100% 100%, 35% 100%);
+//         @media (max-width: 1024px) {
+//             width: 50%;
+//             }
+        
+        
+//         @media (max-width: 768px) {
+//             width: 60%;
+//             clip-path: polygon(80% 0, 100% 0, 100% 100%, 30% 100%);
+//         }
+        
+//         @media (max-width: 767px) {
+//             display: none;                
+//         }
+//     }
+// }
+
+.bg-animation-right {
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 10rem;
+        left: 45rem;
+        width: 130rem;
+        height: 50rem;
+        transform: rotate(115deg);
+        background-color: $primary;
+
+        @media (min-width: 1024px) and (max-width: 1140px) {
+            left: 20rem;
+            width: 80rem;
+            height: 30rem;
+        }
+        
+        @media (max-width: 768px) {
+            left: 10rem;
+        }
+        
+        @media (max-width: 767px) {
+            left: 0;
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 25rem;
+        left: 37rem;
+        width: 80rem;
+        height: 15rem;
+        transform: rotate(115deg);
+        background-color: rgba($primary, 0.1);
+
+        @media (min-width: 1024px) and (max-width: 1140px) {
+            left: 4rem;
+            width: 75rem;
+            height: 15rem;
+            bottom: 20rem;
+        }
+        
+        @media (max-width: 768px) {
+            left: 5rem;
+        }
+        
+        @media (max-width: 767px) {
+            left: -10rem;
+        }
+    }
+}

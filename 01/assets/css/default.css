@@ -1,0 +1,621 @@
+/* =======================================================================
+Template Name: Attoyer
+Author:  Themeori
+Author URI: http://Themeori.Net
+Version: 1.0
+Description: This Template is created for web template   
+--------------------------------------------------------------------------
+CSS Index
+* Default CSS
+/*==========================================================================
+Google Fonts CSS
+========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+/*==========================================================================
+Default CSS
+==========================================================================*/
+
+body {
+	font-size: 16px;
+	font-family: 'Nunito', sans-serif;
+	background: transparent;
+	line-height: 30px;
+	font-weight: 400;
+	color: #4b4b4b;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+a {
+	text-decoration: none;
+	border: none;
+	outline: 0;
+	color: #111c31;
+	font-weight: 700;
+	font-family: 'Nunito', sans-serif;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	transition: .4s;
+}
+
+a:hover{
+	color: #e9b950;
+}
+a:hover,
+a:focus,
+a:active,
+button:focus {
+	text-decoration: none;
+	border: none;
+	outline: 0;
+}
+ul,
+ol,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+p {
+	padding: 0;
+	margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lora', serif;
+	color: #111c31;
+	padding: 0;
+	margin: 0;
+}
+h2 {
+	font-size: 40px;
+	line-height: 54px;
+	font-weight: 600;
+	color: #111c31;
+}
+h3 {
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 600;
+	color: #111C31;
+}
+h4,
+h5,
+h6 {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+}
+input,
+input:hover,
+input:focus,
+input[type=text],
+input[type=email],
+textarea,
+textarea:hover,
+textarea:focus,
+button,
+button:hover,
+button:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 0px;
+	outline: none;
+}
+.section-padding {
+	padding: 100px 0px;
+}
+.section-title {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.section-title h2, .section-title-left h2, .section-title-right h2 {
+	color: #111c31;
+	font-size: 48px;
+	line-height: 60px;
+	font-weight: 700;
+}
+.section-title p {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #4b4b4b;
+}
+.section-title-left {
+	text-align: left;
+}
+.section-title-right {
+	text-align: left;
+	margin: 0;
+}
+.s-table {
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+.s-tablec {
+	display: table-cell;
+	vertical-align: middle;
+}
+.section-top {
+	font-size: 18px;
+	line-height: 30px;
+	color: #e9b950;
+	font-family: 'Lora', serif;
+	display: block;
+	margin-bottom: 10px;
+}
+/* attoyer button */
+
+.attoyer-btn {
+	background: #e9b950;
+	color: #fff;
+	padding: 0 35px;
+	height: 60px;
+	display: inline-block;
+	font-size: 18px;
+	text-align: center;
+	width: auto;
+	line-height: 60px;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	transition: .4s;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-family: 'Lora', serif;
+	font-weight: 500;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+.attoyer-btn::before,
+.all-btn::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	transition: .4s;
+	left: 0;
+	background: #fff;
+	transform: translate(96%,90%);
+	z-index: -1;
+}
+.attoyer-btn:hover::before {
+	transform: translate(0%,0%);
+}
+.attoyer-btn:hover {
+	color: #111C31;
+}
+.all-btn {
+	background: #111c31;
+	color: #fff;
+}
+.all-btn::before {
+	background: #e9b950;
+}
+.all-btn:hover::before {
+	transform: translate(0%,0%);
+}
+.all-btn:hover,
+.b-btn:hover {
+	color: #fff;
+}
+.b-btn::before {
+	background: #111C31;
+} 
+ .b-btn:hover::before {
+	transform: translate(0%,0%);
+} 
+.d-i-block ul li {
+	display: inline-block;
+	margin-right: 15px;
+	color: #fff;
+}
+.d-i-block ul li:last-child {
+	margin: 0;
+}
+.top-left li i::before,
+.comtuser-name a i::before,
+.menu-icon li i::before,
+.blog-content a i::before,
+.services-tiem a i::before,
+.top-right li i::before {
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	display: inline-block;
+	margin-bottom: 2px;
+	margin-right: 5px;
+}
+.top-right li i::before {
+	margin: 0;
+}
+.testimonial-area,
+.about-area,
+.blog-area {
+	background: #fff;
+	position: relative;
+}
+/*==========================================================================
+Preloader CSS
+========================================================================== */
+
+.spinner {
+	width: 80px;
+	height: 80px;
+	position: relative;
+	margin: 100px auto;
+}
+.double-bounce1,
+.double-bounce2 {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+	animation: sk-bounce 2.0s infinite ease-in-out;
+}
+.double-bounce2 {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+}
+@-webkit-keyframes sk-bounce {
+	0%, 100% {
+		-webkit-transform: scale(0.0)
+	}
+	50% {
+		-webkit-transform: scale(1.0)
+	}
+}
+@keyframes sk-bounce {
+	0%, 100% {
+		transform: scale(0.0);
+		-webkit-transform: scale(0.0);
+	}
+	50% {
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+}
+.theme-loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #051235;
+	z-index: 9999999999;
+}
+.theme-loader .spinner {
+	left: 50%;
+	top: 50%;
+	margin-left: -40px;
+	margin-top: -40px;
+}
+/*==========================================================================
+Search Box CSS
+==========================================================================*/
+
+.search-box {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 100%;
+	background: #111c31;
+	z-index: 999;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	transition: .4s;
+	display: none;
+	margin: 0 auto;
+}
+.search-box.active {
+	width: 100%;
+	left: 0;
+}
+.search-box form {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 55%;
+}
+.search-box form input {
+	background-color: transparent;
+	width: 100%;
+	padding: 10px 0;
+	color: #FFF;
+	border: 0;
+	border-bottom: 1px solid #FFF;
+}
+.search-box form input:focus {
+	border-bottom: 1px solid #e9b950;
+}
+.search-box form button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	text-align: center;
+	font-size: 22px;
+	color: #e9b950;
+	border: 0;
+	outline: none;
+}
+.search-box .search-box-icon {
+	position: absolute;
+	right: 50px;
+	top: 50px;
+	font-size: 22px;
+	color: #FFF;
+	cursor: pointer;
+}
+/*==========================================================================
+Menu Box CSS
+==========================================================================*/
+
+.hamburger-popup {
+	position: fixed;
+	width: 430px;
+	height: 100%;
+	right: 0;
+	overflow: auto;
+	transform: translateX(100%);
+	top: 0;
+	background: #fff;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 999999;
+	transition: all 0.3s ease 0s;
+	padding: 100px 50px;
+}
+.hamburger-popup.active {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0%);
+	right: 0;
+}
+.hamburger-popup .hamburger-close-btn {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	cursor: pointer;
+}
+.hamburger-close-btn i::before {
+	font-size: 13px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	background: #e9b950;
+	width: 35px;
+	color: #FFF;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.hamburger-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(20, 20, 20, 0.70);
+	z-index: 99999;
+	display: none;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	transition: .4s;
+}
+.hamburger-overlay.show {
+	display: block;
+}
+.hamburger-icon i::before,
+.responsive-menu i::before,
+.search-icon.open i::before {
+	cursor: pointer;
+}
+.menu-box .website-info {
+	margin-bottom: 30px;
+}
+.menu-box .website-info .logo {
+	display: block;
+	margin-bottom: 20px;
+}
+.menu-box .website-info p {
+	text-transform: capitalize;
+	font-size: 14px;
+}
+.menu-box .contact-info .contact-box {
+	margin-bottom: 30px;
+}
+.menu-box .contact-info .contact-box:last-child {
+	margin: 0;
+}
+.menu-box .contact-info .contact-box i {
+	float: left;
+	font-size: 25px;
+	color: #e9b950;
+	margin-right: 15px;
+}
+.menu-box .contact-info .contact-box .box a.phone,
+.menu-box .contact-info .contact-box .box a.mail,
+.menu-box .contact-info .contact-box .box p {
+	position: relative;
+	display: block;
+	font-family: 'Nunito', sans-serif;
+}
+/*==========================================================================
+responsive Box CSS
+==========================================================================*/
+
+.responsive-menu {
+	position: absolute;
+	top: 25px;
+	left: 74%;
+	width: 100%;
+}
+.mean-container a.meanmenu-reveal span {
+	background: #4b4b4b;
+	margin-top: 4px;
+	height: 2px;
+	width: 17px;
+	margin-right: 4px;
+}
+.mean-container a.meanmenu-reveal {
+	color: #111C31;
+}
+.menu-icon ul li i::before {
+	position: relative;
+	z-index: 10;
+	cursor: pointer;
+}
+.mean-container .mean-bar {
+	background: transparent;
+	padding: 0;
+	right: 13px;
+	z-index: 9;
+}
+.mean-nav ul li {} .mean-container .mean-nav {
+	margin-top: 73px;
+	background: #FAFAFB;
+}
+.mean-container .mean-nav li:first-child > a {
+	border: none;
+}
+.mean-container .mean-nav ul li a,
+.mean-container .mean-nav ul li li a,
+.mean-container .mean-nav li li:first-child > a {
+	color: #111C31;
+	font-size: 16px;
+	font-weight: 700;
+	opacity: 1;
+}
+.mean-container .mean-nav ul li a {
+	border: none;
+}
+.mean-container .mean-nav ul li a.mean-expand {
+	background: #e9b950;
+	height: 38px;
+	color: #fff;
+	border-color: #E7E7E7 !important;
+	border-left: 0 !important;
+}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+	background: #e9b950;
+}
+.mean-bar a i {
+	font-size: 30px;
+	padding-top: 2px;
+	display: block;
+}
+.mean-container .mean-nav ul li {
+	left: 0;
+	border-bottom: 1px solid #E7E7E7;
+}
+.mean-container .mean-nav ul li:last-child {
+	border: 0;
+}
+.mean-container .mean-nav ul li a {
+	text-transform: capitalize;
+	font-size: 17px;
+	line-height: 28px;
+	font-weight: 700;
+}
+.meanmenu-reveal.meanclose i {
+	font-size: 15px;
+}
+/*==========================================================================
+Animation CSS
+==========================================================================*/
+
+/* bounce */
+
+.item-bounce {
+	animation: bounce 5s infinite ease-in-out;
+}
+@keyframes bounce {
+	0% {
+		transform: translateX(7px, 7px);
+	}
+	50% {
+		transform: translate(-10px, 10px);
+	}
+	100% {
+		transform: translateY(7px 7px);
+	}
+}
+/* Bounce */
+
+/*Right roll*/
+
+.item-roll {
+	animation: rotation 12s infinite linear;
+}
+@keyframes rotation {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(-359deg);
+	}
+}
+/* Right roll */
+
+/* Left roll */
+
+.bounce-top {
+	animation: to 4s infinite ease-in-out;
+}
+@keyframes top {
+	0% {
+		transform: translateX(0px);
+	}
+	50% {
+		transform: translate(22px, 0px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+/* Left roll */
+
+/*==========================================================================
+Scroll Top CSS
+==========================================================================*/
+
+.scroll-top {
+	background: #e9b950;
+	bottom: 5%;
+	color: #fff;
+	font-size: 25px;
+	height: 50px;
+	line-height: 55px;
+	position: fixed;
+	right: 3%;
+	text-align: center;
+	width: 50px;
+	z-index: 9;
+	cursor: pointer;
+	display: none;
+}

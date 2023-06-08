@@ -1,0 +1,161 @@
+/*----------------------------------------*/
+/*    15. Pages - Portfolio
+/*----------------------------------------*/
+// Portfolio Section
+.portfolio-section{
+    .single-portfolio-wrap{
+        .port-info{
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            .title{
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 700;
+                color: $white;
+                a{
+                    color: $white;
+                }
+            }
+            .portfolio-cate{
+                a{
+                    color: $white;
+                    position: relative;
+                    &:before{
+                        background-color: $white;
+                        content: "";
+                        position: absolute;
+                        left: auto;
+                        right: 0;
+                        bottom: 4px;
+                        height: 2px;
+                        transition: 0.4s;
+                        width: 0;
+                    }
+                    &:hover{
+                        &:before{
+                            left: 0;
+                            right: auto;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            .port-info{
+                top: 50%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .portfolio-thumb{
+           > a{
+                display: block;
+                > img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+// Portfolio Masonry Section
+.messonry-button{
+    .port-filter{
+        position: relative;
+        border: 0px;
+        background-color: $white;
+        padding: 0;
+        margin: 0 30px 10px 0;
+        transition: 0.4s;
+        color: $headings-color;
+        &:before{
+            background-color: $primary;
+            content: "";
+            position: absolute;
+            left: auto;
+            right: 0;
+            bottom: 0;
+            height: 2px;
+            transition: 0.4s;
+            width: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        &:focus{
+            box-shadow: none;
+            transition: 0.4s;
+        }
+        &.is-checked{
+            color: $primary;
+            &:before{
+                left: 0;
+                right: auto;
+                width: 100%;
+            }
+        }
+        &:hover{
+            color: $primary;
+            left: 0;
+            right: auto;
+            transition: 0.4s;
+            &:before{
+                left: 0;
+                right: auto;
+                width: 100%;
+            }
+        }
+    }
+}
+// Portfolio Details Section
+.portfolio-details-desc{
+    .title{
+        font-size: 30px;
+        font-weight: 700;
+        @include breakpoint(max-xs_device){
+            font-size: 26px;
+        }
+    }
+    p{
+        margin-bottom: 10px;
+    }
+}
+.portfolio-details-info{
+    .title{
+        font-weight: 700;
+        font-size: 24px;
+    }
+    ul{
+        li{
+            margin-bottom: 10px;
+            font-size: 14px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            span{
+                float: left;
+                font-size: 15px;
+                font-weight: 600;
+                margin-right: 15px;
+                color: $headings-color;
+                width: 100px;
+                &:after{
+                    content: ":";
+                    float: right;
+                }
+            }
+            a{
+                margin-right: 10px;
+            }
+        }
+    }
+}

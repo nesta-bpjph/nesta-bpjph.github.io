@@ -1,0 +1,632 @@
+/*==========================================================================
+Menu Bar
+========================================================================== */
+.header__area {
+    &-menu-bar {
+        background: $white;
+        box-shadow: 0 0 70px $shadow;
+        &-left  {
+            position: relative;
+            &-logo > {
+                a {
+                    display: inline-block;
+                    background: $border4;
+                    padding: 11px 25px;
+                    padding-right: 40px;
+                    padding-top: 31px;
+                    position: relative;
+                    z-index: 999;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -20px;
+                        background: $border4;
+                        width: 100%;
+                        height: 20px;
+                    }
+                    img {
+                        max-width: 150px;
+                        position: relative;
+                    }
+                }
+            }
+        }
+        &-main-menu {
+            ul {
+                li {
+                    display: inline-block;
+                    position: relative;
+                    list-style: none;
+                    &:hover > a {
+                        color: $primary-color;
+                    }
+                    &:hover > .sub-menu {
+                        top: 100%;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    .sub-menu {
+                        position: absolute;
+                        background: $white;
+                        min-width: 240px;
+                        transition: all 0.3s ease-out 0s;
+                        top: 120%;
+                        opacity: 0;
+                        visibility: hidden;
+                        border-top: 2px solid $primary-color;
+                        z-index: 99;
+                        box-shadow: 0px 15px 30px 0px $shadow;
+                        text-align: left;
+                        li {
+                            display: block;
+                            margin: 0;
+                            border-bottom: 1px solid $border2;
+                            a {
+                                color: $heading-color;
+                                padding: 13px 25px;
+                                font-size: 15px;
+                                text-transform: capitalize;
+                                font-weight: 700;
+                            }
+                            .sub-menu {
+                                left: 100%;
+                                top: 0;
+                            }
+                            &:hover > a {
+                                color: $primary-color;
+                                padding-left: 30px;
+                            }
+                        }
+                        li:last-child{
+                            border: none;
+                        }
+                    }
+                    ul {
+                        .sub-menu li .sub-menu{
+                            color: $heading-color;
+                            cursor: pointer;
+                        }
+                    }
+                    a {
+                        color: $heading-color;
+                        display: block;
+                        font-size: 16px;
+                        line-height: 26px;
+                        font-weight: 500;
+                        padding: 27px 24px;
+                        transition: all 0.4s ease-out 0s;
+                        text-transform: capitalize;
+                        i {
+                            position: relative;
+                            top: 2px;
+                            margin-left: 5px;
+                            color: $body-color;
+                        }                        
+                    }
+                    &:last-child a {
+                        padding-right: 0;
+                    }
+                }
+            }       
+        }        
+        &-right {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding-right: 25px;
+            &-item {
+                margin-left: 30px;
+                &-search {
+                    &-icon {
+                        i {
+                            cursor: pointer;
+                            position: relative;
+                            z-index: 9;
+                            &::before {
+                                display: block;
+                                color: $heading-color;
+                            }
+                        }
+                    }
+                    &-box {
+                        position: fixed;
+                        bottom: 0;
+                        left: 50%;
+                        width: 100%;
+                        left: 0;
+                        right: 0;
+                        height: 0;
+                        background: $heading-color;
+                        z-index: 999;
+                        transition: .5s;
+                        overflow: hidden;
+                        form {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 55%;
+                        }
+                        input {
+                            background: $white;
+                            color: $heading-color;
+                            border: 0;
+                        }
+                        button {
+                            position: absolute;
+                            right: 15px;
+                            top: 19px;
+                            background-color: transparent;
+                            text-align: center;
+                            font-size: 22px;
+                            color: $primary-color;
+                            border: 0;
+                            outline: none;
+                            padding: 0;
+                            margin: 0;
+                        }
+                        &.active {
+                            height: 100%;
+                            top: 0;
+                        }
+                        &-icon {
+                            position: absolute;
+                            right: 50px;
+                            top: 50px;
+                            font-size: 22px;
+                            color: $white;
+                            cursor: pointer;				
+                            transform: rotate(0deg);
+                            &:hover {
+                                animation: rotate 0.4s ease 0s;			
+                            }
+                            i {
+                                cursor: pointer;
+                                position: relative;
+                                z-index: 9;
+                                &::before {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+                &-login {
+                    &-icon {
+                        i {
+                            cursor: pointer;
+                            position: relative;
+                            z-index: 9;
+                            &::before {
+                                display: block;
+                                color: $heading-color;
+                            }
+                        }
+                    }
+                    &-box {
+                        position: fixed;
+                        top: 0;
+                        width: 100%;
+                        left: 0;
+                        height: 0;
+                        background: $heading-color;
+                        z-index: -1;
+                        overflow: hidden;
+                        h3 {
+                            text-align: center;
+                            margin-bottom: 30px;
+                        }
+                        input {
+                            border: 1px solid $border2;
+                            margin-bottom: 30px;
+                        }
+                        button {
+                            width: 100%;
+                            margin-bottom: 30px;
+                            display: block;
+                        }
+                        &.active {
+                            z-index: 999;
+                            height: 100%;
+                            .header__area-menu-bar-right-item-login-area-bg {
+                                transform: scale(1);
+                            }
+                        }
+                        &-icon {
+                            position: absolute;
+                            right: -20px;
+                            top: -20px;
+                            color: $white;
+                            cursor: pointer;				
+                            transform: rotate(0deg);
+                            &:hover {
+                                animation: rotate 0.4s ease 0s;			
+                            }
+                            i {
+                                cursor: pointer;
+                                position: relative;
+                                z-index: 9;
+                                &::before {
+                                    display: block;
+                                    background: $primary-color;
+                                    width: 40px;
+                                    color: $white;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                    &-area {
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        max-width: 500px;
+                        margin: 0 auto;
+                        &-bg {
+                            background: $white;
+                            padding: 40px;
+                            transform: scale(0.7);
+                            transition: all 0.4s ease-out 0s;
+                        }
+                    }
+                }
+                &:first-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+Menu Bar Two CSS
+==========================================================================*/
+.header__two {
+    &-menu-bar {
+        box-shadow: 0 30px 40px 0 $shadow;
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.89);
+            z-index: -1;
+        }
+        &-right {
+            text-align: right;
+            .theme-btn3 {
+                font-size: 14px;
+                line-height: 50px;
+                padding: 0 30px;                
+            }
+        }
+        &-logo {
+            a {
+                display: inline-block;
+                img {
+                    max-width: 150px;
+                    position: relative;
+                    z-index: 999;
+                }
+            }
+        }
+        &-main-menu {
+            ul {
+                li {
+                    &:hover > a {
+                        color: $primary-color-1;
+                    }
+                    .sub-menu {
+                        border-top: 2px solid $primary-color-1;
+                        li {
+                            &:hover > a {
+                                color: $primary-color-1;
+                            }
+                        }
+                    }
+                }
+            }       
+        }
+    }
+}
+/*==========================================================================
+Menu Box CSS
+==========================================================================*/
+.hamburger-popup {
+	position: fixed;
+	width: 460px;
+	height: 100%;
+	right: 0;
+	overflow: auto;
+	transform: translateX(100%);
+	top: 0;
+	background: $white;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 999999;
+	transition: all 0.3s ease 0s;
+	padding: 80px 50px;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+        right: 0;
+    }
+    .hamburger-close-btn {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        transform: rotate(0);
+        i {
+            &::before {
+                background: $primary-color;
+                width: 40px;
+                color: $white;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50%;
+                cursor: pointer;
+                display: block;
+            }
+        }
+		&:hover {
+			animation: rotate 0.4s ease 0s;			
+		}
+    }
+	&-logo {
+		margin-bottom: 30px;		
+		a {
+			display: inline-block;
+			img {
+				max-width: 155px;       
+			}                
+		}
+	}
+}
+.hamburger-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $heading-color;
+	z-index: 99999;
+	opacity: 0.85;
+	display: none;
+	transition: all 0.4s ease-out 0s;
+    &.show {
+        display: block;
+    }
+}
+.hamburger-icon i::before,
+.responsive-menu i::before,
+.search-icon.open i::before {
+	cursor: pointer;
+    color: $heading-color;
+}
+.contact__info {
+	margin: 30px 0;
+	&-list {
+		a {
+			display: flex;
+			align-items: center;
+			color: $body-color;			
+			margin-bottom: 20px;
+			transition: all 0.4s ease-out 0s;
+			&:last-child {
+				margin: 0;
+			}
+			i {
+				color: $primary-color;
+                display: block;
+                width: 40px;
+                line-height: 40px;
+                height: 40px;
+                border: 1px solid $border1;
+                text-align: center;
+                border-radius: 5px;
+                margin-right: 20px;
+			}
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+}
+.follow__us {
+	&-social {
+		ul {
+			li {
+				display: inline-block;
+				list-style: none;
+				margin-right: 10px;
+				&:last-child {
+					margin: 0;
+				}				
+				a {
+					display: inline-block;
+					i {
+						width: 40px;
+						height: 40px;
+						line-height: 40px;
+						color: $heading-color;
+						transition: all 0.4s ease-out 0s;
+						text-align: center;
+						background: $thin-bg;
+						display: block;
+						border-radius: 50%;
+					}
+					&:hover {
+						i {
+							background: $secondary-color;
+                            color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*==========================================================================
+Responsive Menu Css
+========================================================================== */
+.responsive-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+}
+.mean-container {
+	a.meanmenu-reveal {
+        color: $heading-color;
+        width: 25px;
+        height: 31px;
+        top: 22px;
+        margin-right: 20px;
+        padding: 0;
+        transition: all 0s ease-out 0s;
+		span {	
+			background: $heading-color;
+			margin-top: 6px;		
+		}
+	}
+	.mean-bar {
+		background: transparent;
+		padding: 0;
+		z-index: 99;
+		a i {
+			font-size: 32px;
+			display: block;
+		}
+	}
+	.mean-nav {
+        background: $white;
+        margin-top: 78px;
+        box-shadow: 0 0 30px $shadow;
+		li:first-child > a {
+			border: none;
+		}
+		ul li a.mean-expand {
+			background: $primary-color;
+			height: 34px;
+			color: $white;
+			&:hover {
+			background: $primary-color;
+			}
+		}        
+		.sub-menu li a.mean-expand {
+			background: $primary-color;
+			height: 34px;
+			color: $white;
+			&:hover {
+			background: $primary-color;
+			}
+		}
+        ul li a i {
+            display: none;
+        }
+	}
+}
+.mean-container .mean-nav ul li a,
+.mean-container .mean-nav ul li li a,
+.mean-container .mean-nav li li:first-child > a {
+	color: $heading-color;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 600;
+	text-transform: capitalize;
+	border-top: 1px solid $border1;
+	opacity: 1;
+}
+@media (max-width: 1399px) {
+    .header__two {
+        &-menu-bar {
+            &-main-menu {
+                ul {
+                    li {
+                        a {
+                            padding: 27px 20px;                      
+                        }
+                    }
+                }       
+            }  
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .header__area {
+        &-menu-bar {
+            &-main-menu {
+                ul {
+                    li {
+                        a {
+                            padding: 27px 13px;                  
+                        }
+                    }
+                }       
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .header__area {
+        &-top-bar {
+            padding: 7px 20px;
+        }
+        &-menu-bar {
+            &-left {
+                &-logo > a {
+                    padding: 20px;
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+            &-right {
+                display: none;
+            }
+        }
+    }
+    .responsive-menu {
+        display: block;
+    }
+    .header__two {
+        &-menu-bar {
+            &-logo {
+                position: relative;
+                padding: 20px 0;
+                .mean-container {
+                    a.meanmenu-reveal {
+                        margin-right: 0;
+                    }
+                    .mean-nav {
+                        ul li a.mean-expand {
+                            background: $primary-color-1;
+                            &:hover {
+                            background: $primary-color-1;
+                            }
+                        }        
+                        .sub-menu li a.mean-expand {
+                            background: $primary-color-1;
+                            &:hover {
+                            background: $primary-color-1;
+                            }
+                        }
+                    }
+                }
+            }
+            &-right {
+                display: none;                
+            }
+        }
+    }
+}

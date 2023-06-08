@@ -1,0 +1,639 @@
+/*==========================================================================
+Services
+========================================================================== */
+.services__area {
+    position: relative;
+    z-index: 1;    
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 85%;
+        margin: 0 auto;
+        height: 100%;
+        background: $thin-bg;
+        z-index: -2;
+    }
+    &-title {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &-item {
+        padding: 60px;
+        box-shadow: 0 0 70px $shadow;
+        text-align: center;
+        transition: all 0.4s ease-out 0s;
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0;
+            transition: all 0.4s ease-out 0s;
+            background: $heading-color;
+            z-index: -1;
+        }
+        &-icon {
+            position: relative;
+            &-one {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: 0;
+                transition: all 0.4s ease-out 0s;
+                z-index: 1;             
+            }
+        }
+        &-content {
+            position: relative;
+            padding-top: 23px;
+            margin-top: 38px;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100px;
+                transition: all 0.4s ease-out 0s;
+                height: 1px;
+                background: $border1;
+            }
+            h3 {
+                a {
+                    transition: all 0.4s ease-out 0s;
+                    display: inline-block;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &:hover {
+            &::after {
+                height: 100%;
+            }
+            h3 a {
+                color: $white;
+            }
+            .simple-btn {
+                color: $white;
+            }
+            .services__area-item {
+                &-icon {
+                    &-one {
+                        opacity: 1;
+                    }
+                }
+                &-content {
+                    &::after {
+                        width: 140px;
+                        background: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+    &-page {
+        background: $thin-bg;
+        &-skill {
+            &-left {
+                margin-right: 110px;
+                &-title {
+                    h2 {
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                }
+                &-item {
+                    &-skill {
+                        margin-top: 25px;
+                        &-content {
+                            position: relative;
+                        }
+                        &-count {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            color: $primary-color;
+                            font-size: 18px;
+                            line-height: 28px;
+                            font-weight: 700;
+                        }
+                        &-inner {
+                            width: 100%;
+                            height:20px;
+                            margin-top: 15px;
+                            position: relative;
+                            border: 1px solid $border1;
+                        }
+                        &-bar {
+                            height: 6px;
+                            position: absolute;
+                            width: 0;
+                            top: 6px;
+                            left: 6px;
+                            background: $primary-color;
+                            transition: all 3.5s ease-out 0s;
+                        }
+                    }
+                } 
+            }
+            &-right {
+                &-image {
+                    position: relative;
+                    &-video-icon {
+                        position: absolute;
+                        background: $white;
+                        width: 100px;
+                        height: 100px;
+                        line-height: 100px;
+                        text-align: center;
+                        top: 50%;
+                        left: -50px;
+                        display: inline-block;
+                        z-index: 4;
+                        border-radius: 50%;
+                        transform: translateY(-50%);
+                        box-shadow: 0 0 50px $shadow;
+                        a {
+                            position: relative;
+                            color: $heading-color;
+                            top: 0;
+                            font-size: 20px;
+                            z-index: 1;
+                            width: 100px;
+                            height: 100px;
+                            display: block;
+                        }            
+                    }
+                }
+            }
+        }
+    }
+}
+.appointment {
+    position: relative;
+    z-index: 1;
+    padding: 40px 0;    
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 85%;
+        margin: 0 auto;
+        height: 100%;
+        background: $secondary-color;
+        z-index: -2;
+    }
+    &-left {
+        h3 {
+            font-size: 30px;
+            color: $white;
+            line-height: 40px;
+        }
+    }
+    &-right {
+        text-align: right;
+        .simple-btn {
+            color: $white;
+        }
+    }
+}
+/*==========================================================================
+Services Two
+========================================================================== */
+.services__two {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 110px 0;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: $primary-color-1;
+        z-index: -1;
+        opacity: 90%;
+    }    
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 272px;
+        background: $thin-bg-2;
+        z-index: -1;
+    }
+    &-title {
+        text-align: center;
+        h2 {
+            color: $white;
+        }
+        .subtitle-page-two-center {
+            color: $white;
+        }
+    }
+    &-item {
+        &-area {
+            background: $white;
+            text-align: center;
+            transition: all 0.4s ease-out 0s;
+            padding: 60px;
+            &-icon {
+                width: 120px;
+                height: 120px;
+                line-height: 120px;
+                border: 1px solid $border1;
+                display: inline-block;
+                border-radius: 50%;
+                text-align: center;
+                position: relative;
+                z-index: 1;
+                margin-bottom: 30px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: $white;
+                    width: 0;
+                    height: 0;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: all 0.4s ease-out 0s;
+                    z-index: -1;
+                }
+                img {
+                    max-width: 50px;
+                }
+            }
+            &-content {
+                h4 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        a {
+            display: block;
+            background: $primary-color-1;
+            color: $white;
+            font-size: 16px;
+            padding: 0 35px;
+            text-align: center;
+            font-weight: 700;
+            font-family: $theme-font;
+            z-index: 3;
+            position: relative;
+            transition: all 0.4s ease-out 0s;
+            align-items: center;
+            line-height: 60px;
+            opacity: 0;
+            border-radius: 0 0 5px 5px;
+            i {
+                font-size: 12px;
+                margin-left: 10px;
+            }            
+        }
+        &.swiper-slide.swiper-slide-active.services__two-item {
+            a {
+                opacity: 1;
+            }
+            .services__two-item-area {
+                background: $thin-bg;
+                &-icon {
+                    border: 1px solid $thin-bg;
+                    &::after {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            } 
+        } 
+    }
+	&-button {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;        
+		&-prev {			
+            display: inline-block;
+            margin: 0;
+            left: 210px;
+            position: absolute; 
+			i {
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                line-height: 50px;
+                text-align: center;
+                border: 1px solid $primary-color;
+                font-size: 18px;
+                color: $white;
+                border-radius: 5px;
+                transition: all 0.4s ease-in-out;	
+			}
+			&:hover i {
+				background: $white;
+				color: $primary-color-1;
+			}  
+		}
+		&-next {		
+			display: inline-block;
+            margin: 0;
+            left: auto;
+            right: 210px;
+            position: absolute;            
+			i {
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                line-height: 50px;
+                text-align: center;
+                border: 1px solid $primary-color;
+                font-size: 18px;
+                color: $white;
+                border-radius: 5px;
+                transition: all 0.4s ease-in-out;	
+			}
+			&:hover i {
+				background: $white;
+				color: $primary-color-1;
+			}  
+		}
+	}
+    &-appointment {
+        text-align: center;
+        max-width: 650px;
+        margin: 0 auto;
+        h5 a {
+            color: $primary-color-1;
+            font-size: 14px;
+        }
+    } 
+}
+/*==========================================================================
+Services Details
+========================================================================== */
+.service__details {
+    &-left {
+        &-content {
+            &-list {
+                margin: 35px 0;
+                &-item {
+                    background: $white;
+                    border: 1px solid $border1;
+                    box-shadow: 0 0 70px $shadow;
+                    transition: all 0.4s ease-out 0s;
+                    padding: 22px 30px;
+                    &-icon {
+                        position: relative;
+                        &-one {
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            opacity: 0;
+                            width: 100%;
+                            transition: all 0.4s ease-out 0s;
+                            z-index: 1;             
+                        }
+                    }
+                    &-content {
+                        h6 {
+                            transition: all 0.4s ease-out 0s;
+                            i {
+                                float: right;
+                                margin-top: -7px;
+                                transition: all 0.4s ease-out 0s;
+                                color: $body-color;
+                            }
+                        }
+                    }
+                    &:hover {
+                        background: $heading-color;
+                        .service__details-left-content-list-item {
+                            &-icon {
+                                &-one {
+                                    opacity: 1;            
+                                }
+                            }
+                            &-content {
+                                h6 {
+                                    color: $white;
+                                    i {
+                                        color: $secondary-color;
+                                    }
+                                }
+                            }                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1850px) {
+    .services__two {        
+        &-button {      
+            &-prev {
+                left: 100px;  
+            }
+            &-next {
+                right: 100px;
+            }
+        }
+    }
+}
+@media (max-width: 1600px) {
+	.services__area { 
+        &::after {
+            width: 100%;
+        }
+    }
+    .appointment {  
+        &::after {
+            width: 100%;
+        }
+    }
+    .services__two {        
+        &-button {      
+            &-prev {
+                left: 10px;  
+            }
+            &-next {
+                right: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+	.services__area {
+        &-item {
+            padding: 60px 35px;
+        }
+        &-page {
+            &-skill {
+                &-left {
+                    margin-right: 60px;
+                }
+            }
+        }
+    }    
+    .appointment {
+        &-left {
+            h3 {
+                font-size: 24px;
+                line-height: 34px;
+            }
+        }        
+    }
+    .service__details {
+        &-left {
+            &-content {
+                &-list {
+                    &-item {
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+	.services__area {
+        &-title {
+            max-width: 800px;
+        }
+        &-item {
+            &-content {
+                h3 {
+                    font-size: 22px;
+                    line-height: 32px;                    
+                }
+            }
+        }
+        &-page {
+            &-skill {
+                &-left {
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+    .appointment {
+        &-left {
+            h3 {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }        
+    }
+    .service__details {
+        &-left {
+            &-content {
+                &-list {
+                    &-item {
+                        &-content {
+                            h6 {
+                                font-size: 14px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .services__area {        
+        &-page {
+            &-skill {
+                &-left {
+                    margin-right: 0;
+                }
+                &-right {
+                    &-image {
+                        img {
+                            width: 100%;
+                        }
+                        &-video-icon {
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);           
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .appointment {
+        &-left {
+            text-align: center;
+            margin-bottom: 10px;
+        }        
+        &-right {
+            text-align: center;
+        }        
+    }
+    .service__details {
+        &-left {
+            &-content {
+                &-list {
+                    &-item {
+                        &-content {
+                            h6 {
+                                font-size: 16px;
+                                line-height: 26px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 650px) {
+    .services__two {        
+        &-button {
+            display: none;
+        }
+    }
+}
+@media (max-width: 494px) {
+    .services__two {  
+        &::after {
+            height: 300px;
+        }
+        &-item {
+            &-area {
+                padding: 50px 30px;
+            }
+        }
+    }
+}
+@media (max-width: 330px) {
+    .services__two {  
+        &::after {
+            height: 328px;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+/*******************************************************/
+/*******************  10. Banner Area ******************/
+/*******************************************************/
+.page-banner
+    z-index: 1
+    overflow: hidden
+    position: relative
+    &:after,
+    &:before
+        position: absolute
+        +size(280px, 150%)
+        content: ''
+        top: -25%
+        z-index: -1
+        transform: matrix(0.88, 0.49, -0.47, 0.88, 0, 0)
+        background: linear-gradient(181.92deg, rgba(33, 33, 40, 0.024) 23.92%, rgba(27, 27, 34, 0.4) 102.71%)
+    &:before
+        left: 10%
+    &:after
+        left: 40%
+.banner-inner
+    &:before
+        position: absolute
+        +size(280px, 150%)
+        content: ''
+        top: -25%
+        left: 70%
+        z-index: -1
+        transform: matrix(0.88, 0.49, -0.47, 0.88, 0, 0)
+        background: linear-gradient(181.92deg, rgba(33, 33, 40, 0.024) 23.92%, rgba(27, 27, 34, 0.4) 102.71%)
+.page-title
+    margin-bottom: 30px
+    padding-bottom: 33px
+    text-transform: capitalize
+    +res-bl(lg)
+        font-size: 50px
+        margin-bottom: 20px
+        padding-bottom: 22px
+    +res-bl(md)
+        font-size: 45px
+    +res-bl(sm)
+        font-size: 40px
+    +res-bl(xs)
+        font-size: 35px
+    &:after,
+    &:before
+        position: absolute
+        content: ''
+        left: 50%
+        bottom: 0
+        width: 33px
+        height: 4px
+        border-radius: 2.5px
+        background: $primary-color
+        transform: translateX(-50%)
+    &:before
+        width: 40px
+        bottom: 6px
+.breadcrumb
+    font-size: 20px
+    .breadcrumb-item
+        display: flex
+        align-items: center
+        &.active
+            color: white
+        &+.breadcrumb-item
+            &:before
+                +size(6px)
+                content: ''
+                border-radius: 50%
+                +gapLR(margin, 15px)
+                background: $primary-color
+                outline: 4px solid rgba(255, 255, 255, 0.1)

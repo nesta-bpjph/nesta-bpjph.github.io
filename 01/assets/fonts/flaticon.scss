@@ -1,0 +1,169 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?564408008561796c3ddf027248be6a31") format("truetype"),
+url("./flaticon.woff?564408008561796c3ddf027248be6a31") format("woff"),
+url("./flaticon.woff2?564408008561796c3ddf027248be6a31") format("woff2"),
+url("./flaticon.eot?564408008561796c3ddf027248be6a31#iefix") format("embedded-opentype"),
+url("./flaticon.svg?564408008561796c3ddf027248be6a31#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "call": "\f101",
+    "facebook-app-symbol": "\f102",
+    "twitter": "\f103",
+    "linkedin": "\f104",
+    "vimeo": "\f105",
+    "instagram": "\f106",
+    "left-arrow": "\f107",
+    "next": "\f108",
+    "right-arrow": "\f109",
+    "court": "\f10a",
+    "balance": "\f10b",
+    "checked": "\f10c",
+    "straight-quotes": "\f10d",
+    "date": "\f10e",
+    "comment": "\f10f",
+    "placeholder": "\f110",
+    "mail": "\f111",
+    "envelope": "\f112",
+    "telephone": "\f113",
+    "double-right-arrows-angles": "\f114",
+    "presentation": "\f115",
+    "law": "\f116",
+    "plus": "\f117",
+    "minus": "\f118",
+    "up-arrow": "\f119",
+    "search": "\f11a",
+    "menu": "\f11b",
+    "close": "\f11c",
+    "user": "\f11d",
+    "user-1": "\f11e",
+    "profile-user": "\f11f",
+    "folder": "\f120",
+    "reply": "\f121",
+    "law-1": "\f122",
+    "lawyer": "\f123",
+    "compliant": "\f124",
+);
+
+.flaticon-call:before {
+    content: map-get($flaticon-map, "call");
+}
+.flaticon-facebook-app-symbol:before {
+    content: map-get($flaticon-map, "facebook-app-symbol");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-linkedin:before {
+    content: map-get($flaticon-map, "linkedin");
+}
+.flaticon-vimeo:before {
+    content: map-get($flaticon-map, "vimeo");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon-map, "left-arrow");
+}
+.flaticon-next:before {
+    content: map-get($flaticon-map, "next");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-court:before {
+    content: map-get($flaticon-map, "court");
+}
+.flaticon-balance:before {
+    content: map-get($flaticon-map, "balance");
+}
+.flaticon-checked:before {
+    content: map-get($flaticon-map, "checked");
+}
+.flaticon-straight-quotes:before {
+    content: map-get($flaticon-map, "straight-quotes");
+}
+.flaticon-date:before {
+    content: map-get($flaticon-map, "date");
+}
+.flaticon-comment:before {
+    content: map-get($flaticon-map, "comment");
+}
+.flaticon-placeholder:before {
+    content: map-get($flaticon-map, "placeholder");
+}
+.flaticon-mail:before {
+    content: map-get($flaticon-map, "mail");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon-map, "envelope");
+}
+.flaticon-telephone:before {
+    content: map-get($flaticon-map, "telephone");
+}
+.flaticon-double-right-arrows-angles:before {
+    content: map-get($flaticon-map, "double-right-arrows-angles");
+}
+.flaticon-presentation:before {
+    content: map-get($flaticon-map, "presentation");
+}
+.flaticon-law:before {
+    content: map-get($flaticon-map, "law");
+}
+.flaticon-plus:before {
+    content: map-get($flaticon-map, "plus");
+}
+.flaticon-minus:before {
+    content: map-get($flaticon-map, "minus");
+}
+.flaticon-up-arrow:before {
+    content: map-get($flaticon-map, "up-arrow");
+}
+.flaticon-search:before {
+    content: map-get($flaticon-map, "search");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}
+.flaticon-close:before {
+    content: map-get($flaticon-map, "close");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-user-1:before {
+    content: map-get($flaticon-map, "user-1");
+}
+.flaticon-profile-user:before {
+    content: map-get($flaticon-map, "profile-user");
+}
+.flaticon-folder:before {
+    content: map-get($flaticon-map, "folder");
+}
+.flaticon-reply:before {
+    content: map-get($flaticon-map, "reply");
+}
+.flaticon-law-1:before {
+    content: map-get($flaticon-map, "law-1");
+}
+.flaticon-lawyer:before {
+    content: map-get($flaticon-map, "lawyer");
+}
+.flaticon-compliant:before {
+    content: map-get($flaticon-map, "compliant");
+}

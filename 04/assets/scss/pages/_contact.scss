@@ -1,0 +1,79 @@
+/*----------------------------------------*/
+/*    17. Pages - Contact
+/*----------------------------------------*/
+// Contact Information
+.contact-info{
+    .section-title{
+        p{
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
+.info{
+    border: 1px solid #ebebeb;
+    padding: 0 32px 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint(max-md_device){
+        padding: 0 28px 28px;
+    }
+    .info-icon{
+        background-color: $white;
+        margin-top: -30px;
+        width: 80px;
+        height: 65px;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        i{
+            font-size: 48px;
+            color: $primary;
+        }
+    }
+    .info-content{
+        .title{
+            font-size: 20px;
+            color: $headings-color;
+            margin-bottom: 10px;
+        }
+    }
+}
+// Contact Form
+.contact-form{
+    color: $headings-color;
+    font-size: 20px;
+    .input-item{
+        padding: 10px 20px;
+    }
+    .input-item, .textarea-item{
+        width: 100%;
+        border: 0;
+        font-size: 14px;
+        background: $gray-200;
+        &:focus{
+            border: 0px;
+            outline: 0px;
+        }
+    }
+    .textarea-item{
+        min-height: 130px;
+        padding: 10px 20px;
+    }
+}
+p.form-messege {
+    font-size: 16px;
+    margin-bottom: 0;
+    display: inline-block;
+    padding-top: 30px;
+    line-height: 1;
+    display: none;
+    &.success{
+        display: block;
+    }
+    &.error{
+        display: block;
+    }
+}

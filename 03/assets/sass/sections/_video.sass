@@ -1,0 +1,21 @@
+/*******************************************************/
+/********************  14. Videos **********************/
+/*******************************************************/
+.service-inner-video
+    border-color: white
+    border-style: solid
+    border-width: 60px 80px 0
+    +overlay(black, 0.4)
+    +res-bl(lg)
+        border-left-width: 50px
+        border-right-width: 50px
+    +res-bl(ms)
+        border-width: 25px 25px 0
+    &:before
+        z-index: 1
+    .video-play
+        position: absolute
+        left: 50%
+        top: 50%
+        z-index: 2
+        transform: translate(-50%, -50%)

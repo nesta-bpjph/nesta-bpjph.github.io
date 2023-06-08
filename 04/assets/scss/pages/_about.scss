@@ -1,0 +1,52 @@
+/*----------------------------------------*/
+/*    13. Pages - About
+/*----------------------------------------*/
+.marketing-about-thumb {
+    position: relative;
+    margin-bottom: 0;
+    @include breakpoint(max-md_device){
+        margin-bottom: 50px;
+    }
+    &:before{
+        background-color: rgba(0, 0, 0, 0.6);
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .about-video-btn{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .btn-video-popup {
+        border-radius: 50%;
+        border: 5px solid $white;
+        color: $white;
+        display: block;
+        text-align: center;
+        height: 80px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        transition: $baseTransition;
+        &:hover{
+            transform: scale(1.05);
+        }
+        i{
+            font-size: 24px;
+        }
+        @include breakpoint(max-xs_device){
+            width: 70px;
+            height: 70px;
+            i{
+                font-size: 20px;
+            }
+        }
+    }
+}

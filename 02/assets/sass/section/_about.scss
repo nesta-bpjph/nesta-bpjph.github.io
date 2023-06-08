@@ -1,0 +1,277 @@
+/*==========================================================================
+About
+========================================================================== */
+.about__area {
+    &-left {
+        margin-right: 95px;
+        margin-bottom: 60px;
+        &-image {
+            position: relative;
+            &-content {
+                position: absolute;
+                right: -40px;
+                bottom: -60px;
+                background: $primary-color;
+                padding: 58px 42px;
+                display: inline-block;
+                text-align: center;
+                border-radius: 0 0 95px 0;
+                &-icon {
+                    img {
+                        max-width: 60px;
+                    }
+                    margin-bottom: 20px;
+                }
+                span {
+                    color: $white;
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+                h2 {
+                    color: $white;
+                }
+            }
+        }
+    }
+    &-right {
+        &-title {
+            h2 {
+                margin-bottom: 17px;
+            }
+            p {
+                max-width: 520px;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        &-list {
+            margin-top: 35px;
+            h5 {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                i {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    border: 1px solid $border1;
+                    display: inline-block;
+                    box-shadow: 0 0 60px $shadow;
+                    margin-right: 20px;
+                    text-align: center;
+                    border-radius: 50%;
+                    color: $primary-color;
+                }
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+        &-bottom {
+            display: flex;
+            align-items: center;
+            margin-top: 35px;
+            &-item {
+                margin-right: 40px;
+                &-author {
+                    display: flex;
+                    align-items: center;
+                    &-image {
+                        margin-right: 20px;
+                        img {
+                            max-width: 60px;
+                            border-radius: 50%;
+                        }
+                    }
+                    &-content {
+                        span {
+                            font-size: 14px;
+                            display: inline-block;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+About Two
+========================================================================== */
+.about__two {
+    &-left {
+        margin-right: 50px;
+        &-image {
+            position: relative;
+            margin-bottom: 210px;
+            &-one {
+                position: absolute;
+                right: 0;
+                bottom: -210px;
+            }
+        }
+    }
+    &-right {
+        &-title {
+            h2 {
+                margin-bottom: 30px;
+            }
+        }
+        &-contact {
+            display: flex;
+            margin: 45px 0;
+            &-icon {
+                margin-right: 20px;
+                margin-top: 7px;
+            }
+            &-content {
+                p {
+                    margin-bottom: 10px;
+                    span {
+                        color: $heading-color;
+                        font-weight: 700;
+                    }
+                }
+                h3 {
+                    font-size: 30px;
+                    line-height: 30px;
+                    span {
+                        font-size: 16px;
+                        color: $body-color;
+                        padding: 0 10px;
+                        font-weight: 400;
+                    }
+                    a {
+                        transition: all 0.4s ease-out 0s;
+                        display: inline-block;
+                        &:hover {
+                            color: $primary-color-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+	.about__two {
+        &-right {
+            &-contact {
+                &-content {
+                    h3 {
+                        font-size: 22px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+	.about__area {
+        &-left {
+            margin-right: 55px;
+        }
+        &-right {
+            &-bottom {
+                &-item {
+                    margin-right: 24px;
+                    &-author {
+                        &-image {
+                            margin-right: 10px;
+                        }
+                        &-content {
+                            h4 {
+                                font-size: 20px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .about__two {
+        &-left {
+            margin-right: 30px;
+            &-image {
+                margin-bottom: 160px;
+                &-one {
+                    bottom: -160px;
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .about__two {
+        &-left {
+            margin-right: 0;
+        }
+    }
+}
+@media (max-width: 483px) {
+	.about__area {
+        &-left {
+            margin-right: 40px;
+            &-image {
+                &-content {
+                    padding: 48px 42px;
+                    border-radius: 0 0 85px 0;
+                }
+            }
+        }
+        &-right {
+            &-title {
+                p {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+            &-list {
+                h5 {
+                    font-size: 16px;
+                    line-height: 26px;
+                    i {
+                        margin-right: 15px;
+                    }
+                }
+            }
+            &-bottom {
+                display: inline-block;
+                &-item {
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                    &-author {
+                        &-image {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .about__two {
+        &-right {
+            &-contact {
+                &-content {
+                    p {
+                        margin-bottom: 0;
+                    }
+                    h3 {
+                        font-size: 14px;
+                        line-height: 24px;
+                        span {
+                            font-size: 14px;
+                            padding: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

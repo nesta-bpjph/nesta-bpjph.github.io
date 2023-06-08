@@ -1,0 +1,201 @@
+/*******************************************************/
+/******************  20. All Widgets *******************/
+/*******************************************************/
+.main-sidebar
+    .widget
+        background: #FAFAFA
+        padding: 55px 30px 60px
+        &:not(:last-child)
+            margin-bottom: 60px
+    .widget-title
+        display: flex
+        margin-bottom: 25px
+        align-items: center
+        &:before
+            flex: none
+            content: ''
+            +size(5px, 13px)
+            margin-right: 12px
+            background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+    .widget_search
+        padding: 0
+        form
+            display: flex
+            align-items: center
+            input
+                border: none
+                font-size: 16px
+                background: transparent
+                padding: 15px 0 15px 30px
+                &::placeholder
+                    font-weight: 400
+                    font-family: $base-font
+            button
+                color: white
+                height: 60px
+                width: 65px
+                flex: none
+                font-size: 25px
+                line-height: 60px
+                text-align: center
+                background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+    .widget_catagory
+        li
+            &:not(:last-child)
+                margin-bottom: 10px
+            a
+                z-index: 1
+                display: flex
+                position: relative
+                padding: 10px 17px
+                align-items: center
+                background: rgba(0, 0, 0, 0.03)
+                &:before
+                    content: '\f14a'
+                    transition: 0.5s
+                    margin-right: 12px
+                    color: $primary-color
+                    font-family: "Font Awesome 5 Pro"
+                &:after
+                    content: ''
+                    +size(100%)
+                    z-index: -1
+                    opacity: 0
+                    left: 0
+                    top: 0
+                    transition: 0.5s
+                    position: absolute
+                    background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+                &:hover
+                    color: white
+                    &:before
+                        color: white
+                    &:after
+                        opacity: 1
+    .widget_download
+        li
+            &:not(:last-child)
+                margin-bottom: 15px
+            a
+                z-index: 1
+                display: flex
+                padding: 17px
+                position: relative
+                align-items: center
+                background: rgba(0, 0, 0, 0.03)
+                img
+                    flex: none
+                    width: 35px
+                    margin-right: 15px
+                &:after
+                    content: '\e930'
+                    transition: 0.5s
+                    font-size: 20px
+                    margin-left: auto
+                    color: $primary-color
+                    font-family: 'icomoon'
+    .widget_contact
+        padding: 50px 40px
+        text-align: center
+        background: url(../images/widgets/contact-widget.png) no-repeat center/cover
+        +overlay(linear-gradient(120.21deg, rgba(251, 93, 74, 0.82) 0%, #FF9B07 101.06%), 1)
+        &:after
+            position: absolute
+            content: ''
+            left: 10px
+            top: 10px
+            z-index: -1
+            border: 1px solid white
+            +size(calc(100% - 20px))
+        .icon
+            color: white
+            font-size: 50px
+            margin-bottom: 15px
+        h5
+            color: white
+            font-size: 18px
+            font-weight: 700
+            line-height: 24px
+            font-family: $base-font
+        .number
+            color: white
+            font-size: 28px
+            font-weight: 700
+    .widget_project
+        li
+            display: flex
+            align-items: center
+            &:not(:last-child)
+                margin-bottom: 20px
+                padding-bottom: 20px
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+            .image
+                flex: none
+                max-width: 68px
+                margin-right: 15px
+            h5
+                font-size: 18px
+                margin-bottom: 5px
+                text-transform: capitalize
+            .date
+                font-size: 14px
+    .widget_recent_post
+        > ul
+            max-width: 300px
+            > li
+                display: flex
+                align-items: center
+                +res-bt(lg, xl)
+                    display: block
+                +res-bl(xs)
+                    display: block
+                &:not(:last-child)
+                    margin-bottom: 20px
+                    padding-bottom: 20px
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+                .image
+                    flex: none
+                    max-width: 70px
+                    margin-right: 15px
+                    +res-bt(lg, xl)
+                        margin-bottom: 10px
+                    +res-bl(xs)
+                        margin-bottom: 10px
+                h6
+                    margin-bottom: 5px
+                    text-transform: capitalize
+                .blog-meta
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    li
+                        font-size: 14px
+                        &:not(:last-child)
+                            margin-right: 10px
+                        i
+                            margin-right: 4px
+                            color: $primary-color
+                            
+    .tags
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -10px -10px 0
+        a
+            padding: 4px 20px
+            border-radius: 3px
+            margin: 0 10px 10px 0
+            border: 1px solid rgba(0, 0, 0, 0.1)
+            +overlay(linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%), 0)
+            +res-ab(xl)
+                letter-spacing: 1px
+            +res-bt(xs, lg)
+                letter-spacing: 1px
+            +res-bl(xs)
+                +gapLR(padding, 17px)
+            &:before
+                transition: 0.5s
+            &:hover
+                color: white
+                border-color: $primary-color
+                &:before
+                    opacity: 1

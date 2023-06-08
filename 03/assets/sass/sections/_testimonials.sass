@@ -1,0 +1,206 @@
+/*******************************************************/
+/***************  18. Testimonials Area ****************/
+/*******************************************************/
+.testimonial-active
+    +gapLR(margin, -15px)
+    .testimonial-item
+        +gapLR(margin, 15px)
+.testimonial-item
+    background: white
+    text-align: center
+    position: relative
+    margin: 50px 0 30px
+    padding: 0 30px 45px
+    +res-bl(xs)
+        +gapLR(padding, 20px)
+    &:after
+        content: ''
+        +size(100%, 3px)
+        position: absolute
+        left: 0
+        bottom: 0
+        opacity: 0.2
+        transition: 0.5s
+        background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%);
+    .author-image
+        z-index: 1
+        position: relative
+        display: inline-block
+        transform: translateY(-50px)
+        &:before
+            position: absolute
+            +size(100%, 70%)
+            content: ''
+            left: 0
+            top: 0
+            z-index: -1
+            background: linear-gradient(179.7deg, #FB5D4A -1.89%, #FF9B07 105.7%)
+        &:after
+            position: absolute
+            content: '\e95a'
+            color: white
+            left: 50%
+            bottom: 0
+            font-size: 20px
+            font-family: 'icomoon'
+            transform: translate(-50%, 35%)
+            +circle(linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%), 42px)
+        img
+            max-width: 110px
+            margin: 2px 2px 0
+            border: 5px solid white
+    p
+        font-style: italic
+    .name
+        margin: 20px 0 3px
+    .designation
+        font-size: 14px
+    &:hover
+        &:after
+            opacity: 1
+    
+.slider-arrows
+    button
+        &:first-child
+            margin-right: 12px
+        
+/* Testimonial Two */
+.testimonial-two-image-slider
+    max-width: 530px
+    position: relative
+    &:after
+        position: absolute
+        content: '\e902'
+        +size(82px, 84px)
+        line-height: 84px
+        font-size: 45px
+        color: white
+        bottom: 0
+        right: 0
+        text-align: center
+        font-family: 'icomoon'
+        background: linear-gradient(270deg, #FB5D4A 0%, #FF9B07 117.45%)
+    .testi-two-img-item
+        img
+            transition: 0.5s
+            transform: translate(50px)
+            +res-bl(lg)
+                transform: translate(0, 50px)
+        &.slick-active
+            img
+                transform: translate(0)
+    
+.testimonial-two-item
+    .name
+        line-height: 1.2
+        margin-bottom: 0
+    .designation
+        display: block
+        font-size: 14px
+        margin-bottom: 10px
+    p
+        color: #757575
+        font-size: 18px
+        line-height: 1.82
+        font-style: italic
+        +res-ab(xs)
+            font-size: 22px
+            font-weight: 500
+    .signature
+        max-width: 160px
+        margin-top: 25px
+        margin-bottom: 10px
+    .ratting
+        .quality
+            line-height: 1
+            margin-left: 20px
+            padding-left: 20px
+            border-left: 1px solid rgba(0, 0, 0, 0.5)
+            
+/* Testimonial Three */
+.testimonial-area-three
+    +overlay($black-color, 0.98)
+.testimonial-three-image
+    display: inline-block
+    position: relative
+    z-index: 1
+    .line
+        position: absolute
+        z-index: -1
+        width: 1px
+        background: #474750
+        &:after
+            position: absolute
+            content: ''
+            height: 12%
+            width: 100%
+            left: 0
+            bottom: 26%
+            background: $primary-color
+            animation: slideUpDown 15s infinite
+        &.one
+            height: 26%
+            left: 50%
+            top: 0
+        &.two
+            height: 34%
+            left: 8%
+            bottom: 0
+            &:after
+                animation-delay: 2s
+        &.three
+            height: 37%
+            right: 11%
+            bottom: 0
+            &:after
+                animation-delay: 4s
+.testimonial-three-item
+    .author
+        +size(72px)
+        border-radius: 50%
+        margin-bottom: 30px
+    .name
+        font-size: 22px
+        margin-bottom: 0
+    .designation
+        display: block
+        font-size: 14px
+        line-height: 1.5
+        margin-bottom: 20px
+    p
+        opacity: 0.8
+        line-height: 1.95
+        font-style: italic
+        letter-spacing: 1px
+        +res-ab(ms)
+            font-size: 18px
+            font-weight: 500
+    .ratting
+        padding-top: 10px
+.testimonial-three-slider
+    padding-right: 100px
+    +res-bl(md)
+        padding-right: 50px
+    +res-bl(ms)
+        padding-right: 25px
+    &:after
+        content: '\e909'
+        position: absolute
+        top: 0
+        right: 0
+        color: #474750
+        font-size: 75px
+        font-family: 'icomoon'
+    .slick-dots
+        position: absolute
+        bottom: 0
+        right: 0
+        flex-direction: column
+        li
+            height: 18px
+            margin: 0 0 5px
+            border-radius: 4.5px
+            &:before
+                display: none
+            &:not(.slick-active)
+                background: rgba(255, 255, 255, 0.1)
