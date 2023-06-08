@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+/* width: min(100% - 30px, 1320px); */
+/* font-family: 'Lato', sans-serif; */
+
+:root {
+	--text-muted: #a1a1a6;
+	--white-color: #f5f5f7;
+	--black-color: #0000;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* Body */
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+}
+
+body {
+	overflow-y: scroll;
+}
+
+/* App */
+
+#homepage h1 {
+	font-size: 40px;
+	font-weight: 800;
+	margin: 0;
+}
+
+#homepage p {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+#homepage a {
+	font-size: 18px;
+	text-decoration: none;
+}
+
+#homepage a:hover {
+	color: #0d6efd !important;
+	text-decoration: underline;
+}
+
+.product-description {
+	padding: 100px;
+}
+
+.link-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.learn-more {
+	margin: 0 20px 0 20px;
+}
+
+.buy-now {
+	margin: 0 20px 0 20px;
+}
+
+.product-1 {
+	min-height: 90vh;
+	background-color: black;
+	background-image: url("/asset/img/product/iphone-14.jpg");
+	background-repeat: no-repeat;
+	background-size: 50rem;
+	background-position: center bottom;
+}
+
+.product-2 {
+	min-height: 90vh;
+	background-color: white;
+	background-image: url("/asset/img/product/iphone-14-color.png");
+	background-repeat: no-repeat;
+	background-size: 40rem;
+	background-position: center bottom;
+}
+
+.product-3 {
+	background-color: black;
+	background-image: url("/asset/img/product/ipad.png");
+	background-repeat: no-repeat;
+	background-size: 40rem;
+	background-position: center top;
+}
+
+.product-3 .product-description {
+	padding-top: 450px;
+}
+
+.product-1.me-md-3.pt-3.px-3.pt-md-5.px-md-5.text-center.overflow-hidden {
+	flex: 1;
+}
+
+.product-2.me-md-3.pt-3.px-3.pt-md-5.px-md-5.text-center.overflow-hidden {
+	flex: 1;
+}
+
+.product-3.me-md-3.pt-3.px-3.pt-md-5.px-md-5.text-center.overflow-hidden {
+	flex: 1;
+}
+
+.product-4.me-md-3.pt-3.px-3.pt-md-5.px-md-5.text-center.overflow-hidden {
+	flex: 1;
+}
+
+.product-5.me-md-3.pt-3.px-3.pt-md-5.px-md-5.text-center.overflow-hidden {
+	flex: 1;
+}
+
+.product-6.me-md-3.pt-3.px-3.pt-md-5.px-md-5.text-center.overflow-hidden {
+	flex: 1;
+}
+
+.product-promotion .promotion-description h2 {
+	margin: 5px 0;
+	font-size: 28px;
+	font-weight: 800;
+}
+
+.product-promotion .promotion-description p {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.product-promotion .product-1 {
+	background-image: url("https://www.apple.com/v/home/az/images/promos/iphone-tradein/iphone_tradein_promo__d5au3rkw5kuq_large.jpg");
+	background-position-x: center;
+	background-size: cover;
+	height: 560px;
+}
+
+.product-promotion .product-2 {
+	background-image: url("https://www.apple.com/v/home/az/images/promos/wwdc23-announce/promo_wwdc23__b68ptht3mro2_large.jpg");
+	background-position-x: center;
+	background-size: cover;
+	height: 560px;
+}
+
+.product-promotion .product-3 {
+	background-image: url("https://www.apple.com/v/home/az/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg");
+	background-position-x: center;
+	background-size: cover;
+	height: 560px;
+}
+
+.product-promotion .product-4 {
+	background-image: url("https://www.apple.com/v/home/az/images/promos/macbook-pro-14-and-16/promo_mbp__ek7p477bkp6q_large.jpg");
+	background-position-x: center;
+	background-size: cover;
+	height: 560px;
+}
+
+.product-promotion .product-5 {
+	background-image: url("https://www.apple.com/v/home/az/images/promos/mothers-day-2023/airpods/promo__sw58lbodkmqq_large.jpg");
+	background-position-x: center;
+	background-size: cover;
+	height: 560px;
+}
+
+.product-promotion .product-6 {
+	background-image: url("https://www.apple.com/v/home/ba/images/promos/homepod/promo_homepod__f7jnolq94m2y_large.jpg");
+	background-position-x: center;
+	background-size: cover;
+	height: 560px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 991px) {
+	#homepage h1 {
+		font-size: 36px;
+		font-weight: 800;
+		margin: 0;
+	}
+
+	#homepage p {
+		font-size: 22px;
+		font-weight: 500;
+	}
+
+	#homepage a {
+		font-size: 18px;
+		text-decoration: none;
+	}
+
+	.product-1 {
+		min-height: 80vh;
+		background-image: url("/asset/img/product/iphone-14-2.png");
+		background-repeat: no-repeat;
+		background-size: 30rem;
+		background-position: center bottom;
+	}
+
+	.product-2 {
+		min-height: 80vh;
+		background-color: white;
+		background-image: url("/asset/img/product/iphone-14-color.png");
+		background-repeat: no-repeat;
+		background-size: 40rem;
+		background-position: center bottom;
+	}
+
+	.product-description {
+		padding: 80px;
+	}
+
+	.product-promotion .promotion-description h2 {
+		margin: 0;
+		font-size: 22px;
+		font-weight: 800;
+	}
+
+	.product-promotion .promotion-description p {
+		font-size: 18px;
+		font-weight: 500;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#homepage h1 {
+		font-size: 32px;
+		font-weight: 800;
+		margin: 0;
+	}
+
+	#homepage p {
+		font-size: 18px;
+		font-weight: 500;
+	}
+
+	#homepage a {
+		font-size: 16px;
+		text-decoration: none;
+	}
+
+	.product-1 {
+		min-height: 70vh;
+		background-image: url("/asset/img/product/iphone-14-2.png");
+		background-repeat: no-repeat;
+		background-size: 30rem;
+		background-position: center bottom;
+	}
+
+	.product-2 {
+		min-height: 70vh;
+		background-color: white;
+		background-image: url("/asset/img/product/iphone-14-color.png");
+		background-repeat: no-repeat;
+		background-size: 30rem;
+		background-position: center bottom;
+	}
+
+	.product-description {
+		padding: 70px;
+	}
+
+	.d-md-flex .flex-md-equal > * {
+		flex: 1;
+	}
+
+	.product-promotion .promotion-description h2 {
+		margin: 0;
+		font-size: 20px;
+		font-weight: 800;
+	}
+
+	.product-promotion .promotion-description p {
+		font-size: 16px;
+		font-weight: 500;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.product-1 {
+		min-height: 60vh;
+		background-image: url("/asset/img/product/iphone-14-2.png");
+		background-repeat: no-repeat;
+		background-size: 30rem;
+		background-position: center bottom;
+	}
+
+	.product-3 {
+		background-color: black;
+		background-image: url("/asset/img/product/ipad.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center top;
+	}
+
+	.product-3 .product-description {
+		padding-top: 370px;
+	}
+
+	.product-description {
+		padding: 50px;
+	}
+
+	.product-promotion .promotion-description h2 {
+		margin: 0;
+		font-size: 18px;
+		font-weight: 800;
+	}
+
+	.product-promotion .promotion-description p {
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.product-2 {
+		min-height: 60vh;
+		background-size: 100%;
+	}
+
+	.product-3 .product-description {
+		padding-top: 300px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.product-1 {
+		min-height: 50vh;
+		background-image: url("/asset/img/product/iphone-14-2.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center bottom;
+	}
+
+	.product-2 {
+		min-height: 50vh;
+	}
+
+	.product-3 .product-description {
+		padding-top: 280px;
+	}
+}

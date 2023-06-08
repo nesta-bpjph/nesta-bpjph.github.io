@@ -1,0 +1,4700 @@
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	background-color: black !important;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.container {
+	background-color: black;
+	padding: 0 -120px;
+	margin: 0 -10px;
+}
+
+.container hr {
+	color: white;
+	/* margin: 0 -120px; */
+	margin: 0;
+}
+
+nav {
+	background-color: black;
+	padding: 0 100px;
+}
+
+.navbar-nav {
+	margin-left: 460px;
+}
+
+.navbar-nav .nav-item .nav-link {
+	color: white;
+}
+
+.navbar-collapse.a {
+	flex-grow: 0;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.navbar-nav.a {
+	margin-left: 0;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.navbar-nav.a .nav-item .nav-link {
+	color: white;
+}
+
+.d-flex {
+	column-gap: 40px;
+}
+
+.label {
+	background-color: #161617;
+	text-align: center;
+}
+
+.label p {
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 23px 0;
+}
+
+.content1 .flex-content1 {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+
+.content1 .flex-content1 h1 {
+	font-size: 75px;
+}
+
+.content1 .flex-content1 .sticky-element {
+	display: flex;
+	margin-top: 35px;
+}
+
+.color-option {
+	display: inline-block;
+	margin: 10px;
+}
+
+.color-option label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.result {
+	font-size: 24px;
+}
+
+.color-option input[type="radio"] {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	outline: none;
+	cursor: pointer;
+}
+
+.color-option input[type="radio"]:checked {
+	border-color: rgb(255, 255, 255);
+	border-width: 2px;
+	border-style: solid;
+}
+
+.color-option input[type="radio"][value="Deep Purple"] {
+	background-color: #36016f;
+}
+
+.color-option input[type="radio"][value="Gold"] {
+	background-color: gold;
+}
+
+.color-option input[type="radio"][value="Silver"] {
+	background-color: silver;
+}
+
+.color-option input[type="radio"][value="Space Black"] {
+	background-color: #474747;
+	color: white; /* Mengubah warna teks menjadi putih agar terlihat jelas */
+}
+
+.content1 .hp1 {
+	text-align: center;
+	margin-top: 80px;
+}
+
+.content2 {
+	background-color: #161617;
+}
+
+.content2 .container.a {
+	background-color: #161617;
+	color: white;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.content2 .container.a .text-content {
+	padding: 80px 0;
+}
+
+.content2 .container.a .grid-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 0.7fr 0.7fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 30px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"grid1 grid1 grid1 grid2 grid2"
+		"grid1 grid1 grid1 grid2 grid2"
+		"grid1 grid1 grid1 grid3 grid3"
+		"grid1 grid1 grid1 grid3 grid3"
+		"grid4 grid4 grid5 grid5 grid5"
+		"grid4 grid4 grid5 grid5 grid5"
+		"grid6 grid6 grid7 grid7 grid7"
+		"grid6 grid6 grid7 grid7 grid7"
+		"grid6 grid6 grid7 grid7 grid7"
+		"grid6 grid6 grid7 grid7 grid7"
+		"grid8 grid8 grid8 grid9 grid9"
+		"grid8 grid8 grid8 grid9 grid9"
+		"grid8 grid8 grid8 grid10 grid10"
+		"grid8 grid8 grid8 grid10 grid10"
+		"grid11 grid11 grid11 grid10 grid10"
+		"grid11 grid11 grid11 grid10 grid10"
+		"grid12 grid12 grid13 grid13 grid13"
+		"grid12 grid12 grid13 grid13 grid13";
+}
+
+.absolute-button1 {
+	background-color: aliceblue;
+	margin-left: 590px;
+	margin-top: 0px;
+	padding: 4px 5px;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.grid1 {
+	grid-area: grid1;
+	background-color: #000000;
+	border-radius: 30px;
+}
+.grid1 .text1 {
+	margin: 35px 0;
+}
+
+.absolute-button2 {
+	background-color: aliceblue;
+	margin-left: 370px;
+	margin-top: -73px;
+	padding: 4px 5px;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.grid2 {
+	grid-area: grid2;
+	background-color: black;
+	border-radius: 30px;
+	overflow: hidden;
+	height: 340px;
+}
+.grid2 img {
+	margin-top: -70px;
+	width: 100%;
+}
+.grid2 .text2 {
+	margin: -130px 0 0 40px;
+	font-size: 25px;
+	text-align: left !important;
+	font-weight: 500;
+	text-shadow: 4px 4px 50px rgba(0, 0, 0, 1);
+}
+
+.absolute-button3 {
+	background-color: aliceblue;
+	margin-left: 370px;
+	margin-top: -215px;
+	padding: 4px 5px;
+	position: absolute;
+	border-radius: 50%;
+}
+.grid3 {
+	grid-area: grid3;
+	background-color: black;
+	border-radius: 30px;
+	overflow: hidden;
+	height: 340px;
+}
+.grid3 .text3 {
+	font-size: 40px;
+	font-weight: 600;
+	text-align: left !important;
+	margin: 20px 0 0 40px;
+	line-height: 47px;
+}
+.grid3 img {
+	width: 380px;
+	margin: 20px 0 0 48px;
+}
+
+.absolute-button4 {
+	background-color: aliceblue;
+	margin-left: 310px;
+	margin-top: 70px;
+	padding: 4px 5px;
+	position: absolute;
+	border-radius: 50%;
+}
+.grid4 {
+	grid-area: grid4;
+	background-color: #000000;
+	overflow: hidden;
+	height: 400px;
+	border-radius: 30px;
+	text-align: left !important;
+	padding: 60px 0 0 50px;
+}
+
+.grid4 p {
+	font-size: 23px;
+	margin: 0 0 3px 0;
+}
+
+.grid4 h2 {
+	font-size: 80px;
+	font-weight: 600;
+	line-height: 80px;
+}
+.grid4 h2 span {
+	margin-left: 63px;
+}
+
+.absolute-button5 {
+	background-color: aliceblue;
+	margin-left: 590px;
+	margin-top: -30px;
+	padding: 4px 5px;
+	position: absolute;
+	border-radius: 50%;
+}
+.grid5 {
+	grid-area: grid5;
+	border-radius: 30px;
+	background-color: #000000;
+}
+.grid5 img {
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+}
+.grid5 p {
+	margin: -150px 0 0 0;
+	font-size: 32px;
+	font-weight: 500;
+}
+.grid5 p span {
+	font-size: 45px;
+}
+
+.absolute-button6 {
+	background-color: aliceblue;
+	margin-left: 365px;
+	margin-top: -55px;
+	padding: 4px 5px;
+	position: absolute;
+	border-radius: 50%;
+}
+.grid6 {
+	grid-area: grid6;
+	border-radius: 30px;
+	background-color: #000000;
+}
+.grid6 .text6 p span {
+	font-size: 25px;
+	text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.6);
+}
+.grid6 .text6 p {
+	position: relative;
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 50px;
+	margin-top: 50px;
+	text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.6);
+}
+.grid6 img {
+	width: 100%;
+	z-index: 0;
+	height: 100%;
+	margin-top: -222px;
+	border-radius: 30px;
+}
+
+.absolute-button7 {
+	background-color: aliceblue;
+	margin-left: 590px;
+	margin-top: 50px;
+	padding: 4px 5px;
+	position: absolute;
+	border-radius: 50%;
+}
+.grid7 {
+	grid-area: grid7;
+	border-radius: 30px;
+	background-color: #000000;
+}
+.grid7 .text7 {
+	font-size: 45px;
+	line-height: 55px;
+	margin: 60px 0;
+}
+
+.absolute-button8 {
+	background-color: aliceblue;
+	margin-left: 590px;
+	margin-top: -30px;
+	padding: 4px 5px;
+	position: absolute;
+	border-radius: 50%;
+}
+.grid8 {
+	grid-area: grid8;
+	background-color: #000000;
+	border-radius: 30px;
+}
+.grid8 .text8 p {
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 55px;
+	margin: 50px 0;
+}
+.grid8 .text8 p span {
+	font-size: 25px;
+}
+
+.grid9 {
+	grid-area: grid9;
+	background-color: #000000;
+	border-radius: 30px;
+	overflow: hidden;
+}
+.grid9 img {
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+}
+
+.absolute-button10 {
+	background-color: aliceblue;
+	margin-left: 360px;
+	margin-top: -60px;
+	padding: 4px 5px;
+	position: absolute;
+	border-radius: 50%;
+}
+.grid10 {
+	grid-area: grid10;
+	background-color: #000000;
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+.grid10 .text10 {
+	font-weight: 600;
+	font-size: 45px;
+	margin: 30px 0;
+	position: relative;
+}
+
+.grid10 img {
+	width: 100%;
+	margin-top: -195px;
+	height: 100%;
+}
+
+.absolute-button11 {
+	background-color: aliceblue;
+	margin-left: 590px;
+	margin-top: 10px;
+	padding: 4px 5px;
+	position: absolute;
+	border-radius: 50%;
+}
+.grid11 {
+	grid-area: grid11;
+	border-radius: 30px;
+	background-color: #000000;
+}
+.grid11 p {
+	font-size: 25px;
+	margin: 35px 0;
+}
+.grid11 img {
+	width: 440px;
+}
+
+.absolute-button12 {
+	background-color: aliceblue;
+	margin-left: 360px;
+	margin-top: 90px;
+	padding: 4px 5px;
+	position: absolute;
+	border-radius: 50%;
+}
+.grid12 {
+	grid-area: grid12;
+	background-color: #000000;
+	border-radius: 30px;
+	overflow: hidden;
+}
+.grid12 img {
+	width: 300px;
+}
+.grid12 .text12 {
+	font-size: 50px;
+	font-weight: 500;
+	margin-top: -255px;
+	line-height: 50px;
+}
+
+.grid13 {
+	grid-area: grid13;
+	background-color: #000000;
+	border-radius: 30px;
+	overflow: hidden;
+}
+.grid13 .grid-flex {
+	display: flex;
+	column-gap: 40px;
+	justify-content: center;
+}
+.grid13 .grid-flex .left {
+	margin: 50px 0 0 0;
+}
+.grid13 .grid-flex .left img {
+	width: 240px;
+}
+.grid13 .grid-flex .left p {
+	font-size: 25px;
+}
+.grid13 .grid-flex .right {
+	margin: 80px 0 0 0;
+}
+.grid13 .grid-flex .right img {
+	width: 240px;
+}
+.grid13 .grid-flex .right p {
+	font-size: 25px;
+}
+
+.content3 {
+	background-color: #161617;
+}
+
+.content3 .container.b {
+	background-color: #161617;
+	color: white;
+	padding: 120px 0 30px 0;
+}
+
+.save-iphone .title {
+	font-size: 60px;
+	font-weight: 500;
+	line-height: 70px;
+}
+
+.save-iphone .card-flex {
+	display: flex;
+	text-align: center;
+	column-gap: 30px;
+	margin-top: 80px;
+}
+
+.save-iphone .card-flex .card1 {
+	background-color: #000000;
+	border-radius: 30px;
+	height: 550px;
+	overflow: hidden;
+	padding: 40px 30px 0 30px;
+	width: 32%;
+}
+
+.save-iphone .card-flex .card1 img {
+	margin-top: 50px;
+}
+
+.save-iphone .card-flex .card1 p {
+	font-size: 25px;
+	line-height: 35px;
+	font-weight: 500;
+}
+
+.save-iphone .card-flex .card2 {
+	background-color: #000000;
+	border-radius: 30px;
+	height: 550px;
+	overflow: hidden;
+	padding: 40px 35px 0 35px;
+	width: 32%;
+}
+
+.save-iphone .card-flex .card2 img {
+	margin-top: 50px;
+}
+
+.save-iphone .card-flex .card2 p {
+	font-size: 25px;
+	line-height: 35px;
+	font-weight: 500;
+}
+
+.save-iphone .card-flex .card3 {
+	background-color: #000000;
+	border-radius: 30px;
+	height: 550px;
+	overflow: hidden;
+	padding: 40px 35px 0 35px;
+	width: 32%;
+}
+
+.save-iphone .card-flex .card3 a {
+	margin-top: -200px;
+}
+
+.save-iphone .card-flex .card3 img {
+	margin-top: 50px;
+}
+
+.save-iphone .card-flex .card3 p {
+	font-size: 25px;
+	line-height: 35px;
+	font-weight: 500;
+}
+
+.designed .title2 {
+	margin: 90px 0;
+	font-size: 60px;
+	font-weight: 500;
+}
+
+.designed .card-flex2 {
+	display: flex;
+	text-align: center;
+	column-gap: 30px;
+}
+
+.designed .card-flex2 .card1 {
+	background-color: #000000;
+	border-radius: 30px;
+	height: 550px;
+	overflow: hidden;
+	padding: 40px 30px 0 30px;
+	width: 32%;
+}
+
+.designed .card-flex2 .card1 p {
+	font-size: 27px;
+	line-height: 35px;
+	font-weight: 500;
+	margin-top: 25px;
+}
+
+.designed .card-flex2 .card1 img {
+	margin-top: 50px;
+}
+
+.designed .card-flex2 .card2 {
+	background-color: #000000;
+	border-radius: 30px;
+	height: 550px;
+	overflow: hidden;
+	padding: 40px 30px 0 30px;
+	width: 32%;
+}
+
+.designed .card-flex2 .card2 p {
+	font-size: 27px;
+	line-height: 35px;
+	font-weight: 500;
+	margin-top: 25px;
+}
+
+.designed .card-flex2 .card2 img {
+	margin-top: 50px;
+}
+
+.designed .card-flex2 .card3 {
+	background-color: #000000;
+	border-radius: 30px;
+	height: 550px;
+	overflow: hidden;
+	padding: 40px 30px 0 30px;
+	width: 32%;
+}
+
+.designed .card-flex2 .card3 p {
+	font-size: 27px;
+	line-height: 35px;
+	font-weight: 500;
+	margin-top: 25px;
+}
+
+.designed .card-flex2 .card3 img {
+	margin-top: 50px;
+}
+
+.iphone-right {
+	margin: 80px 0;
+}
+
+.iphone-right .title-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.iphone-right .title-flex p {
+	font-size: 55px;
+	font-weight: 500;
+}
+
+.iphone-right .title-flex a {
+	margin-top: 120px;
+	font-size: 22px;
+}
+
+.iphone-right .table-iphone {
+	margin-top: 40px;
+	text-align: center;
+	width: 100%;
+}
+
+.footer2 {
+	margin: -30px 0 0 0;
+}
+
+.footer2 .bawah a {
+	color: white;
+}
+
+.footer2 .bawah {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer {
+	padding: 40px 0;
+}
+
+.footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.footer-column {
+	flex-basis: 25%; /* Atur lebar kolom sesuai kebutuhan */
+	margin-bottom: 20px;
+}
+
+.footer-column h4 {
+	color: #ffffff;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.footer-column ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.footer-column ul li {
+	margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+	text-decoration: none;
+	color: #b1b1b1;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 1400px) {
+	.absolute-button2 {
+		background-color: aliceblue;
+		margin-left: 370px;
+		margin-top: -15px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.navbar-nav {
+		margin-left: 300px;
+	}
+
+	.absolute-button1 {
+		background-color: aliceblue;
+		margin-left: 490px;
+		margin-top: 15px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.absolute-button2 {
+		background-color: aliceblue;
+		margin-left: 300px;
+		margin-top: 0px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid2 img {
+		margin-top: -15px;
+		width: 100%;
+	}
+
+	.absolute-button3 {
+		background-color: aliceblue;
+		margin-left: 300px;
+		margin-top: -220px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.absolute-button4 {
+		background-color: aliceblue;
+		margin-left: 240px;
+		margin-top: 70px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid4 h2 {
+		font-size: 70px;
+		font-weight: 600;
+		line-height: 80px;
+	}
+	.grid4 h2 span {
+		margin-left: 50px;
+	}
+
+	.absolute-button5 {
+		background-color: aliceblue;
+		margin-left: 480px;
+		margin-top: -30px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid5 {
+		grid-area: grid5;
+		border-radius: 30px;
+		background-color: #000000;
+	}
+	.grid5 img {
+		width: 100%;
+		height: 100%;
+		border-radius: 30px;
+		object-fit: cover;
+	}
+
+	.absolute-button6 {
+		background-color: aliceblue;
+		margin-left: 300px;
+		margin-top: -55px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid6 img {
+		width: 100%;
+		z-index: 0;
+		height: 100%;
+		object-fit: cover;
+		margin-top: -222px;
+		border-radius: 30px;
+	}
+
+	.absolute-button7 {
+		background-color: aliceblue;
+		margin-left: 480px;
+		margin-top: 50px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.absolute-button8 {
+		background-color: aliceblue;
+		margin-left: 490px;
+		margin-top: -30px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.absolute-button10 {
+		background-color: aliceblue;
+		margin-left: 290px;
+		margin-top: -60px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.absolute-button11 {
+		background-color: aliceblue;
+		margin-left: 480px;
+		margin-top: 10px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.absolute-button12 {
+		background-color: aliceblue;
+		margin-left: 290px;
+		margin-top: 90px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid12 {
+		grid-area: grid12;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+	}
+	.grid12 img {
+		width: 300px;
+	}
+	.grid12 .text12 {
+		font-size: 50px;
+		font-weight: 500;
+		margin-top: -255px;
+		line-height: 50px;
+	}
+
+	.grid13 {
+		grid-area: grid13;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+	}
+	.grid13 .grid-flex {
+		display: flex;
+		column-gap: 40px;
+		justify-content: center;
+	}
+	.grid13 .grid-flex .left {
+		margin: 50px 0 0 0;
+	}
+	.grid13 .grid-flex .left img {
+		width: 240px;
+	}
+	.grid13 .grid-flex .left p {
+		font-size: 25px;
+	}
+	.grid13 .grid-flex .right {
+		margin: 80px 0 0 0;
+	}
+	.grid13 .grid-flex .right img {
+		width: 240px;
+	}
+	.grid13 .grid-flex .right p {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.navbar-toggler.a {
+		margin-left: 490px;
+	}
+
+	.navbar-toggler.b {
+		margin-left: 420px;
+	}
+
+	.navbar-nav.a .nav-item .nav-link {
+		margin-left: 0;
+	}
+
+	.navbar-nav .nav-item .nav-link {
+		margin-left: -300px;
+	}
+
+	.content1 .flex-content1 h1 {
+		font-size: 60px;
+	}
+
+	.content1 .flex-content1 .sticky-element {
+		display: flex;
+		margin-top: 20px;
+	}
+
+	.color-option {
+		display: inline-block;
+		margin: 10px;
+	}
+
+	.color-option label {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.result {
+		font-size: 20px;
+		margin-top: 3px;
+	}
+
+	.content1 .hp1 img {
+		width: 100%;
+	}
+
+	.content2 .container.a .grid-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+		gap: 20px;
+		grid-auto-flow: row;
+		grid-template-areas:
+			"grid1 grid1 grid1 grid2 grid2"
+			"grid1 grid1 grid1 grid2 grid2"
+			"grid1 grid1 grid1 grid3 grid3"
+			"grid1 grid1 grid1 grid3 grid3"
+			"grid4 grid4 grid5 grid5 grid5"
+			"grid4 grid4 grid5 grid5 grid5"
+			"grid6 grid6 grid7 grid7 grid7"
+			"grid6 grid6 grid7 grid7 grid7"
+			"grid6 grid6 grid7 grid7 grid7"
+			"grid6 grid6 grid7 grid7 grid7"
+			"grid8 grid8 grid8 grid9 grid9"
+			"grid8 grid8 grid8 grid9 grid9"
+			"grid8 grid8 grid8 grid10 grid10"
+			"grid8 grid8 grid8 grid10 grid10"
+			"grid11 grid11 grid11 grid10 grid10"
+			"grid11 grid11 grid11 grid10 grid10"
+			"grid12 grid12 grid13 grid13 grid13"
+			"grid12 grid12 grid13 grid13 grid13";
+	}
+
+	.absolute-button1 {
+		background-color: aliceblue;
+		margin-left: 350px;
+		margin-top: -50px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.grid1 img {
+		width: 400px;
+	}
+
+	.absolute-button2 {
+		background-color: aliceblue;
+		margin-left: 210px;
+		margin-top: 10px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid2 {
+		grid-area: grid2;
+		background-color: black;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 300px;
+	}
+	.grid2 img {
+		margin-top: 30px;
+		width: 100%;
+	}
+	.grid2 .text2 {
+		margin: -130px 0 0 20px;
+		font-size: 22px;
+		text-align: left !important;
+		font-weight: 500;
+		text-shadow: 4px 4px 50px rgba(0, 0, 0, 1);
+	}
+
+	.absolute-button3 {
+		background-color: aliceblue;
+		margin-left: 210px;
+		margin-top: -255px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid3 {
+		grid-area: grid3;
+		background-color: black;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 300px;
+	}
+	.grid3 .text3 {
+		font-size: 35px;
+		font-weight: 600;
+		text-align: left !important;
+		margin: 20px 0 0 40px;
+		line-height: 47px;
+	}
+	.grid3 img {
+		width: 380px;
+		margin: 20px 0 0 48px;
+	}
+
+	.absolute-button4 {
+		background-color: aliceblue;
+		margin-left: 180px;
+		margin-top: 10px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid4 {
+		grid-area: grid4;
+		background-color: #000000;
+		overflow: hidden;
+		height: 300px;
+		border-radius: 30px;
+		text-align: left !important;
+		padding: 30px 0 0 30px;
+	}
+
+	.grid4 p {
+		font-size: 23px;
+		margin: 0 0 3px 0;
+	}
+
+	.grid4 h2 {
+		font-size: 60px;
+		font-weight: 600;
+		line-height: 80px;
+	}
+	.grid4 h2 span {
+		margin-left: 30px;
+	}
+
+	.absolute-button5 {
+		background-color: aliceblue;
+		margin-left: 360px;
+		margin-top: -10px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid5 {
+		grid-area: grid5;
+		border-radius: 30px;
+		background-color: #000000;
+	}
+	.grid5 img {
+		width: 100%;
+		height: 100%;
+		border-radius: 30px;
+	}
+	.grid5 p {
+		margin: -150px 0 0 0;
+		font-size: 32px;
+		font-weight: 500;
+	}
+	.grid5 p span {
+		font-size: 45px;
+	}
+
+	.absolute-button6 {
+		background-color: aliceblue;
+		margin-left: 210px;
+		margin-top: -55px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid6 {
+		grid-area: grid6;
+		border-radius: 30px;
+		height: 650px;
+		background-color: #000000;
+	}
+	.grid6 .text6 p span {
+		font-size: 25px;
+		text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.6);
+	}
+	.grid6 .text6 p {
+		position: relative;
+		font-size: 40px;
+		font-weight: 500;
+		line-height: 50px;
+		margin-top: 50px;
+		text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.6);
+	}
+	.grid6 img {
+		width: 100%;
+		z-index: 0;
+		height: 100%;
+		margin-top: -222px;
+		border-radius: 30px;
+	}
+
+	.absolute-button7 {
+		background-color: aliceblue;
+		margin-left: 350px;
+		margin-top: -60px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid7 {
+		grid-area: grid7;
+		border-radius: 30px;
+		height: 650px;
+		background-color: #000000;
+	}
+	.grid7 .text7 {
+		font-size: 45px;
+		line-height: 55px;
+		margin: 60px 0;
+	}
+	.grid7 img {
+		width: 350px;
+	}
+
+	.absolute-button8 {
+		background-color: aliceblue;
+		margin-left: 350px;
+		margin-top: -60px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.grid8 img {
+		width: 300px;
+	}
+	.grid8 {
+		grid-area: grid8;
+		background-color: #000000;
+		border-radius: 30px;
+		height: 650px;
+	}
+	.grid8 .text8 p {
+		font-size: 40px;
+		font-weight: 500;
+		line-height: 55px;
+		margin: 50px 0;
+	}
+	.grid8 .text8 p span {
+		font-size: 25px;
+	}
+
+	.grid9 {
+		grid-area: grid9;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 325px;
+	}
+	.grid9 img {
+		width: 100%;
+		object-fit: cover;
+		height: 100%;
+	}
+
+	.absolute-button10 {
+		background-color: aliceblue;
+		margin-left: 200px;
+		margin-top: -60px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid10 {
+		grid-area: grid10;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 650px;
+	}
+
+	.grid10 .text10 {
+		font-weight: 600;
+		font-size: 45px;
+		margin: 30px 0;
+		position: relative;
+	}
+
+	.grid10 img {
+		width: 100%;
+		margin-top: -263px;
+		height: 100%;
+	}
+
+	.absolute-button11 {
+		background-color: aliceblue;
+		margin-left: 350px;
+		margin-top: 10px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid11 {
+		grid-area: grid11;
+		border-radius: 30px;
+		background-color: #000000;
+		height: 325px;
+	}
+	.grid11 p {
+		font-size: 25px;
+		margin: 35px 0;
+	}
+	.grid11 img {
+		width: 300px;
+	}
+
+	.absolute-button12 {
+		background-color: aliceblue;
+		margin-left: 210px;
+		margin-top: 45px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid12 {
+		grid-area: grid12;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 325px;
+	}
+	.grid12 img {
+		width: 300px;
+		object-fit: cover;
+		margin: -20px 0 0 -20px;
+	}
+	.grid12 .text12 {
+		font-size: 50px;
+		font-weight: 500;
+		margin-top: -255px;
+		line-height: 50px;
+	}
+
+	.grid13 {
+		grid-area: grid13;
+		background-color: #000000;
+		border-radius: 30px;
+		height: 325px;
+		overflow: hidden;
+	}
+	.grid13 .grid-flex {
+		display: flex;
+		column-gap: 40px;
+		justify-content: center;
+	}
+	.grid13 .grid-flex .left {
+		margin: 30px 0 0 0;
+	}
+	.grid13 .grid-flex .left img {
+		width: 200px;
+	}
+	.grid13 .grid-flex .left p {
+		font-size: 25px;
+		margin: 0 0 0 10px;
+	}
+	.grid13 .grid-flex .right {
+		margin: 100px 0 0 0;
+	}
+	.grid13 .grid-flex .right img {
+		width: 200px;
+	}
+	.grid13 .grid-flex .right p {
+		font-size: 25px;
+		margin: 0 10px 0 0;
+	}
+
+	.save-iphone .title {
+		font-size: 55px;
+		font-weight: 500;
+		line-height: 70px;
+	}
+
+	.save-iphone .card-flex {
+		display: flex;
+		text-align: center;
+		gap: 20px;
+		margin-top: 80px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.save-iphone .card-flex .card1 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 45%;
+	}
+
+	.save-iphone .card-flex .card1 img {
+		margin-top: 10px;
+	}
+
+	.save-iphone .card-flex .card1 p {
+		font-size: 20px;
+		line-height: 35px;
+		font-weight: 500;
+	}
+
+	.save-iphone .card-flex .card2 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 35px 0 35px;
+		width: 45%;
+	}
+
+	.save-iphone .card-flex .card2 img {
+		margin-top: 50px;
+	}
+
+	.save-iphone .card-flex .card2 p {
+		font-size: 20px;
+		line-height: 35px;
+		font-weight: 500;
+	}
+
+	.save-iphone .card-flex .card3 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 35px 0 35px;
+		width: 45%;
+	}
+
+	.save-iphone .card-flex .card3 a {
+		margin-top: -200px;
+	}
+
+	.save-iphone .card-flex .card3 img {
+		margin-top: 50px;
+	}
+
+	.save-iphone .card-flex .card3 p {
+		font-size: 20px;
+		line-height: 35px;
+		font-weight: 500;
+	}
+
+	.designed .title2 {
+		margin: 90px 0;
+		font-size: 60px;
+		font-weight: 500;
+	}
+
+	.designed .card-flex2 {
+		display: flex;
+		text-align: center;
+		gap: 30px;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.designed .card-flex2 .card1 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 45%;
+	}
+
+	.designed .card-flex2 .card1 p {
+		font-size: 27px;
+		line-height: 35px;
+		font-weight: 500;
+		margin-top: 25px;
+	}
+
+	.designed .card-flex2 .card1 img {
+		margin-top: 50px;
+	}
+
+	.designed .card-flex2 .card2 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 45%;
+	}
+
+	.designed .card-flex2 .card2 p {
+		font-size: 27px;
+		line-height: 35px;
+		font-weight: 500;
+		margin-top: 25px;
+	}
+
+	.designed .card-flex2 .card2 img {
+		margin-top: 50px;
+	}
+
+	.designed .card-flex2 .card3 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 45%;
+	}
+
+	.designed .card-flex2 .card3 p {
+		font-size: 27px;
+		line-height: 35px;
+		font-weight: 500;
+		margin-top: 25px;
+	}
+
+	.designed .card-flex2 .card3 img {
+		margin-top: 50px;
+	}
+
+	.iphone-right {
+		margin: 80px 0;
+	}
+
+	.iphone-right .title-flex {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.iphone-right .title-flex p {
+		font-size: 45px;
+		font-weight: 500;
+	}
+
+	.iphone-right .title-flex a {
+		margin-top: 90px;
+		font-size: 22px;
+	}
+
+	.iphone-right .table-iphone {
+		margin-top: 40px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.wrapper {
+		width: 100%;
+		height: min-content;
+		box-sizing: border-box;
+		border: none;
+		padding: 0 30px;
+		overflow: scroll;
+	}
+	.responsive {
+		margin-right: -30px;
+		margin-left: -30px;
+		overflow-x: auto;
+	}
+	.responsive .table-iphone {
+		width: 100%;
+		border-collapse: collapse;
+		display: block;
+		-webkit-overflow-scrolling: touch;
+		margin-left: 30px;
+	}
+	.responsive .table-iphone td,
+	th {
+		border: 1px solid #cccccc;
+		padding: 8px;
+		font-family: Arial;
+		font-size: 16px;
+	}
+
+	.footer2 {
+		margin: -30px 0 0 0;
+	}
+
+	.footer2 hr {
+		margin: 5px 0;
+	}
+
+	.footer2 .bawah a {
+		color: white;
+	}
+
+	.footer2 .bawah {
+		display: block;
+	}
+
+	.footer2 .bawah p {
+		float: right;
+		margin-top: -45px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-toggler.a {
+		margin-left: 330px;
+	}
+
+	.navbar-toggler.b {
+		margin-left: 240px;
+	}
+
+	.label p {
+		font-size: 18px;
+	}
+
+	.content1 .flex-content1 h1 {
+		font-size: 55px;
+	}
+
+	.content1 .flex-content1 .sticky-element {
+		display: block;
+		margin-top: 5px;
+		text-align: center;
+	}
+
+	.color-option {
+		display: inline-block;
+		margin: 3px;
+	}
+
+	.color-option label {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.content2 .container.a .grid-content {
+		display: grid;
+		grid-auto-columns: 1fr;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+		gap: 20px;
+		grid-template-areas:
+			"grid1"
+			"grid1"
+			"grid1"
+			"grid2"
+			"grid2"
+			"grid3"
+			"grid3"
+			"grid4"
+			"grid4"
+			"grid5"
+			"grid5"
+			"grid6"
+			"grid6"
+			"grid6"
+			"grid7"
+			"grid7"
+			"grid7"
+			"grid8"
+			"grid8"
+			"grid8"
+			"grid9"
+			"grid9"
+			"grid10"
+			"grid10"
+			"grid10"
+			"grid11"
+			"grid11"
+			"grid12"
+			"grid12"
+			"grid13"
+			"grid13";
+	}
+
+	.absolute-button1 {
+		background-color: aliceblue;
+		margin-left: 450px;
+		margin-top: -30px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.grid1 h1 {
+		font-size: 40px;
+	}
+
+	.grid1 {
+		height: 650px;
+	}
+
+	.grid1 img {
+		width: 400px;
+	}
+
+	.absolute-button2 {
+		background-color: aliceblue;
+		margin-left: 455px;
+		margin-top: -10px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid2 {
+		grid-area: grid2;
+		background-color: black;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 435px;
+	}
+	.grid2 img {
+		margin-top: -60px;
+		width: 100%;
+	}
+	.grid2 .text2 {
+		margin: -160px 0 0 40px;
+		font-size: 30px;
+		text-align: left !important;
+		font-weight: 500;
+		text-shadow: 4px 4px 50px rgba(0, 0, 0, 1);
+	}
+
+	.absolute-button3 {
+		background-color: aliceblue;
+		margin-left: 450px;
+		margin-top: -195px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid3 {
+		grid-area: grid3;
+		background-color: black;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 435px;
+	}
+	.grid3 .text3 {
+		font-size: 45px;
+		font-weight: 600;
+		text-align: left !important;
+		margin: 50px 0 0 40px;
+		line-height: 47px;
+	}
+	.grid3 img {
+		width: 380px;
+		margin: 60px 0 0 130px;
+	}
+
+	.absolute-button4 {
+		background-color: aliceblue;
+		margin-left: 400px;
+		margin-top: 90px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid4 {
+		grid-area: grid4;
+		background-color: #000000;
+		overflow: hidden;
+		height: 435px;
+		border-radius: 30px;
+		text-align: left !important;
+		padding: 70px 0 0 50px;
+	}
+
+	.grid4 p {
+		font-size: 23px;
+		margin: 0 0 3px 0;
+	}
+
+	.grid4 h2 {
+		font-size: 80px;
+		font-weight: 600;
+		line-height: 80px;
+	}
+	.grid4 h2 span {
+		margin-left: 60px;
+	}
+
+	.absolute-button5 {
+		background-color: aliceblue;
+		margin-left: 450px;
+		margin-top: -20px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid5 {
+		grid-area: grid5;
+		border-radius: 30px;
+		background-color: #000000;
+	}
+	.grid5 img {
+		width: 100%;
+		height: 100%;
+		border-radius: 30px;
+	}
+	.grid5 p {
+		margin: -150px 0 0 0;
+		font-size: 32px;
+		font-weight: 500;
+	}
+	.grid5 p span {
+		font-size: 45px;
+	}
+
+	.absolute-button6 {
+		background-color: aliceblue;
+		margin-left: 450px;
+		margin-top: -55px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid6 {
+		grid-area: grid6;
+		border-radius: 30px;
+		height: 650px;
+		background-color: #000000;
+	}
+	.grid6 .text6 p span {
+		font-size: 25px;
+		text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.6);
+	}
+	.grid6 .text6 p {
+		position: relative;
+		font-size: 40px;
+		font-weight: 500;
+		line-height: 50px;
+		margin-top: 50px;
+		text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.6);
+	}
+	.grid6 img {
+		width: 100%;
+		z-index: 0;
+		height: 100%;
+		margin-top: -222px;
+		border-radius: 30px;
+	}
+
+	.absolute-button7 {
+		background-color: aliceblue;
+		margin-left: 450px;
+		margin-top: -60px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid7 {
+		grid-area: grid7;
+		border-radius: 30px;
+		height: 650px;
+		background-color: #000000;
+	}
+	.grid7 .text7 {
+		font-size: 45px;
+		line-height: 55px;
+		margin: 60px 0;
+	}
+	.grid7 img {
+		width: 350px;
+	}
+
+	.absolute-button8 {
+		background-color: aliceblue;
+		margin-left: 450px;
+		margin-top: -60px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.grid8 img {
+		width: 300px;
+	}
+	.grid8 {
+		grid-area: grid8;
+		background-color: #000000;
+		border-radius: 30px;
+		height: 650px;
+	}
+	.grid8 .text8 p {
+		font-size: 40px;
+		font-weight: 500;
+		line-height: 55px;
+		margin: 50px 0;
+	}
+	.grid8 .text8 p span {
+		font-size: 25px;
+	}
+
+	.grid9 {
+		grid-area: grid9;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 435px;
+	}
+	.grid9 img {
+		width: 100%;
+		object-fit: cover;
+		height: 100%;
+	}
+
+	.absolute-button10 {
+		background-color: aliceblue;
+		margin-left: 450px;
+		margin-top: -60px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid10 {
+		grid-area: grid10;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 650px;
+	}
+
+	.grid10 .text10 {
+		font-weight: 600;
+		font-size: 45px;
+		margin: 30px 0;
+		position: relative;
+	}
+
+	.grid10 img {
+		width: 100%;
+		margin-top: -195px;
+		height: 100%;
+	}
+
+	.absolute-button11 {
+		background-color: aliceblue;
+		margin-left: 450px;
+		margin-top: 70px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid11 {
+		grid-area: grid11;
+		border-radius: 30px;
+		background-color: #000000;
+		height: 435px;
+	}
+	.grid11 p {
+		font-size: 25px;
+		margin: 35px 0;
+	}
+	.grid11 img {
+		width: 400px;
+	}
+
+	.absolute-button12 {
+		background-color: aliceblue;
+		margin-left: 450px;
+		margin-top: 90px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid12 {
+		grid-area: grid12;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 435px;
+	}
+	.grid12 img {
+		width: 400px;
+		object-fit: cover;
+	}
+	.grid12 .text12 {
+		font-size: 60px;
+		font-weight: 500;
+		margin-top: -330px;
+		line-height: 50px;
+		margin-left: -20px;
+	}
+
+	.grid13 {
+		grid-area: grid13;
+		background-color: #000000;
+		border-radius: 30px;
+		height: 435px;
+		overflow: hidden;
+	}
+	.grid13 .grid-flex {
+		display: flex;
+		column-gap: 40px;
+		justify-content: center;
+	}
+	.grid13 .grid-flex .left {
+		margin: 50px 0 0 0;
+	}
+	.grid13 .grid-flex .left img {
+		width: 200px;
+	}
+	.grid13 .grid-flex .left p {
+		font-size: 25px;
+		margin: 0 0 0 10px;
+	}
+	.grid13 .grid-flex .right {
+		margin: 100px 0 0 0;
+	}
+	.grid13 .grid-flex .right img {
+		width: 200px;
+	}
+	.grid13 .grid-flex .right p {
+		font-size: 25px;
+		margin: 0 10px 0 0;
+	}
+
+	.save-iphone .title {
+		font-size: 50px;
+		font-weight: 500;
+		line-height: 70px;
+	}
+
+	.save-iphone .card-flex {
+		display: flex;
+		text-align: center;
+		gap: 20px;
+		margin-top: 80px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.save-iphone .card-flex .card1 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 400px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 48%;
+	}
+
+	.save-iphone .card-flex .card1 img {
+		margin-top: 10px;
+	}
+
+	.save-iphone .card-flex .card1 p {
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 500;
+	}
+
+	.save-iphone .card-flex .card2 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 400px;
+		overflow: hidden;
+		padding: 40px 35px 0 35px;
+		width: 48%;
+	}
+
+	.save-iphone .card-flex .card2 img {
+		margin-top: 50px;
+	}
+
+	.save-iphone .card-flex .card2 p {
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 500;
+	}
+
+	.save-iphone .card-flex .card3 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 400px;
+		overflow: hidden;
+		padding: 40px 35px 0 35px;
+		width: 48%;
+	}
+
+	.save-iphone .card-flex .card3 a {
+		margin-top: -200px;
+	}
+
+	.save-iphone .card-flex .card3 img {
+		margin-top: 50px;
+		width: 270px;
+	}
+
+	.save-iphone .card-flex .card3 p {
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 500;
+	}
+
+	.designed .title2 {
+		margin: 90px 0;
+		font-size: 50px;
+		font-weight: 500;
+	}
+
+	.designed .card-flex2 {
+		display: flex;
+		text-align: center;
+		gap: 20px;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.designed .card-flex2 .card1 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 400px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 48%;
+	}
+
+	.designed .card-flex2 .card1 p {
+		font-size: 27px;
+		line-height: 35px;
+		font-weight: 500;
+		margin-top: 25px;
+	}
+
+	.designed .card-flex2 .card1 img {
+		margin-top: 0px;
+	}
+
+	.designed .card-flex2 .card2 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 400px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 48%;
+	}
+
+	.designed .card-flex2 .card2 p {
+		font-size: 27px;
+		line-height: 35px;
+		font-weight: 500;
+		margin-top: 25px;
+	}
+
+	.designed .card-flex2 .card2 img {
+		margin-top: 20px;
+	}
+
+	.designed .card-flex2 .card3 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 400px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 48%;
+	}
+
+	.designed .card-flex2 .card3 p {
+		font-size: 27px;
+		line-height: 35px;
+		font-weight: 500;
+		margin-top: 25px;
+	}
+
+	.designed .card-flex2 .card3 img {
+		margin-top: 20px;
+	}
+
+	.iphone-right .title-flex {
+		display: block;
+	}
+
+	.wrapper {
+		width: 100%;
+		margin-top: 10px;
+		height: min-content;
+		box-sizing: border-box;
+		border: none;
+		margin-top: -20px;
+		padding: 0 30px;
+		overflow: scroll;
+	}
+
+	.flex3 .d-flex.a {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		gap: 30px;
+	}
+
+	.flex3 .d-flex.a p {
+		line-height: 18px;
+		margin: 10px 0;
+	}
+
+	.flex3 .d-flex.a .c1 {
+		width: 47%;
+	}
+
+	.flex3 .d-flex.a .c2 {
+		width: 47%;
+	}
+
+	.flex3 .d-flex.a .c3 {
+		width: 47%;
+	}
+
+	.flex3 .d-flex.b {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		gap: 30px;
+	}
+
+	.flex3 .d-flex.b .d1 {
+		width: 45%;
+	}
+
+	.flex3 .d-flex.b .d2 {
+		width: 45%;
+	}
+
+	.flex3 .d-flex.b .d3 {
+		width: 45%;
+	}
+
+	.flex3 .d-flex.b p {
+		line-height: 18px;
+		margin: 10px 0;
+	}
+
+	.footer {
+		padding: 40px 0;
+		margin: 0 0 20px 0;
+	}
+
+	.footer-content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.footer-column {
+		flex-basis: 33%; /* Atur lebar kolom sesuai kebutuhan */
+		margin-bottom: 20px;
+	}
+
+	.footer-column h4 {
+		color: #ffffff;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+
+	.footer-column ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+
+	.footer-column ul li {
+		margin-bottom: 8px;
+	}
+
+	.footer-column ul li a {
+		text-decoration: none;
+		color: #b1b1b1;
+		font-size: 14px;
+	}
+
+	.footer2 {
+		margin: -30px 0 0 0;
+	}
+
+	.footer2 hr {
+		display: none;
+	}
+
+	.footer2 .bawah a {
+		color: white;
+	}
+
+	.footer2 .bawah {
+		display: block;
+		margin-top: 40px;
+	}
+
+	.footer2 .bawah p {
+		float: left;
+		margin-top: -80px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.navbar-toggler.a {
+		margin-left: 260px;
+	}
+
+	.navbar-toggler.b {
+		margin-left: 170px;
+	}
+
+	.label p {
+		font-size: 17px;
+	}
+
+	.content1 .flex-content1 h1 {
+		font-size: 50px;
+	}
+
+	.content1 .flex-content1 .sticky-element {
+		display: block;
+		margin-top: 0px;
+		text-align: center;
+	}
+
+	.color-option {
+		display: inline-block;
+		margin: 3px;
+	}
+
+	.color-option label {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.result {
+		font-size: 20px;
+		margin-top: 3px;
+	}
+
+	.absolute-button1 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -40px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.grid1 h1 {
+		font-size: 40px;
+	}
+
+	.grid1 {
+		height: 650px;
+	}
+
+	.grid1 img {
+		width: 400px;
+	}
+
+	.absolute-button2 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -10px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid2 {
+		grid-area: grid2;
+		background-color: black;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 435px;
+	}
+	.grid2 img {
+		margin-top: -10px;
+		width: 450px;
+	}
+	.grid2 .text2 {
+		margin: -170px 0 0 40px;
+		font-size: 30px;
+		text-align: left !important;
+		font-weight: 500;
+		text-shadow: 4px 4px 50px rgba(0, 0, 0, 1);
+	}
+
+	.absolute-button3 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -195px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid3 {
+		grid-area: grid3;
+		background-color: black;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 435px;
+	}
+	.grid3 .text3 {
+		font-size: 45px;
+		font-weight: 600;
+		text-align: left !important;
+		margin: 50px 0 0 40px;
+		line-height: 47px;
+	}
+	.grid3 img {
+		width: 370px;
+		margin: 60px 0 0 150px;
+	}
+
+	.absolute-button4 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 90px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid4 {
+		grid-area: grid4;
+		background-color: #000000;
+		overflow: hidden;
+		height: 435px;
+		border-radius: 30px;
+		text-align: left !important;
+		padding: 70px 0 0 50px;
+	}
+
+	.grid4 p {
+		font-size: 23px;
+		margin: 0 0 3px 0;
+	}
+
+	.grid4 h2 {
+		font-size: 80px;
+		font-weight: 600;
+		line-height: 80px;
+	}
+	.grid4 h2 span {
+		margin-left: 60px;
+	}
+
+	.absolute-button5 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -20px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid5 {
+		grid-area: grid5;
+		border-radius: 30px;
+		background-color: #000000;
+	}
+	.grid5 img {
+		width: 100%;
+		height: 100%;
+		border-radius: 30px;
+	}
+	.grid5 p {
+		margin: -150px 0 0 0;
+		font-size: 32px;
+		font-weight: 500;
+	}
+	.grid5 p span {
+		font-size: 45px;
+	}
+
+	.absolute-button6 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -55px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid6 {
+		grid-area: grid6;
+		border-radius: 30px;
+		height: 650px;
+		background-color: #000000;
+	}
+	.grid6 .text6 p span {
+		font-size: 25px;
+		text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.6);
+	}
+	.grid6 .text6 p {
+		position: relative;
+		font-size: 40px;
+		font-weight: 500;
+		line-height: 50px;
+		margin-top: 50px;
+		text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.6);
+	}
+	.grid6 img {
+		width: 100%;
+		z-index: 0;
+		height: 100%;
+		margin-top: -222px;
+		border-radius: 30px;
+	}
+
+	.absolute-button7 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -60px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid7 {
+		grid-area: grid7;
+		border-radius: 30px;
+		height: 650px;
+		overflow: hidden;
+		background-color: #000000;
+	}
+	.grid7 .text7 {
+		font-size: 45px;
+		line-height: 55px;
+		margin: 60px 0;
+	}
+	.grid7 img {
+		width: 350px;
+	}
+
+	.absolute-button8 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -130px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.grid8 img {
+		width: 350px;
+	}
+	.grid8 {
+		grid-area: grid8;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 650px;
+	}
+	.grid8 .text8 p {
+		font-size: 40px;
+		font-weight: 500;
+		line-height: 55px;
+		margin: 50px 0;
+	}
+	.grid8 .text8 p span {
+		font-size: 25px;
+	}
+
+	.grid9 {
+		grid-area: grid9;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 435px;
+	}
+	.grid9 img {
+		width: 100%;
+		object-fit: cover;
+		height: 100%;
+	}
+
+	.absolute-button10 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -60px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid10 {
+		grid-area: grid10;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 650px;
+	}
+
+	.grid10 .text10 {
+		font-weight: 600;
+		font-size: 45px;
+		margin: 30px 0;
+		position: relative;
+	}
+
+	.grid10 img {
+		width: 100%;
+		margin-top: -195px;
+		height: 100%;
+	}
+
+	.absolute-button11 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 70px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid11 {
+		grid-area: grid11;
+		border-radius: 30px;
+		background-color: #000000;
+		height: 435px;
+	}
+	.grid11 p {
+		font-size: 25px;
+		margin: 35px 0;
+	}
+	.grid11 img {
+		width: 400px;
+	}
+
+	.absolute-button12 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 110px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid12 {
+		grid-area: grid12;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 435px;
+	}
+	.grid12 img {
+		width: 370px;
+		object-fit: cover;
+	}
+	.grid12 .text12 {
+		font-size: 60px;
+		font-weight: 500;
+		margin-top: -310px;
+		line-height: 50px;
+		margin-left: -20px;
+	}
+
+	.grid13 {
+		grid-area: grid13;
+		background-color: #000000;
+		border-radius: 30px;
+		height: 435px;
+		overflow: hidden;
+	}
+	.grid13 .grid-flex {
+		display: flex;
+		column-gap: 40px;
+		justify-content: center;
+	}
+	.grid13 .grid-flex .left {
+		margin: 50px 0 0 0;
+	}
+	.grid13 .grid-flex .left img {
+		width: 200px;
+	}
+	.grid13 .grid-flex .left p {
+		font-size: 25px;
+		margin: 0 0 0 10px;
+	}
+	.grid13 .grid-flex .right {
+		margin: 100px 0 0 0;
+	}
+	.grid13 .grid-flex .right img {
+		width: 200px;
+	}
+	.grid13 .grid-flex .right p {
+		font-size: 25px;
+		margin: 0 10px 0 0;
+	}
+
+	.save-iphone .title {
+		font-size: 50px;
+		font-weight: 500;
+		line-height: 70px;
+		text-align: center;
+	}
+
+	.save-iphone .card-flex {
+		display: flex;
+		text-align: center;
+		gap: 20px;
+		margin-top: 80px;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.save-iphone .card-flex .card1 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 80%;
+		margin: auto;
+	}
+
+	.save-iphone .card-flex .card1 p {
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 500;
+	}
+
+	.save-iphone .card-flex .card1 img {
+		margin-top: 30px;
+	}
+
+	.save-iphone .card-flex .card2 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 35px 0 35px;
+		width: 80%;
+		margin: auto;
+	}
+
+	.save-iphone .card-flex .card2 p {
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 500;
+	}
+
+	.save-iphone .card-flex .card3 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 35px 0 35px;
+		width: 80%;
+		margin: auto;
+	}
+
+	.save-iphone .card-flex .card3 a {
+		margin-top: -200px;
+	}
+
+	.save-iphone .card-flex .card3 p {
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 500;
+	}
+
+	.save-iphone .card-flex .card3 img {
+		width: 270px;
+	}
+
+	.designed .title2 {
+		margin: 90px 0;
+		font-size: 50px;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	.designed .card-flex2 {
+		display: flex;
+		text-align: center;
+		gap: 20px;
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.designed .card-flex2 .card1 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 80%;
+		margin: auto;
+	}
+
+	.designed .card-flex2 .card1 p {
+		font-size: 27px;
+		line-height: 35px;
+		font-weight: 500;
+		margin-top: 25px;
+	}
+
+	.designed .card-flex2 .card1 img {
+		margin-top: 30px;
+	}
+
+	.designed .card-flex2 .card2 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 80%;
+		margin: auto;
+	}
+
+	.designed .card-flex2 .card2 p {
+		font-size: 27px;
+		line-height: 35px;
+		font-weight: 500;
+		margin-top: 25px;
+	}
+
+	.designed .card-flex2 .card2 img {
+		margin-top: 30px;
+	}
+
+	.designed .card-flex2 .card3 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 80%;
+		margin: auto;
+	}
+
+	.designed .card-flex2 .card3 p {
+		font-size: 27px;
+		line-height: 35px;
+		font-weight: 500;
+		margin-top: 25px;
+	}
+
+	.designed .card-flex2 .card3 img {
+		margin-top: 30px;
+		width: 250px;
+	}
+
+	.iphone-right {
+		margin: 80px 10px;
+	}
+
+	.iphone-right .title-flex p {
+		font-size: 40px;
+		font-weight: 500;
+		margin-left: 10px;
+	}
+
+	.iphone-right .title-flex a {
+		margin-top: 90px;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.wrapper {
+		width: 100%;
+		margin-top: -40px;
+		height: min-content;
+		box-sizing: border-box;
+		padding: 0 30px;
+		overflow: scroll;
+	}
+
+	.flex3 .d-flex.a {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		gap: 20px;
+		row-gap: 50px;
+		flex-direction: column;
+	}
+
+	.flex3 .d-flex.a p {
+		line-height: 18px;
+		margin: 10px 0;
+	}
+
+	.flex3 .d-flex.a .c1 {
+		width: 60%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.a .c2 {
+		width: 60%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.a .c3 {
+		width: 60%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.b {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		gap: 20px;
+		row-gap: 50px;
+		flex-direction: column;
+	}
+
+	.flex3 .d-flex.b .d1 {
+		width: 60%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.b .d2 {
+		width: 60%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.b .d3 {
+		width: 60%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.b p {
+		line-height: 18px;
+		margin: 10px 0;
+	}
+
+	.footer {
+		padding: 40px 0;
+		margin: 0 0 20px 0;
+	}
+
+	.footer-content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	.footer-column {
+		flex-basis: 50%; /* Atur lebar kolom sesuai kebutuhan */
+		margin-bottom: 20px;
+	}
+
+	.footer-column h4 {
+		color: #ffffff;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+
+	.footer-column ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+
+	.footer-column ul li {
+		margin-bottom: 8px;
+	}
+
+	.footer-column ul li a {
+		text-decoration: none;
+		color: #b1b1b1;
+		font-size: 14px;
+	}
+
+	.footer2 {
+		margin: -30px 0 0 0;
+		padding: 0 10px;
+	}
+
+	.footer2 hr {
+		display: none;
+	}
+
+	.footer2 .bawah a {
+		color: white;
+	}
+
+	.footer2 .bawah .d-flex {
+		column-gap: 20px;
+	}
+
+	.footer2 .bawah {
+		display: block;
+		margin-top: 40px;
+	}
+
+	.footer2 .bawah p {
+		float: left;
+		margin-top: -80px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.navbar-toggler.a {
+		margin-left: 160px;
+	}
+
+	.navbar-toggler.b {
+		margin-left: 90px;
+	}
+
+	.label p {
+		font-size: 16px;
+	}
+
+	.content1 .flex-content1 h1 {
+		font-size: 50px;
+	}
+
+	.content1 .flex-content1 .sticky-element {
+		display: block;
+		margin-top: 0px;
+		text-align: center;
+	}
+
+	.color {
+		display: flex;
+		flex-basis: 25%;
+	}
+
+	.color-option {
+		display: inline-block;
+		margin: 3px;
+	}
+
+	.color-option label {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.result {
+		font-size: 18px;
+		margin-top: 40px;
+	}
+
+	.absolute-button1 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 0px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.content2 .container.a .grid-content {
+		grid-template-columns: 100%;
+		grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+	}
+
+	.grid1 h1 {
+		font-size: 40px;
+	}
+
+	.grid1 {
+		height: 560px;
+	}
+
+	.grid1 img {
+		width: 300px;
+	}
+
+	.absolute-button2 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -10px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid2 {
+		grid-area: grid2;
+		background-color: black;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 400px;
+	}
+	.grid2 img {
+		margin-top: 30px;
+		width: 350px;
+	}
+	.grid2 .text2 {
+		margin: -130px 0 0 40px;
+		font-size: 30px;
+		text-align: left !important;
+		font-weight: 500;
+		text-shadow: 4px 4px 50px rgba(0, 0, 0, 1);
+	}
+
+	.absolute-button3 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -255px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid3 {
+		grid-area: grid3;
+		background-color: black;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 370px;
+	}
+	.grid3 .text3 {
+		font-size: 45px;
+		font-weight: 600;
+		text-align: left !important;
+		margin: 50px 0 0 40px;
+		line-height: 47px;
+	}
+	.grid3 img {
+		width: 370px;
+		margin: 60px 0 0 150px;
+	}
+
+	.absolute-button4 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 90px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid4 {
+		grid-area: grid4;
+		background-color: #000000;
+		overflow: hidden;
+		height: 435px;
+		border-radius: 30px;
+		text-align: left !important;
+		padding: 70px 0 0 50px;
+	}
+
+	.grid4 p {
+		font-size: 23px;
+		margin: 0 0 3px 0;
+	}
+
+	.grid4 h2 {
+		font-size: 80px;
+		font-weight: 600;
+		line-height: 80px;
+	}
+	.grid4 h2 span {
+		margin-left: 60px;
+	}
+
+	.absolute-button5 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -20px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid5 {
+		grid-area: grid5;
+		border-radius: 30px;
+		height: 350px;
+		background-color: #000000;
+	}
+	.grid5 img {
+		width: 100%;
+		height: 100%;
+		border-radius: 30px;
+	}
+	.grid5 p {
+		margin: -150px 0 0 0;
+		font-size: 32px;
+		font-weight: 500;
+	}
+	.grid5 p span {
+		font-size: 45px;
+	}
+
+	.absolute-button6 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -55px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid6 {
+		grid-area: grid6;
+		border-radius: 30px;
+		height: 650px;
+		background-color: #000000;
+	}
+	.grid6 .text6 p span {
+		font-size: 25px;
+		text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.6);
+	}
+	.grid6 .text6 p {
+		position: relative;
+		font-size: 40px;
+		font-weight: 500;
+		line-height: 50px;
+		margin-top: 50px;
+		text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.6);
+	}
+	.grid6 img {
+		width: 100%;
+		z-index: 0;
+		height: 100%;
+		margin-top: -222px;
+		border-radius: 30px;
+	}
+
+	.absolute-button7 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -60px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid7 {
+		grid-area: grid7;
+		border-radius: 30px;
+		height: 650px;
+		overflow: hidden;
+		background-color: #000000;
+	}
+	.grid7 .text7 {
+		font-size: 40px;
+		line-height: 55px;
+		margin: 60px 0;
+	}
+	.grid7 img {
+		width: 350px;
+	}
+
+	.absolute-button8 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -130px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.grid8 img {
+		width: 350px;
+	}
+	.grid8 {
+		grid-area: grid8;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 650px;
+	}
+	.grid8 .text8 p {
+		font-size: 40px;
+		font-weight: 500;
+		line-height: 55px;
+		margin: 50px 0;
+	}
+	.grid8 .text8 p span {
+		font-size: 25px;
+	}
+
+	.grid9 {
+		grid-area: grid9;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 435px;
+	}
+	.grid9 img {
+		width: 100%;
+		object-fit: cover;
+		height: 100%;
+	}
+
+	.absolute-button10 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -60px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid10 {
+		grid-area: grid10;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 650px;
+	}
+
+	.grid10 .text10 {
+		font-weight: 600;
+		font-size: 45px;
+		margin: 30px 0;
+		position: relative;
+	}
+
+	.grid10 img {
+		width: 100%;
+		margin-top: -195px;
+		height: 100%;
+	}
+
+	.absolute-button11 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 70px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid11 {
+		grid-area: grid11;
+		border-radius: 30px;
+		background-color: #000000;
+		height: 435px;
+	}
+	.grid11 p {
+		font-size: 25px;
+		margin: 35px 0;
+	}
+	.grid11 img {
+		width: 300px;
+	}
+
+	.absolute-button12 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 110px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid12 {
+		grid-area: grid12;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 435px;
+	}
+	.grid12 img {
+		width: 370px;
+		object-fit: cover;
+	}
+	.grid12 .text12 {
+		font-size: 60px;
+		font-weight: 500;
+		margin-top: -310px;
+		line-height: 50px;
+		margin-left: -20px;
+	}
+
+	.grid13 {
+		grid-area: grid13;
+		background-color: #000000;
+		border-radius: 30px;
+		height: 435px;
+		overflow: hidden;
+	}
+	.grid13 .grid-flex {
+		display: flex;
+		column-gap: 40px;
+		justify-content: center;
+	}
+	.grid13 .grid-flex .left {
+		margin: 50px 0 0 0;
+	}
+	.grid13 .grid-flex .left img {
+		width: 200px;
+	}
+	.grid13 .grid-flex .left p {
+		font-size: 25px;
+		margin: 0 0 0 10px;
+	}
+	.grid13 .grid-flex .right {
+		margin: 100px 0 0 0;
+	}
+	.grid13 .grid-flex .right img {
+		width: 200px;
+	}
+	.grid13 .grid-flex .right p {
+		font-size: 25px;
+		margin: 0 10px 0 0;
+	}
+
+	.save-iphone .card-flex .card1 img {
+		margin-top: 30px;
+		width: 300px;
+	}
+
+	.save-iphone .card-flex .card2 img {
+		margin-top: 50px;
+	}
+
+	.save-iphone .card-flex .card3 img {
+		margin-top: 50px;
+	}
+
+	.designed .card-flex2 .card1 img {
+		margin-left: -10px;
+		width: 300px;
+	}
+
+	.flex3 .d-flex.a {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		gap: 20px;
+		row-gap: 50px;
+		flex-direction: column;
+	}
+
+	.flex3 .d-flex.a p {
+		line-height: 18px;
+		margin: 10px 0;
+	}
+
+	.flex3 .d-flex.a .c1 {
+		width: 70%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.a .c2 {
+		width: 70%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.a .c3 {
+		width: 70%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.b {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		gap: 20px;
+		row-gap: 50px;
+		flex-direction: column;
+	}
+
+	.flex3 .d-flex.b .d1 {
+		width: 70%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.b .d2 {
+		width: 70%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.b .d3 {
+		width: 70%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.b p {
+		line-height: 18px;
+		margin: 10px 0;
+	}
+
+	.footer2 {
+		margin: -30px 0 0 0;
+		padding: 0 10px;
+	}
+
+	.footer2 hr {
+		display: none;
+	}
+
+	.footer2 .bawah a {
+		color: white;
+	}
+
+	.footer2 .bawah .d-flex {
+		column-gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	.footer2 .bawah {
+		display: block;
+		margin-top: 40px;
+	}
+
+	.footer2 .bawah p {
+		float: left;
+		margin-top: -80px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.navbar-toggler.a {
+		margin-left: 90px;
+	}
+
+	.navbar-toggler.b {
+		margin-left: 20px;
+	}
+
+	.label p {
+		font-size: 15px;
+	}
+
+	.content1 .flex-content1 h1 {
+		font-size: 40px;
+		font-weight: bold;
+	}
+
+	.color {
+		display: flex;
+		flex-basis: 25%;
+	}
+
+	.color-option {
+		display: inline-block;
+		margin: 3px;
+	}
+
+	.color-option label {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.result {
+		font-size: 18px;
+		margin-top: 20px;
+	}
+
+	.content2 .container.a .grid-content {
+		grid-template-columns: 100%;
+		grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+	}
+
+	.absolute-button1 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 0px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.grid1 h1 {
+		font-size: 35px;
+	}
+
+	.grid1 {
+		height: 510px;
+	}
+
+	.grid1 img {
+		width: 260px;
+	}
+
+	.absolute-button2 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 0px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid2 {
+		grid-area: grid2;
+		background-color: black;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 320px;
+	}
+	.grid2 img {
+		margin-top: -20px;
+		width: 350px;
+	}
+	.grid2 .text2 {
+		margin: -140px 0 0 20px;
+		font-size: 25px;
+		text-align: left !important;
+		font-weight: 500;
+		text-shadow: 4px 4px 50px rgba(0, 0, 0, 1);
+	}
+
+	.absolute-button3 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -205px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid3 {
+		grid-area: grid3;
+		background-color: black;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 370px;
+	}
+	.grid3 .text3 {
+		font-size: 35px;
+		font-weight: 600;
+		text-align: left !important;
+		margin: 30px 0 0 40px;
+		line-height: 47px;
+	}
+	.grid3 img {
+		width: 370px;
+		margin: 40px 0 0 50px;
+	}
+
+	.absolute-button4 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 40px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid4 {
+		grid-area: grid4;
+		background-color: #000000;
+		overflow: hidden;
+		height: 350px;
+		border-radius: 30px;
+		text-align: left !important;
+		padding: 40px 0 0 20px;
+	}
+
+	.grid4 p {
+		font-size: 20px;
+		margin: 0 0 3px 0;
+	}
+
+	.grid4 h2 {
+		font-size: 55px;
+		font-weight: 600;
+		line-height: 80px;
+	}
+	.grid4 h2 span {
+		margin-left: 30px;
+	}
+
+	.absolute-button5 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 0px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid5 {
+		grid-area: grid5;
+		border-radius: 30px;
+		height: 350px;
+		background-color: #000000;
+	}
+	.grid5 img {
+		width: 100%;
+		height: 100%;
+		border-radius: 30px;
+	}
+	.grid5 p {
+		margin: -150px 0 0 0;
+		font-size: 28px;
+		font-weight: 500;
+	}
+	.grid5 p span {
+		font-size: 40px;
+	}
+
+	.absolute-button6 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -55px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid6 {
+		grid-area: grid6;
+		border-radius: 30px;
+		height: 450px;
+		background-color: #000000;
+	}
+	.grid6 .text6 p span {
+		font-size: 25px;
+		text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.6);
+	}
+	.grid6 .text6 p {
+		position: relative;
+		font-size: 40px;
+		font-weight: 500;
+		line-height: 50px;
+		margin-top: 50px;
+		text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.6);
+	}
+	.grid6 img {
+		width: 100%;
+		z-index: 0;
+		height: 100%;
+		margin-top: -222px;
+		border-radius: 30px;
+	}
+
+	.absolute-button7 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -150px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid7 {
+		grid-area: grid7;
+		border-radius: 30px;
+		height: 550px;
+		overflow: hidden;
+		background-color: #000000;
+	}
+	.grid7 .text7 {
+		font-size: 32px;
+		line-height: 40px;
+		margin: 60px 0;
+	}
+	.grid7 img {
+		width: 350px;
+	}
+
+	.absolute-button8 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -110px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.grid8 img {
+		width: 300px;
+	}
+	.grid8 {
+		grid-area: grid8;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 550px;
+	}
+	.grid8 .text8 p {
+		font-size: 30px;
+		font-weight: 500;
+		line-height: 40px;
+		margin: 50px 0;
+	}
+	.grid8 .text8 p span {
+		font-size: 20px;
+	}
+
+	.grid9 {
+		grid-area: grid9;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 270px;
+	}
+	.grid9 img {
+		width: 100%;
+		object-fit: cover;
+		height: 100%;
+	}
+
+	.absolute-button10 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -60px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid10 {
+		grid-area: grid10;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 500px;
+	}
+
+	.grid10 .text10 {
+		font-weight: 600;
+		font-size: 45px;
+		margin: 30px 0;
+		position: relative;
+	}
+
+	.grid10 img {
+		width: 100%;
+		margin-top: -262px;
+		height: 100%;
+	}
+
+	.absolute-button11 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 20px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid11 {
+		grid-area: grid11;
+		border-radius: 30px;
+		background-color: #000000;
+		height: 350px;
+	}
+	.grid11 p {
+		font-size: 25px;
+		margin: 35px 0;
+	}
+	.grid11 img {
+		width: 250px;
+	}
+
+	.absolute-button12 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 30px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid12 {
+		grid-area: grid12;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 260px;
+	}
+	.grid12 img {
+		width: 300px;
+		object-fit: cover;
+	}
+	.grid12 .text12 {
+		font-size: 50px;
+		font-weight: 500;
+		margin-top: -310px;
+		line-height: 50px;
+		margin-left: -20px;
+	}
+
+	.grid13 {
+		grid-area: grid13;
+		background-color: #000000;
+		border-radius: 30px;
+		height: 500px;
+		overflow: hidden;
+	}
+	.grid13 .grid-flex {
+		display: flex;
+		flex-direction: column;
+		column-gap: 40px;
+		justify-content: center;
+	}
+	.grid13 .grid-flex .left {
+		margin: 50px 0 0 0;
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.grid13 .grid-flex .left img {
+		width: 150px;
+		margin-left: -70px;
+	}
+
+	.grid13 .grid-flex .left h1 {
+		display: none;
+	}
+	.grid13 .grid-flex .left p {
+		font-size: 25px;
+		margin: 0 0 0 10px;
+	}
+	.grid13 .grid-flex .right {
+		margin: 100px 0 0 0;
+		display: flex;
+		flex-direction: row;
+	}
+	.grid13 .grid-flex .right img {
+		width: 150px;
+		margin-right: -70px;
+	}
+	.grid13 .grid-flex .right h1 {
+		display: none;
+	}
+	.grid13 .grid-flex .right p {
+		font-size: 25px;
+		margin: 0 10px 0 10px;
+	}
+
+	.save-iphone .title {
+		padding: 0 10px;
+		font-size: 45px;
+		margin-bottom: -40px;
+	}
+
+	.save-iphone .card-flex {
+		display: flex;
+		text-align: center;
+		gap: 20px;
+		margin-top: 80px;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.save-iphone .card-flex .card1 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 90%;
+		margin: auto;
+	}
+
+	.save-iphone .card-flex .card1 img {
+		margin-top: 30px;
+		margin-left: 0px;
+		width: 270px;
+	}
+
+	.save-iphone .card-flex .card1 p {
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 500;
+	}
+
+	.save-iphone .card-flex .card2 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 35px 0 35px;
+		width: 90%;
+		margin: auto;
+	}
+
+	.save-iphone .card-flex .card2 img {
+		margin-top: 50px;
+		margin-left: -20px;
+	}
+
+	.save-iphone .card-flex .card2 p {
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 500;
+	}
+
+	.save-iphone .card-flex .card3 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 35px 0 35px;
+		width: 90%;
+		margin: auto;
+	}
+
+	.save-iphone .card-flex .card3 a {
+		margin-top: -200px;
+	}
+
+	.save-iphone .card-flex .card3 img {
+		margin-top: 50px;
+		margin-left: -30px;
+	}
+
+	.save-iphone .card-flex .card3 p {
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 500;
+	}
+
+	.designed .title2 {
+		margin: 90px 0;
+		font-size: 45px;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	.designed .card-flex2 {
+		display: flex;
+		text-align: center;
+		gap: 20px;
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	.designed .card-flex2 .card1 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 90%;
+		margin: auto;
+	}
+
+	.designed .card-flex2 .card1 p {
+		font-size: 27px;
+		line-height: 35px;
+		font-weight: 500;
+		margin-top: 25px;
+	}
+
+	.designed .card-flex2 .card1 img {
+		margin-top: 30px;
+		width: 270px;
+		margin-left: 0;
+	}
+
+	.designed .card-flex2 .card2 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 90%;
+		margin: auto;
+	}
+
+	.designed .card-flex2 .card2 p {
+		font-size: 27px;
+		line-height: 35px;
+		font-weight: 500;
+		margin-top: 25px;
+	}
+
+	.designed .card-flex2 .card2 img {
+		margin-top: 30px;
+		margin-left: -20px;
+	}
+
+	.designed .card-flex2 .card3 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 90%;
+		margin: auto;
+	}
+
+	.designed .card-flex2 .card3 p {
+		font-size: 27px;
+		line-height: 35px;
+		font-weight: 500;
+		margin-top: 25px;
+	}
+
+	.designed .card-flex2 .card3 img {
+		margin-top: 30px;
+		width: 250px;
+		margin-left: -20px;
+	}
+
+	.iphone-right {
+		margin: 80px 10px;
+	}
+
+	.iphone-right .title-flex p {
+		font-size: 34px;
+		font-weight: 500;
+		margin-left: 10px;
+	}
+
+	.iphone-right .title-flex a {
+		margin-top: 90px;
+		font-size: 18px;
+		margin-left: 10px;
+	}
+
+	.iphone-right .table-iphone {
+		margin-top: 40px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.flex3 .d-flex.a {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		gap: 20px;
+		row-gap: 50px;
+		flex-direction: column;
+	}
+
+	.flex3 .d-flex.a p {
+		line-height: 18px;
+		margin: 10px 0;
+	}
+
+	.flex3 .d-flex.a .c1 {
+		width: 80%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.a .c2 {
+		width: 80%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.a .c3 {
+		width: 80%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.b {
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		gap: 20px;
+		row-gap: 50px;
+		flex-direction: column;
+	}
+
+	.flex3 .d-flex.b .d1 {
+		width: 80%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.b .d2 {
+		width: 80%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.b .d3 {
+		width: 80%;
+		margin: auto;
+	}
+
+	.flex3 .d-flex.b p {
+		line-height: 18px;
+		margin: 10px 0;
+	}
+
+	.footer {
+		padding: 40px 0;
+		margin: 0 0 20px 0;
+	}
+
+	.footer-content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+
+	.footer-column {
+		flex-basis: 50%; /* Atur lebar kolom sesuai kebutuhan */
+		margin-bottom: 20px;
+		width: 85%;
+	}
+
+	.footer-column h4 {
+		color: #ffffff;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+
+	.footer-column ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+
+	.footer-column ul li {
+		margin-bottom: 8px;
+	}
+
+	.footer-column ul li a {
+		text-decoration: none;
+		color: #b1b1b1;
+		font-size: 14px;
+	}
+
+	.footer2 {
+		margin: -30px 0 0 0;
+		padding: 0 10px;
+	}
+
+	.footer2 hr {
+		display: none;
+	}
+
+	.footer2 .bawah a {
+		color: white;
+	}
+
+	.footer2 .bawah .d-flex {
+		column-gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	.footer2 .bawah {
+		display: block;
+		margin-top: 40px;
+	}
+
+	.footer2 .bawah p {
+		float: left;
+		margin-top: -100px;
+	}
+}
+
+@media screen and (max-width: 314px) {
+	.footer2 {
+		margin: -20px 0 0 0;
+		padding: 0 10px;
+	}
+
+	.footer2 hr {
+		display: none;
+	}
+
+	.footer2 .bawah a {
+		color: white;
+	}
+
+	.footer2 .bawah .d-flex {
+		column-gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	.footer2 .bawah {
+		display: block;
+		margin-top: 40px;
+	}
+
+	.footer2 .bawah p {
+		float: left;
+		margin-top: -120px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.navbar-toggler.b {
+		margin-left: 0;
+	}
+
+	.content1 .flex-content1 h1 {
+		font-size: 35px;
+		font-weight: bold;
+	}
+
+	.color {
+		display: flex;
+		flex-basis: 25%;
+	}
+
+	.color-option label {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	.result {
+		font-size: 18px;
+		margin-top: 15px;
+	}
+
+	.absolute-button1 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 0px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.grid1 {
+		height: 500px;
+	}
+
+	.grid1 img {
+		width: 250px;
+	}
+
+	.absolute-button2 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 20px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid2 {
+		grid-area: grid2;
+		background-color: black;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 320px;
+	}
+	.grid2 img {
+		margin-top: -20px;
+		width: 350px;
+	}
+	.grid2 .text2 {
+		margin: -150px 0 0 20px;
+		font-size: 24px;
+		text-align: left !important;
+		font-weight: 500;
+		text-shadow: 4px 4px 50px rgba(0, 0, 0, 1);
+	}
+
+	.absolute-button3 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -205px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid3 {
+		grid-area: grid3;
+		background-color: black;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 370px;
+	}
+	.grid3 .text3 {
+		font-size: 35px;
+		font-weight: 600;
+		text-align: left !important;
+		margin: 30px 0 0 40px;
+		line-height: 47px;
+	}
+	.grid3 img {
+		width: 370px;
+		margin: 40px 0 0 50px;
+	}
+
+	.absolute-button4 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 10px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid4 {
+		grid-area: grid4;
+		background-color: #000000;
+		overflow: hidden;
+		height: 320px;
+		border-radius: 30px;
+		text-align: left !important;
+		padding: 40px 0 0 20px;
+	}
+
+	.grid4 p {
+		font-size: 20px;
+		margin: 0 0 3px 0;
+	}
+
+	.grid4 h2 {
+		font-size: 55px;
+		font-weight: 600;
+		line-height: 80px;
+	}
+	.grid4 h2 span {
+		margin-left: 30px;
+	}
+
+	.absolute-button5 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 0px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid5 {
+		grid-area: grid5;
+		border-radius: 30px;
+		height: 350px;
+		background-color: #000000;
+	}
+	.grid5 img {
+		width: 100%;
+		height: 100%;
+		border-radius: 30px;
+	}
+	.grid5 p {
+		margin: -180px 0 0 0;
+		font-size: 28px;
+		font-weight: 500;
+	}
+	.grid5 p span {
+		font-size: 40px;
+		line-height: 30px;
+	}
+
+	.absolute-button6 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -55px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid6 {
+		grid-area: grid6;
+		border-radius: 30px;
+		height: 410px;
+		background-color: #000000;
+	}
+	.grid6 .text6 p span {
+		font-size: 25px;
+		text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.6);
+	}
+	.grid6 .text6 p {
+		position: relative;
+		font-size: 40px;
+		font-weight: 500;
+		line-height: 50px;
+		margin-top: 50px;
+		text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.6);
+	}
+	.grid6 img {
+		width: 100%;
+		z-index: 0;
+		height: 100%;
+		margin-top: -222px;
+		border-radius: 30px;
+	}
+
+	.absolute-button7 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -220px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid7 {
+		grid-area: grid7;
+		border-radius: 30px;
+		height: 400px;
+		overflow: hidden;
+		background-color: #000000;
+	}
+	.grid7 .text7 {
+		font-size: 28px;
+		line-height: 40px;
+		margin: 40px 0;
+	}
+	.grid7 img {
+		width: 350px;
+	}
+
+	.absolute-button8 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -220px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.grid8 img {
+		width: 300px;
+	}
+	.grid8 {
+		grid-area: grid8;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 400px;
+	}
+	.grid8 .text8 p {
+		font-size: 30px;
+		font-weight: 500;
+		line-height: 40px;
+		margin: 30px 0;
+	}
+	.grid8 .text8 p span {
+		font-size: 20px;
+	}
+
+	.grid9 {
+		grid-area: grid9;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 270px;
+	}
+	.grid9 img {
+		width: 100%;
+		object-fit: cover;
+		height: 100%;
+	}
+
+	.absolute-button10 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: -60px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid10 {
+		grid-area: grid10;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 400px;
+	}
+
+	.grid10 .text10 {
+		font-weight: 600;
+		font-size: 40px;
+		margin: 30px 0;
+		position: relative;
+	}
+
+	.grid10 img {
+		width: 100%;
+		margin-top: -240px;
+		height: 100%;
+	}
+
+	.absolute-button11 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 20px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid11 {
+		grid-area: grid11;
+		border-radius: 30px;
+		background-color: #000000;
+		height: 350px;
+	}
+	.grid11 p {
+		font-size: 25px;
+		margin: 35px 0;
+	}
+	.grid11 img {
+		width: 250px;
+	}
+
+	.absolute-button12 {
+		background-color: aliceblue;
+		right: 0;
+		margin-right: 40px;
+		margin-top: 30px;
+		padding: 4px 5px;
+		position: absolute;
+		border-radius: 50%;
+	}
+	.grid12 {
+		grid-area: grid12;
+		background-color: #000000;
+		border-radius: 30px;
+		overflow: hidden;
+		height: 260px;
+	}
+	.grid12 img {
+		width: 250px;
+		object-fit: cover;
+	}
+	.grid12 .text12 {
+		font-size: 45px;
+		font-weight: 500;
+		margin-top: -230px;
+		line-height: 50px;
+		margin-left: -20px;
+	}
+
+	.grid13 {
+		grid-area: grid13;
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+	}
+	.grid13 .grid-flex {
+		display: flex;
+		flex-direction: column;
+		column-gap: 40px;
+		justify-content: center;
+	}
+	.grid13 .grid-flex .left {
+		margin: 50px 0 0 0;
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.grid13 .grid-flex .left img {
+		width: 150px;
+		margin-left: -70px;
+	}
+
+	.grid13 .grid-flex .left h1 {
+		display: none;
+	}
+	.grid13 .grid-flex .left p {
+		font-size: 25px;
+		margin: 0 0 0 10px;
+	}
+	.grid13 .grid-flex .right {
+		margin: 100px 0 0 0;
+		display: flex;
+		flex-direction: row;
+	}
+	.grid13 .grid-flex .right img {
+		width: 150px;
+		margin-right: -70px;
+	}
+	.grid13 .grid-flex .right h1 {
+		display: none;
+	}
+	.grid13 .grid-flex .right p {
+		font-size: 25px;
+		margin: 0 10px 0 10px;
+	}
+
+	.save-iphone .card-flex {
+		display: flex;
+		text-align: center;
+		gap: 20px;
+		margin-top: 80px;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.save-iphone .card-flex .card1 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 30px 0 30px;
+		width: 90%;
+		margin: auto;
+	}
+
+	.save-iphone .card-flex .card1 img {
+		margin-top: 30px;
+		margin-left: -20px;
+		width: 270px;
+	}
+
+	.save-iphone .card-flex .card1 p {
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 500;
+	}
+
+	.save-iphone .card-flex .card2 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 35px 0 35px;
+		width: 90%;
+		margin: auto;
+	}
+
+	.save-iphone .card-flex .card2 img {
+		margin-top: 50px;
+		margin-left: -35px;
+	}
+
+	.save-iphone .card-flex .card2 p {
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 500;
+	}
+
+	.save-iphone .card-flex .card3 {
+		background-color: #000000;
+		border-radius: 30px;
+		height: 450px;
+		overflow: hidden;
+		padding: 40px 35px 0 35px;
+		width: 90%;
+		margin: auto;
+	}
+
+	.save-iphone .card-flex .card3 a {
+		margin-top: -200px;
+	}
+
+	.save-iphone .card-flex .card3 img {
+		margin-top: 50px;
+	}
+
+	.save-iphone .card-flex .card3 p {
+		font-size: 20px;
+		line-height: 25px;
+		font-weight: 500;
+	}
+}

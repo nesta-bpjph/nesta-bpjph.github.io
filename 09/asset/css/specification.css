@@ -1,0 +1,1194 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+:root {
+	--text-muted: #a1a1a6;
+	--white-color: #f5f5f7;
+	--black-color: #0000;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* Body */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+}
+
+html,
+body {
+	background-color: black;
+}
+
+/* App */
+
+#specification {
+	background-color: black;
+}
+
+#specification h1 {
+	color: var(--white-color);
+}
+
+#specification p {
+	color: var(--text-muted);
+}
+
+#specification .title {
+	font-size: 24px;
+	font-weight: 800;
+	letter-spacing: 0.1rem;
+}
+
+#specification .container {
+	width: min(100% - 30px, 991px);
+}
+
+/* Product Detail */
+
+.product-detail h1.text-content {
+	font-size: 32px;
+	line-height: 1.125;
+	font-weight: 600;
+	letter-spacing: 0.004em;
+}
+
+/* Product Review */
+
+.product-review {
+	border-top: 2px solid #424245;
+}
+
+.product-review hr {
+	display: none;
+}
+
+.product-review .product-content img.phone-1 {
+	margin-top: 135px;
+	width: 80%;
+}
+
+.product-review .product-content img.phone-2 {
+	margin-top: 100px;
+	width: 90%;
+}
+
+.product-review .product-content .product-specification h1 {
+	display: none;
+}
+
+.product-review .product-content .product-specification p {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+/* Capacity */
+
+.capacity {
+	border-top: 2px solid #424245;
+}
+
+.capacity hr {
+	display: none;
+}
+
+.capacity .capacity-product-1 h1 {
+	display: none;
+}
+
+.capacity .capacity-product-2 h1 {
+	display: none;
+}
+
+.capacity p {
+	text-align: center;
+	font-size: 18px;
+	color: var(--text-muted);
+	font-weight: 700;
+}
+
+/* Size & Weight */
+
+.size-product {
+	border-top: 2px solid #424245;
+}
+
+.size-product hr {
+	display: none;
+}
+
+.size-product .col-md-10 {
+	padding: 0 0 0 70px;
+}
+
+.size-product .col-md-10 .size-product-1 {
+	width: 55%;
+}
+
+.size-product .col-md-10 .size-product-2 {
+	width: 45%;
+}
+
+.size-product .col-md-10 .size-detail h1 {
+	display: none;
+}
+
+.size-product .size-detail p {
+	margin-top: 17px;
+}
+
+.size-product .size-product-1 img.iphone-size-1 {
+	margin-top: 16px;
+	width: 100%;
+}
+
+.size-product .size-product-2 img.iphone-size-2 {
+	width: 100%;
+}
+
+.size-product figure {
+	display: block;
+	width: 200px;
+	height: 150px;
+	position: relative;
+}
+
+.size-product figcaption.figure-captions {
+	position: absolute;
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--white-color);
+	z-index: 2;
+	width: 70px;
+	margin: 0;
+}
+
+.size-product figcaption.figure-captions.product-width {
+	bottom: -20px;
+}
+
+.size-product figcaption.figure-captions.product-height {
+	bottom: 120px;
+}
+
+.size-product figcaption.figure-captions.product-depth {
+	right: -20px;
+	bottom: 10px;
+}
+
+/* Display */
+
+.display {
+	border-top: 2px solid #424245;
+}
+
+.display hr {
+	display: none;
+}
+
+.display .display-product-1 {
+	margin: 0px 60px 0 60px;
+}
+
+.display .display-product-2 {
+	margin: 0px 0 0 60px;
+}
+
+.display .display-product-1 img {
+	margin-top: 24px;
+	width: 150px;
+}
+
+.display .display-product-2 img {
+	width: 160px;
+}
+
+.display .col-md-10 h1 {
+	display: none;
+}
+
+.display .display-specification ul {
+	padding-left: 0rem !important;
+	list-style: none;
+}
+
+.display .display-specification ul li {
+	margin-top: 10px;
+	font-size: 18px;
+	color: var(--white-color);
+	font-weight: 500;
+}
+
+.display .display-description p {
+	font-size: 14px;
+}
+
+/* Feature */
+
+.feature {
+	border-top: 2px solid #424245;
+}
+
+.feature hr {
+	display: none;
+}
+
+.feature .feature-description {
+	margin-left: 60px;
+}
+
+.feature .feature-description h1 {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.feature .feature-description ul {
+	padding-left: 0rem !important;
+	list-style: none;
+}
+
+.feature .feature-description ul li {
+	margin-top: 10px;
+	font-size: 18px;
+	color: var(--text-muted);
+	font-weight: 500;
+}
+
+/* Chip */
+
+.processor {
+	border-top: 2px solid #424245;
+}
+
+.processor hr {
+	display: none;
+}
+
+.processor .col-md-10 {
+	padding: 0 0 0 70px;
+}
+
+.processor .processor-description ul {
+	list-style: none;
+}
+
+.processor .processor-description ul li {
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: var(--text-muted);
+	font-weight: 500;
+}
+
+/* Camera */
+
+.camera {
+	border-top: 2px solid #424245;
+}
+
+.camera hr {
+	display: none;
+}
+
+.camera .col-md-10 {
+	padding: 0 0 0 70px;
+}
+
+.camera .camera-description ul {
+	list-style: none;
+	padding-left: 0rem !important;
+}
+
+.camera .camera-description ul li {
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: var(--text-muted);
+	font-weight: 500;
+}
+
+/* Video Recording */
+
+.video-recording {
+	border-top: 2px solid #424245;
+}
+
+.video-recording hr {
+	display: none;
+}
+
+.video-recording .col-md-10 {
+	padding: 0 0 0 70px;
+}
+
+.video-recording .video-description ul {
+	list-style: none;
+	padding-left: 0rem !important;
+}
+
+.video-recording .video-description ul li {
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: var(--text-muted);
+	font-weight: 500;
+}
+
+/* Power and Battery */
+
+.power-batteries {
+	border-top: 2px solid #424245;
+}
+
+.power-batteries hr {
+	display: none;
+}
+
+.power-batteries .col-md-10 {
+	padding: 0 0 0 70px;
+}
+
+.power-batteries .power-battery ul {
+	list-style: none;
+	padding-left: 0rem !important;
+}
+
+.power-batteries .power-battery ul li {
+	margin-bottom: 10px;
+	font-size: 18px;
+	color: var(--text-muted);
+	font-weight: 500;
+}
+
+.power-batteries .power-battery .battery-specification h1 {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.power-batteries .power-battery-2 ul {
+	margin: 0 0 0 220px;
+}
+
+.power-batteries .battery-description {
+	margin: 20px 0 0 0;
+}
+
+.power-batteries .battery-description h1 {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.power-batteries .battery-description ul {
+	list-style: none;
+	padding-left: 0rem !important;
+}
+
+.power-batteries .battery-description ul li {
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: var(--text-muted);
+	font-weight: 500;
+}
+
+/* Operating System */
+
+.os {
+	border-top: 2px solid #424245;
+}
+
+.os hr {
+	display: none;
+}
+
+.os .col-md-10 {
+	padding: 0 0 0 70px;
+}
+
+.os .os-description p {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.os .os-description a {
+	font-size: 18px;
+}
+
+/* Waterproof */
+
+.waterproof {
+	border-top: 2px solid #424245;
+}
+
+.waterproof hr {
+	display: none;
+}
+
+.waterproof .col-md-10 {
+	padding: 0 0 0 70px;
+}
+
+.waterproof p {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+/* Carriers */
+
+.carriers {
+	border-top: 2px solid #424245;
+}
+
+.carriers hr {
+	display: none;
+}
+
+.carriers .col-md-10 {
+	padding: 0 0 0 70px;
+}
+
+.carriers .col-md-10 .row .col {
+	padding: 10px 20px 10px 20px;
+}
+
+/* Built In App*/
+
+.built-in-app {
+	border-top: 2px solid #424245;
+}
+
+.built-in-app hr {
+	display: none;
+}
+
+.built-in-app .col-md-10 {
+	padding: 0 0 0 70px;
+}
+
+.built-in-app figure {
+	max-width: 90px;
+}
+
+.built-in-app figure img {
+	width: 50px;
+	margin: 0 20px;
+}
+
+.built-in-app figure figcaption {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 500;
+	color: var(--white-color);
+}
+
+/* In the Box */
+
+.in-the-box {
+	border-top: 2px solid #424245;
+}
+
+.in-the-box hr {
+	display: none;
+}
+
+.in-the-box .col-md-10 {
+	padding: 0 0 0 70px;
+}
+
+.in-the-box .col-md-10 ul {
+	list-style: none;
+	padding-left: 0 !important;
+}
+
+.in-the-box .col-md-10 ul li {
+	font-size: 18px;
+	color: var(--text-muted);
+}
+
+.in-the-box .images img {
+	width: 200px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 991px) {
+	/* Product Review */
+
+	.product-review {
+		border-top: 2px solid #424245;
+	}
+
+	.product-review .product-content img.phone-1 {
+		margin-top: 125px;
+	}
+
+	.product-review .product-content img.phone-2 {
+		margin-top: 100px;
+	}
+
+	/* Display */
+
+	.display .display-product-1 {
+		margin: 0 50px 0 50px;
+	}
+
+	.display .display-product-2 {
+		margin: 0 0 0 50px;
+	}
+
+	/* Feature */
+
+	.feature .feature-description {
+		margin-left: 50px;
+	}
+
+	/* Processor */
+
+	.processor .col-md-10 {
+		padding: 0 0 0 60px;
+	}
+
+	/* Camera */
+
+	.camera .col-md-10 {
+		padding: 0 0 0 60px;
+	}
+
+	/* Video */
+
+	.video-recording .col-md-10 {
+		padding: 0 0 0 60px;
+	}
+
+	/* Power Batteries */
+
+	.power-batteries .col-md-10 {
+		padding: 0 0 0 60px;
+	}
+
+	.power-batteries .power-battery-2 ul {
+		margin: 0 0 0 100px;
+	}
+
+	/* OS */
+
+	.os .col-md-10 {
+		padding: 0 0 0 60px;
+	}
+
+	/* Waterproof */
+
+	.waterproof .col-md-10 {
+		padding: 0 0 0 60px;
+	}
+
+	/* Carriers */
+
+	.carriers .col-md-10 {
+		padding: 0 0 0 60px;
+	}
+
+	/* Bulit In App */
+
+	.built-in-app .col-md-10 {
+		padding: 0 0 0 60px;
+	}
+
+	/* In The Box */
+
+	.in-the-box .col-md-10 {
+		padding: 0 0 0 60px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	/* Product Review */
+
+	.product-review {
+		border: none;
+	}
+
+	.product-review hr {
+		display: block;
+		border-top: 2px solid white;
+	}
+
+	.product-review .product-content img.phone-1 {
+		width: 330px;
+		margin-top: 50px;
+	}
+
+	.product-review .product-content img.phone-2 {
+		width: 330px;
+		margin-top: 50px;
+	}
+
+	.product-review .product-content .product-specification h1 {
+		display: block;
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	.product-review .product-content .product-specification p {
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	/* Capacity */
+
+	.capacity {
+		border: none;
+	}
+
+	.capacity hr {
+		display: block;
+		border-top: 2px solid white;
+	}
+
+	.capacity .capacity-product-1 h1 {
+		display: block;
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	.capacity .capacity-product-2 h1 {
+		display: block;
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	.capacity p {
+		text-align: start;
+		font-size: 16px;
+		color: var(--text-muted);
+		font-weight: 700;
+	}
+
+	/* Size & Weight */
+
+	.size-product {
+		border: none;
+	}
+
+	.size-product hr {
+		display: block;
+		border-top: 2px solid white;
+	}
+
+	.size-product .col-md-10 {
+		padding-top: 20px;
+		padding-left: 10px;
+		align-items: center;
+	}
+
+	.size-product .col-md-10 .size-product-1 {
+		width: 60%;
+	}
+
+	.size-product .col-md-10 .size-product-2 {
+		width: 50%;
+	}
+
+	/* Display */
+
+	.display {
+		border: none;
+	}
+
+	.display hr {
+		display: block;
+		border-top: 2px solid white;
+	}
+
+	.display .display-product-1 {
+		margin: 0 0 0 0;
+	}
+
+	.display .display-product-2 {
+		margin: 0 0 0 50px;
+	}
+
+	.display .display-product-1 img {
+		margin-top: 24px;
+		width: 150px;
+	}
+
+	.display .display-product-2 img {
+		width: 160px;
+	}
+
+	.display .display-specification ul {
+		padding-left: 0rem !important;
+		list-style: none;
+	}
+
+	.display .display-specification ul li {
+		font-size: 16px;
+		color: var(--white-color);
+	}
+
+	.display .display-description p {
+		font-size: 14px;
+	}
+
+	/* Feature */
+
+	.feature {
+		border: none;
+	}
+
+	.feature hr {
+		display: block;
+		border-top: 2px solid white;
+	}
+
+	.feature .feature-description {
+		margin-left: 0px;
+	}
+
+	.feature .feature-description h1 {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.feature .feature-description ul {
+		padding-left: 0rem !important;
+		list-style: none;
+	}
+
+	.feature .feature-description ul li {
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	/* Processor */
+
+	.processor {
+		border: none;
+	}
+
+	.processor hr {
+		display: block;
+		border-top: 2px solid white;
+	}
+
+	.processor .col-md-10 {
+		padding: 0 0 0 10px;
+	}
+
+	.processor .processor-description ul {
+		list-style: none;
+	}
+
+	.processor .processor-description ul li {
+		font-size: 16px;
+	}
+
+	/* Camera */
+
+	.camera {
+		border: none;
+	}
+
+	.camera hr {
+		display: block;
+		border-top: 2px solid white;
+	}
+
+	.camera .col-md-10 {
+		padding: 0 0 0 10px;
+	}
+
+	.camera .camera-description ul li {
+		font-size: 16px;
+	}
+
+	/* Video Recording */
+
+	.video-recording {
+		border: none;
+	}
+
+	.video-recording hr {
+		display: block;
+		border-top: 2px solid white;
+	}
+
+	.video-recording .col-md-10 {
+		padding: 0 0 0 10px;
+	}
+
+	.video-recording .camera-description ul li {
+		font-size: 16px;
+	}
+
+	/* Power and Battery */
+
+	.power-batteries {
+		border: none;
+	}
+
+	.power-batteries hr {
+		display: block;
+		border-top: 2px solid white;
+	}
+
+	.power-batteries .col-md-10 {
+		padding: 0 0 0 10px;
+	}
+
+	.power-batteries .power-battery ul li {
+		font-size: 16px;
+		color: var(--text-muted);
+		font-weight: 500;
+	}
+
+	.power-batteries .power-battery .battery-specification h1 {
+		font-size: 18px;
+	}
+
+	.power-batteries .battery-description {
+		margin: 20px 0 0 0;
+	}
+
+	.power-batteries .battery-description h1 {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.power-batteries .battery-description ul li {
+		margin-bottom: 5px;
+		font-size: 16px;
+		color: var(--text-muted);
+		font-weight: 500;
+	}
+
+	/* Operating System */
+
+	.os {
+		border: none;
+	}
+
+	.os hr {
+		display: block;
+		border-top: 2px solid white;
+	}
+
+	.os .col-md-10 {
+		padding: 0 0 0 10px;
+	}
+
+	.os .os-description p {
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	.os .os-description a {
+		font-size: 16px;
+	}
+
+	/* Waterproof */
+
+	.waterproof {
+		border: none;
+	}
+
+	.waterproof hr {
+		display: block;
+		border-top: 2px solid white;
+	}
+
+	.waterproof .col-md-10 {
+		padding: 0 0 0 10px;
+	}
+
+	.waterproof p {
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	/* Carriers */
+
+	.carriers {
+		border: none;
+	}
+
+	.carriers hr {
+		display: block;
+		border-top: 2px solid white;
+	}
+
+	.carriers .col-md-10 {
+		padding: 0 0 0 10px;
+	}
+
+	/* Built In Apps */
+
+	.built-in-app {
+		border: none;
+	}
+
+	.built-in-app hr {
+		display: block;
+		border-top: 2px solid white;
+	}
+
+	.built-in-app .col-md-10 {
+		padding: 0 0 0 10px;
+	}
+
+	/* In the Box */
+
+	.in-the-box {
+		border: none;
+	}
+
+	.in-the-box hr {
+		display: block;
+		border-top: 2px solid white;
+	}
+
+	.in-the-box .col-md-10 {
+		justify-content: center;
+		align-items: center;
+		padding: 0 0 0 10px;
+	}
+
+	.in-the-box .col-md-10 ul li {
+		font-size: 16px;
+		color: var(--text-muted);
+	}
+}
+
+@media screen and (max-width: 576px) {
+	/* Product Review */
+
+	.product-review .product-content .product-specification h1 {
+		display: block;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.product-review .product-content .product-specification p {
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	/* Capacity */
+
+	.capacity .capacity-product-1 h1 {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.capacity .capacity-product-2 h1 {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.capacity p {
+		text-align: start;
+		font-size: 14px;
+		color: var(--text-muted);
+		font-weight: 700;
+	}
+
+	/* Size & Weight */
+
+	.size-product .col-md-10 {
+		flex-direction: column;
+	}
+
+	.size-product .col-md-10 .size-product-1 {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	.size-product .col-md-10 .size-product-2 {
+		width: 100%;
+	}
+
+	.size-product .size-detail {
+		text-align: center !important;
+	}
+
+	.size-product .col-md-10 .size-detail h1 {
+		display: block;
+		font-size: 18px;
+	}
+
+	.size-product .col-md-10 figure {
+		display: block;
+		margin: auto;
+	}
+
+	/* Display */
+
+	.display .col-md-10 {
+		flex-direction: column;
+	}
+
+	.display .display-product-1 {
+		margin: 0 0 30px 0;
+	}
+
+	.display .display-product-2 {
+		margin: 20px 0 0 0;
+	}
+
+	.display .col-md-10 h1 {
+		display: block;
+		font-size: 18px;
+		font-weight: 800;
+		text-align: center;
+	}
+
+	.display .display-image {
+		justify-content: center !important;
+	}
+
+	.display .display-specification ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.display .display-specification ul li {
+		font-size: 14px;
+	}
+
+	.display .display-description p {
+		text-align: center;
+	}
+
+	/* Feature */
+
+	.feature .feature-description h1 {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.feature .feature-description ul li {
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	/* Processor */
+
+	.processor .processor-description ul li {
+		font-size: 14px;
+	}
+
+	/* Camera */
+
+	.camera .camera-description ul li {
+		font-size: 14px;
+	}
+
+	/* Processor */
+
+	.video-recording .video-description ul li {
+		font-size: 14px;
+	}
+
+	/* Power and Battery */
+	.power-batteries .power-battery {
+		flex-direction: column;
+	}
+
+	.power-batteries .power-battery ul li {
+		font-size: 14px;
+	}
+
+	.power-batteries .power-battery .battery-specification h1 {
+		font-size: 16px;
+	}
+
+	.power-batteries .power-battery-2 ul {
+		margin: 0 0 0 0;
+	}
+
+	.power-batteries .battery-description {
+		margin: 20px 0 0 0;
+	}
+
+	.power-batteries .battery-description h1 {
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	.power-batteries .battery-description ul li {
+		margin-bottom: 5px;
+		font-size: 14px;
+	}
+
+	/* OS */
+
+	.os .os-description p {
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.os .os-description a {
+		font-size: 14px;
+	}
+
+	/* Waterproof */
+
+	.waterproof p {
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	/* In the Box */
+
+	.in-the-box .col-md-10 ul li {
+		font-size: 14px;
+		color: var(--text-muted);
+	}
+}
+
+@media screen and (max-width: 375px) {
+	/* Product Review */
+
+	.product-review .product-content img.phone-1 {
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.product-review .product-content img.phone-2 {
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	/* Capacity */
+
+	.capacity .col-md-10 {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/* Processor */
+
+	.processor .col-md-10 {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.processor .processor-description ul {
+		margin-top: 15px;
+		padding-left: 0rem !important;
+		list-style: none;
+	}
+}
